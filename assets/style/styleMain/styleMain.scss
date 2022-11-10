@@ -3,154 +3,158 @@
 @import "../styleFooter/styleFooter.scss";
 
 h2 {
-    color: coral;
+  color: coral;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 35px;
 }
 .gallery {
-    @include f-center;
-    @include f-column;
-    align-items: center;
+  @include f-center;
+  @include f-column;
+  align-items: center;
 
-    &__container {
-        columns: 5 200px;
-        column-gap: 1.5rem;
-        width: 90%;
-        margin: 0 auto;
-        div {
-            width: 150px;
-            margin: 0 1.5rem 1.5rem 0;
-            display: inline-block;
-            width: 100%;
-            border: solid 2px white;
-            margin-top: 10%;
-            padding: 5px;
-            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-            border-radius: 5px;
-            transition: all 0.25s ease-in-out;
-            &:hover img {
-                filter: grayscale(0);
-            }
-            &:hover {
-                border: solid 4px coral;
-                box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-            }
-            img {
-                width: 100%;
-                filter: grayscale(100%);
-                border-radius: 5px;
-                transition: all 0.25s ease-in-out;
-            }
-            p {
-                margin: 5px 0;
-                padding: 0;
-                text-align: center;
-                font-style: italic;
-            }
-        }
+  &__container {
+    columns: 5 200px;
+    column-gap: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+    div {
+      width: 150px;
+      margin: 0 1.5rem 1.5rem 0;
+      display: inline-block;
+      width: 100%;
+      border: solid 2px white;
+      margin-top: 10%;
+      padding: 5px;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+      transition: all 0.25s ease-in-out;
+      &:hover img {
+        filter: grayscale(0);
+      }
+      &:hover {
+        border: solid 4px coral;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+      img {
+        width: 100%;
+        filter: grayscale(100%);
+        border-radius: 5px;
+        transition: all 0.25s ease-in-out;
+      }
+      p {
+        margin: 5px 0;
+        padding: 0;
+        text-align: center;
+        font-style: italic;
+      }
     }
+  }
 }
 .team {
-    &__container {
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-    }
+  &__container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-    &__title {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin-bottom: 80px;
-        margin-top: 40px;
-        text-align: center;
-        h1 {
-            display: inline-block;
-            font-size: 35px;
-            text-transform: uppercase;
-            font-weight: 700;
-            color: #000000;
-            margin: 0 0 5px;
-            position: relative;
-            &::before {
-                content: "";
-                left: 32%;
-                position: absolute;
-                height: 3px;
-                right: 32%;
-                background-color: #50c5fc;
-                bottom: -5px;
-            }
-        }
-    }
-    p {
-        padding: 0;
-        margin: 0 0 15px 0;
-        color: #454545;
-        font-weight: 300;
-    }
+  &__title {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    text-align: center;
 
-    img {
-        width: 100%;
-        height: auto;
+    h2 {
+      display: inline-block;
+      font-size: 35px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: coral;
+      margin: 0 0 5px;
+      position: relative;
+      &::before {
+        content: "";
+        left: 32%;
+        position: absolute;
+        height: 3px;
+        right: 32%;
+        background-color: #50c5fc;
+        bottom: -5px;
+      }
     }
+  }
+  p {
+    padding: 0;
+    margin: 0 0 15px 0;
+    color: #454545;
+    font-weight: 300;
+  }
 
-    &__row {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        margin-right: -15px;
-        margin-left: -15px;
-    }
-    &__column {
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  &__column {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+
+    .team__card {
+      margin-bottom: 30px;
+
+      .team__img {
         position: relative;
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        flex: 0 0 100%;
-        max-width: 100%;
-
-        .team__card {
-            margin-bottom: 30px;
-
-            .team__img {
-                position: relative;
-                font-size: 0;
-                text-align: center;
-                img {
-                    width: 160px;
-                    height: auto;
-                    border-radius: 100%;
-                    border: 20px solid #f3f4fa;
-                }
-            }
-            .team__content {
-                padding: 80px 20px 20px 20px;
-                margin-top: -80px;
-                text-align: center;
-                background: #f3f4fa;
-                border-radius: 10px;
-
-                h2 {
-                    font-size: 25px;
-                    font-weight: 400;
-                    letter-spacing: 2px;
-                }
-                h3 {
-                    font-size: 16px;
-                    font-weight: 300;
-                }
-                h4 {
-                    font-size: 16px;
-                    font-weight: 300;
-                    letter-spacing: 1px;
-                    font-style: italic;
-                    margin-bottom: 0;
-                }
-                p {
-                    font-size: 16px;
-                    font-weight: 400;
-                    line-height: 22px;
-                }
-            }
+        font-size: 0;
+        text-align: center;
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 100%;
+          border: 20px solid #f3f4fa;
         }
+      }
+      .team__content {
+        padding: 80px 20px 20px 20px;
+        margin-top: -80px;
+        text-align: center;
+        background: #f3f4fa;
+        border-radius: 10px;
+
+        h3 {
+          font-size: 25px;
+          font-weight: 400;
+          letter-spacing: 2px;
+        }
+        h4 {
+          font-size: 16px;
+          font-weight: 300;
+        }
+        h5 {
+          font-size: 16px;
+          font-weight: 300;
+          letter-spacing: 1px;
+          font-style: italic;
+          margin-bottom: 0;
+        }
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22px;
+        }
+      }
     }
+  }
 }
