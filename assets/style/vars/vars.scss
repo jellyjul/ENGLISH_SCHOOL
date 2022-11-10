@@ -47,6 +47,21 @@ body {
   color: rgba(243, 243, 243, 1);
   font-family: Montserrat;
 }
+@mixin main-button {
+  color: #030303;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  background: none;
+  border: 1px solid;
+  border-radius: 67px;
+
+  &:hover {
+    background: rgba(255, 166, 0, 0.788);
+    border: none;
+    box-shadow: 0px 5px 5px rgba(255, 0, 0, 0.212);
+  }
+}
 
 @mixin h2 {
   font-weight: 400;
