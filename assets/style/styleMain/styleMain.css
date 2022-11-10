@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -171,159 +172,6 @@ li {
   box-sizing: border-box;
 }
 
-
-h2 {
-  color: coral;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 35px;
-}
-
-.gallery {
-  display: flex;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.gallery__container {
-  -moz-columns: 5 200px;
-       columns: 5 200px;
-  -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
-  width: 90%;
-  margin: 0 auto;
-}
-.gallery__container div {
-  width: 150px;
-  margin: 0 1.5rem 1.5rem 0;
-  display: inline-block;
-  width: 100%;
-  border: solid 2px white;
-  margin-top: 10%;
-  padding: 5px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  transition: all 0.25s ease-in-out;
-}
-.gallery__container div:hover img {
-  filter: grayscale(0);
-}
-.gallery__container div:hover {
-  border: solid 4px coral;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-}
-.gallery__container div img {
-  width: 100%;
-  filter: grayscale(100%);
-  border-radius: 5px;
-  transition: all 0.25s ease-in-out;
-}
-.gallery__container div p {
-  margin: 5px 0;
-  padding: 0;
-  text-align: center;
-  font-style: italic;
-}
-
-.team__container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.team__title {
-  flex: 0 0 100%;
-  max-width: 100%;
-  margin-bottom: 80px;
-  margin-top: 40px;
-  text-align: center;
-}
-.team__title h2 {
-  display: inline-block;
-  font-size: 35px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: coral;
-  margin: 0 0 5px;
-  position: relative;
-}
-.team__title h2::before {
-  content: "";
-  left: 32%;
-  position: absolute;
-  height: 3px;
-  right: 32%;
-  background-color: #50c5fc;
-  bottom: -5px;
-}
-.team p {
-  padding: 0;
-  margin: 0 0 15px 0;
-  color: #454545;
-  font-weight: 300;
-}
-.team img {
-  width: 100%;
-  height: auto;
-}
-.team__row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-right: -15px;
-  margin-left: -15px;
-}
-.team__column {
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-.team__column .team__card {
-  margin-bottom: 30px;
-}
-.team__column .team__card .team__img {
-  position: relative;
-  font-size: 0;
-  text-align: center;
-}
-.team__column .team__card .team__img img {
-  width: 100%;
-  height: auto;
-  border-radius: 100%;
-  border: 20px solid #f3f4fa;
-}
-.team__column .team__card .team__content {
-  padding: 80px 20px 20px 20px;
-  margin-top: -80px;
-  text-align: center;
-  background: #f3f4fa;
-  border-radius: 10px;
-}
-.team__column .team__card .team__content h3 {
-  font-size: 25px;
-  font-weight: 400;
-  letter-spacing: 2px;
-}
-.team__column .team__card .team__content h4 {
-  font-size: 16px;
-  font-weight: 300;
-}
-.team__column .team__card .team__content h5 {
-  font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 1px;
-  font-style: italic;
-  margin-bottom: 0;
-}
-.team__column .team__card .team__content p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-=======
 *,
 *::before,
 *::after {
@@ -364,6 +212,107 @@ body {
   line-height: 137%;
   color: rgb(243, 243, 243);
   font-family: Montserrat;
+}
+
+.review img {
+  width: 30%;
+  height: 30%;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+}
+.price__title {
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 57px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 3%;
+}
+.price__info {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2% 5% 10% 5%;
+}
+.price__info ol {
+  list-style: none;
+  padding-left: 0rem;
+}
+.price__info ol > li {
+  padding-left: 20px;
+  position: relative;
+  margin: 5px 5px 5px 8px;
+}
+.price__info ol > li:before {
+  content: "✔";
+  position: absolute;
+  left: -10px;
+}
+.price__info .no:before {
+  content: "❌";
+  position: absolute;
+}
+.price__info-bag {
+  text-align: center;
+  width: 100%;
+  box-shadow: -1px 10px 10px 0px rgba(0, 0, 0, 0.171);
+  border-radius: 20px;
+}
+.price__info-bag-description-details {
+  text-align: start;
+  padding-left: 10px;
+}
+.price__info-bag-description-title {
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 57px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+}
+.price__info-bag-description-rate {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(255, 115, 0);
+  padding-bottom: 5px;
+}
+.price__info-bag-description:hover {
+  background: rgba(45, 252, 73, 0.1921568627);
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  box-shadow: -1px 20px 10px 0px rgba(0, 0, 0, 0.212);
+}
+.price__info .bag-light,
+.price__info .bag-standard {
+  margin-right: 5%;
+}
+.price__info .btn {
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #030303;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  background: none;
+  border: 1px solid;
+  border-radius: 67px;
+  width: 10vw;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+}
+.price__info .btn:hover {
+  background: rgba(255, 166, 0, 0.788);
+  border: none;
+  box-shadow: 0px 5px 5px rgba(255, 0, 0, 0.212);
 }
 
 .wrapper {
@@ -523,5 +472,157 @@ body {
 .about__right-content {
   transform: translateY(500px);
   margin-bottom: 20px;
+}
 
+h2 {
+  color: coral;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery__container {
+  -moz-columns: 5 200px;
+       columns: 5 200px;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
+}
+.gallery__container div {
+  width: 150px;
+  margin: 0 1.5rem 1.5rem 0;
+  display: inline-block;
+  width: 100%;
+  border: solid 2px white;
+  margin-top: 10%;
+  padding: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+}
+.gallery__container div:hover img {
+  filter: grayscale(0);
+}
+.gallery__container div:hover {
+  border: solid 4px coral;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.gallery__container div img {
+  width: 100%;
+  filter: grayscale(100%);
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+}
+.gallery__container div p {
+  margin: 5px 0;
+  padding: 0;
+  text-align: center;
+  font-style: italic;
+}
+
+.team__container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.team__title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 80px;
+  margin-top: 40px;
+  text-align: center;
+}
+.team__title h2 {
+  display: inline-block;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: coral;
+  margin: 0 0 5px;
+  position: relative;
+}
+.team__title h2::before {
+  content: "";
+  left: 32%;
+  position: absolute;
+  height: 3px;
+  right: 32%;
+  background-color: #50c5fc;
+  bottom: -5px;
+}
+.team p {
+  padding: 0;
+  margin: 0 0 15px 0;
+  color: #454545;
+  font-weight: 300;
+}
+.team img {
+  width: 100%;
+  height: auto;
+}
+.team__row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.team__column {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.team__column .team__card {
+  margin-bottom: 30px;
+}
+.team__column .team__card .team__img {
+  position: relative;
+  font-size: 0;
+  text-align: center;
+}
+.team__column .team__card .team__img img {
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+  border: 20px solid #f3f4fa;
+}
+.team__column .team__card .team__content {
+  padding: 80px 20px 20px 20px;
+  margin-top: -80px;
+  text-align: center;
+  background: #f3f4fa;
+  border-radius: 10px;
+}
+.team__column .team__card .team__content h3 {
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.team__column .team__card .team__content h4 {
+  font-size: 16px;
+  font-weight: 300;
+}
+.team__column .team__card .team__content h5 {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-style: italic;
+  margin-bottom: 0;
+}
+.team__column .team__card .team__content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
 }/*# sourceMappingURL=styleMain.css.map */

@@ -1,2 +1,6 @@
+
+{"version":3,"sources":["../vars/vars.scss","styleFooter.css"],"names":[],"mappings":"AAKA;EACI,SAAA;EACA,UAAA;EACA,sBAAA;ACJJ","file":"styleFooter.css"}
+=======
 {"version":3,"sources":["../vars/vars.scss","styleFooter.css"],"names":[],"mappings":"AAKA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;ACJF;;ADMA;;;EAGE,UAAA;EACA,SAAA;EACA,SAAA;EACA,sBAAA;ACHF;;ADMA;EACE,qBAAA;ACHF;;ADKA;;;EAGE,gBAAA;ACFF;;ADIA;EACE,mBAAA;ACDF;;ADIA;;;;;;EAME,kBAAA;EACA,oBAAA;ACDF;;ADIA;;EAEE,gBAAA;EACA,eAAA;EACA,iBAAA;EACA,yBAAA;EACA,uBAAA;ACDF","file":"styleFooter.css"}
+
 
