@@ -4,36 +4,82 @@ $paragraph-color: rgba(255, 255, 255, 0.8);
 $color-hover: rgba(80, 39, 198, 1);
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+html,
+body {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 137%;
+  color: rgba(243, 243, 243, 1);
+  font-family: Montserrat;
 }
 
 @mixin h2 {
-    font-weight: 400;
-    font-size: 52px;
-    line-height: 57px;
-    text-transform: uppercase;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 57px;
+  text-transform: uppercase;
 }
 @mixin regular-paragraphs {
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 24px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
 }
 
 @mixin f-column {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 @mixin f-center {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 @mixin f-space-around {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 @mixin f-space-between {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+}
+@mixin font-header {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 137%;
+  color: rgba(243, 243, 243, 1);
+  font-family: Montserrat;
 }
