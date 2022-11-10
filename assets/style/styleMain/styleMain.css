@@ -16,7 +16,7 @@
   box-sizing: border-box;
 }
 
-h1 {
+h2 {
   color: coral;
 }
 
@@ -67,92 +67,101 @@ h1 {
   font-style: italic;
 }
 
-.team__accordeon {
-  max-width: 800px;
-}
-.team__accordeon label {
-  height: 30px !important;
-  line-height: 21px !important;
-  font-size: 12px !important;
-  font-family: "Open Sans", "Arial Narrow", Arial, sans-serif !important;
-  padding: 5px 20px;
-  position: relative;
-  z-index: 20;
-  display: block;
-  height: 30px;
-  cursor: pointer;
-  color: #777;
-  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
-  line-height: 33px;
-  font-size: 19px;
-  background: #fff;
-  background: linear-gradient(top, #fff 1%, #eaeaea 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#fff",endColorstr="#eaeaea",GradientType=0 );
-  box-shadow: 0 0 0 1px rgba(155, 155, 155, 0.3), 1px 0 0 rgba(255, 255, 255, 0.9) inset, 0 2px 2px rgba(0, 0, 0, 0.1);
-  font-size: 12px;
-  height: 30px;
-  line-height: 20px;
-}
-.team__accordeon {
+.team__container {
   width: 100%;
-  margin: 10px auto 30px auto;
-  text-align: left;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
-.team__accordeon label:hover {
-  background: #fff;
+.team__title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 80px;
+  margin-top: 40px;
+  text-align: center;
 }
-.team__accordeon input:checked + label, .team__accordeon input:checked + label:hover {
-  background: #f1f2f3;
-  color: #666;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
-  box-shadow: 0 0 0 1px rgba(155, 155, 155, 0.3), 0 2px 2px rgba(0, 0, 0, 0.1);
-  height: 30px;
-  line-height: 21px;
-  font-size: 13px;
-}
-.team__accordeon label:hover:after, .team__accordeon input:checked + label:hover:after {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  right: 13px;
-  top: 7px;
-  background: transparent url(../images/arrow_down.png) no-repeat center center;
-}
-.team__accordeon input:checked + label:hover:after {
-  background-image: url(../images/arrow_up.png);
-}
-.team__accordeon input {
-  display: none;
-}
-.team__accordeon article {
-  background: rgba(255, 255, 255, 0.5);
-  margin-top: -1px;
-  overflow: hidden;
-  height: 0;
+.team__title h1 {
+  display: inline-block;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 5px;
   position: relative;
-  z-index: 10;
-  transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
 }
-.team__accordeon article p {
-  font-style: normal;
-  color: #777;
-  line-height: 23px;
-  font-size: 10px;
-  padding: 20px;
-  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
-  font: normal normal 12px "Open Sans";
+.team__title h1::before {
+  content: "";
+  left: 32%;
+  position: absolute;
+  height: 3px;
+  right: 32%;
+  background-color: #50c5fc;
+  bottom: -5px;
 }
-.team__accordeon input:checked ~ article {
-  transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-  box-shadow: 0 0 0 1px rgba(155, 155, 155, 0.3);
+.team p {
+  padding: 0;
+  margin: 0 0 15px 0;
+  color: #454545;
+  font-weight: 300;
 }
-.team__accordeon input:checked ~ article.ac-small {
-  height: 140px;
+.team img {
+  width: 100%;
+  height: auto;
 }
-.team__accordeon input:checked ~ article.ac-medium {
-  height: 180px;
+.team__row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-right: -15px;
+  margin-left: -15px;
 }
-.team__accordeon input:checked ~ article.ac-large {
-  height: 230px;
+.team__column {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.team__column .team__card {
+  margin-bottom: 30px;
+}
+.team__column .team__card .team__img {
+  position: relative;
+  font-size: 0;
+  text-align: center;
+}
+.team__column .team__card .team__img img {
+  width: 160px;
+  height: auto;
+  border-radius: 100%;
+  border: 20px solid #f3f4fa;
+}
+.team__column .team__card .team__content {
+  padding: 80px 20px 20px 20px;
+  margin-top: -80px;
+  text-align: center;
+  background: #f3f4fa;
+  border-radius: 10px;
+}
+.team__column .team__card .team__content h2 {
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.team__column .team__card .team__content h3 {
+  font-size: 16px;
+  font-weight: 300;
+}
+.team__column .team__card .team__content h4 {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-style: italic;
+  margin-bottom: 0;
+}
+.team__column .team__card .team__content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
 }/*# sourceMappingURL=styleMain.css.map */
