@@ -1,3 +1,126 @@
 @import "../vars/vars.scss";
 @import "../styleHeader/styleHeader.scss";
 @import "../styleFooter/styleFooter.scss";
+
+
+@mixin main-button {
+    color: #030303;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: none;
+    border: 1px solid;
+    border-radius: 67px;
+
+    &:hover {
+        background: rgba(255, 166, 0, 0.788);
+        border: none;
+        box-shadow: 0px 5px 5px rgba(255, 0, 0, 0.212);
+    }
+}
+
+
+//---------------------------------------review----------------------------------------------//
+
+.review {
+    img {
+        width: 30%;
+        height: 30%;
+    }
+}
+
+//-------------------------------------------------------------------------------------------//
+//-----------------------------------------price---------------------------------------------//
+
+.price {
+    @include f-column;
+
+    &__title {
+        @include h2;
+        text-align: center;
+        padding-top: 3%
+    }
+
+    &__info {
+        @include regular-paragraphs;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2% 5% 10% 5%;
+
+        ol {
+            list-style: none;
+            padding-left: 0rem;
+        }
+
+        ol>li {
+            padding-left: 20px;
+            position: relative;
+            margin: 5px 5px 5px 8px;
+        }
+
+        ol>li:before {
+            content: '✔';
+            position: absolute;
+            left: -10px;
+        }
+
+        .no:before {
+            content: "\274c";
+            position: absolute;
+        }
+
+        &-bag {
+            text-align: center;
+            width: 100%;
+            box-shadow: -1px 10px 10px 0px rgba(0, 0, 0, 0.171);
+            border-radius: 20px;
+
+            &-description {
+                &-details {
+                    text-align: start;
+                    padding-left: 10px;
+                }
+
+                &-title {
+                    @include h2;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+
+                &-rate {
+                    @include regular-paragraphs;
+                    font-size: 25px;
+                    font-weight: bold;
+                    color: rgb(255, 115, 0);
+                    padding-bottom: 5px;
+
+                }
+            }
+
+            &-description:hover {
+                background: #2dfc4931;
+                color: rgb(0, 0, 0);
+                border-radius: 20px;
+                box-shadow: -1px 20px 10px 0px rgba(0, 0, 0, 0.212);
+
+            }
+        }
+
+        .bag-light,
+        .bag-standard {
+            margin-right: 5%;
+        }
+
+        .btn {
+            margin-bottom: 10px;
+            cursor: pointer;
+            @include main-button;
+            width: 10vw;
+            font-size: 12px;
+            letter-spacing: 0.1em;
+        }
+    }
+}
+
+//--------------------------------------------------------------------------------------------//
