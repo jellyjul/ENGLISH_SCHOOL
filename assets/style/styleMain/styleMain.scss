@@ -238,6 +238,7 @@ h2 {
     }
   }
 }
+
 //---------------------------team------------------------
 .team {
   &__container {
@@ -357,11 +358,46 @@ h2 {
 
 //---------------------------------------review----------------------------------------------//
 .review {
+
+  .review__title {
+    @include h2;
+    color: coral;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    text-align: center;
+  }
+
+  .review__text {
+    @include regular-paragraphs;
+    color: black;
+    text-align: center;
+    padding-bottom: 3%;
+  }
+
+  .carousel-inner {
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(159, 127, 105, 1);
+    overflow: hidden;
+  }
+
+  .sr-only {
+    color: black;
+  }
+
   img {
-    width: 30%;
-    height: 30%;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
 }
+
+
+
+
+
+
 
 //-----------------------------------------price---------------------------------------------//
 
@@ -371,7 +407,7 @@ h2 {
   &__title {
     @include h2;
     text-align: center;
-    padding-top: 3%;
+    padding-top: 5%;
     color: coral;
   }
 
@@ -387,30 +423,33 @@ h2 {
       padding-left: 0rem;
     }
 
-    ol > li {
+    ol>li {
       padding-left: 20px;
       position: relative;
       margin: 5px 5px 5px 8px;
       color: black;
     }
 
-    ol > li:before {
+    ol>li:before {
       content: "✔";
       position: absolute;
       left: -10px;
-      color: black;
+      color: rgb(5, 116, 2);
+      font-weight: bold;
+      font-size: 20px;
     }
 
     .no:before {
       content: "\274c";
       position: absolute;
+      font-size: 14px;
     }
 
     &-bag {
       text-align: center;
       width: 100%;
-      box-shadow: -1px 10px 10px 0px rgba(0, 0, 0, 0.171);
-      border-radius: 20px;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
 
       &-description {
         &-details {
@@ -429,7 +468,7 @@ h2 {
           @include regular-paragraphs;
           font-size: 25px;
           font-weight: bold;
-          color: rgb(255, 115, 0);
+          color: coral;
           padding-bottom: 5px;
         }
       }
@@ -438,7 +477,8 @@ h2 {
         background: #2dfc4931;
         color: rgb(0, 0, 0);
         border-radius: 20px;
-        box-shadow: -1px 20px 10px 0px rgba(0, 0, 0, 0.212);
+        border: solid 4px coral;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
       }
     }
 
