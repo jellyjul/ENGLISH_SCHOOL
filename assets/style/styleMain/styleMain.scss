@@ -1,9 +1,7 @@
 @import "../vars/vars.scss";
 @import "../styleHeader/styleHeader.scss";
 @import "../styleFooter/styleFooter.scss";
-
 //--------------------------------------------------------------------------------------------//
-
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -303,6 +301,12 @@ h2 {
     padding-left: 15px;
     flex: 0 0 100%;
     max-width: 100%;
+    &:hover {
+      background: #2dfc4931;
+      color: rgb(0, 0, 0);
+      border-radius: 20px;
+      box-shadow: -1px 20px 10px 0px rgba(0, 0, 0, 0.212);
+    }
 
     .team__card {
       margin-bottom: 30px;
@@ -494,6 +498,139 @@ h2 {
       width: 10vw;
       font-size: 12px;
       letter-spacing: 0.1em;
+    }
+  }
+
+}
+
+}
+.questions {
+  // background-color: #D9D9D9;
+  &__wrapper {
+    font-family: $main-font;
+    max-width: 1200px;
+    margin: 0 auto;
+    h2 {
+      font-size: 45px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      padding: 40px 0 0 45px;
+      text-transform: uppercase;
+    }
+    .questions__block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding-top: 30px;
+      padding-bottom: 156px;
+      .questions__item {
+        display: block;
+        background: rgb(240 117 0 / 42%);
+        width: 700px;
+        box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      summary::-webkit-details-marker {
+        display: none;
+      }
+      summary::-moz-list-bullet {
+        list-style-type: none;
+      }
+      summary::marker {
+        display: none;
+      }
+      summary {
+        display: block;
+        padding: 0.3em 1em 0.3em 0.9em;
+        border-bottom: 1px solid #e2e8f0;
+        font-size: 1.4em;
+        cursor: pointer;
+        position: relative;
+      }
+      summary:before {
+        top: 15px;
+        right: 12px;
+        color: transparent;
+        background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50% 50% / 1em
+          1em;
+        width: 1em;
+        height: 1em;
+        content: "";
+        position: absolute;
+        transition: transform 0.5s;
+      }
+      details[open] > summary:before {
+        transform: scale(1, -1);
+      }
+      summary ~ * {
+        padding: 0 1em 10px 1.4em;
+      }
+      details[open] summary ~ * {
+        animation: sweep 0.5s ease-in-out;
+      }
+    }
+  }
+}
+//---------------------------------------advantages----------------------------------------------//
+.advantages {
+  h2 {
+    color: coral;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+  }
+  &__subtitle {
+    color: gray;
+    font-size: 20px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4%;
+  }
+  &__wrapper {
+    width: 90%;
+    margin: 2% auto;
+  }
+  &__block {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: repeat(2, 3fr);
+    grid-gap: 3%;
+  }
+  &__card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+
+    &:hover {
+      background: #2dfc4931;
+      color: rgb(0, 0, 0);
+      border-radius: 20px;
+      box-shadow: -1px 20px 10px 0px rgba(0, 0, 0, 0.212);
+    }
+    img {
+      width: 30%;
+    }
+    h4 {
+      margin-top: 5%;
+      color: orangered;
+      font-family: sans-serif;
+      font-weight: 800;
+    }
+    h5 {
+      padding: 0 10px;
+      color: gray;
+      font-family: sans-serif;
+      text-align: justify;
     }
   }
 }

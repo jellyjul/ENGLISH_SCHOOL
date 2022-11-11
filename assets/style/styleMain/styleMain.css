@@ -214,6 +214,48 @@ body {
   font-family: Montserrat;
 }
 
+footer {
+  font-family: "Lato", sans-serif;
+  background: url("../../images/imagesFooter/bgкопия.jpeg");
+}
+footer .footer__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+footer .footer__wrapper .logo {
+  max-width: 100px;
+  border-radius: 50px;
+}
+footer .footer__wrapper .footer__nav {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 70px;
+}
+footer .footer__wrapper .footer__nav .footer__nav-right {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 42%;
+  gap: 80px;
+}
+footer .footer__wrapper .footer__nav .footer__nav-right .footer__nav-contacts {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer__wrapper .footer__nav .footer__nav-right .footer__nav-contacts a {
+  font-weight: 400;
+  font-size: 17px;
+  text-decoration: none;
+  color: white;
+  padding-bottom: 5px;
+}
+footer .footer__wrapper .footer__nav .footer__nav-right .hover a:hover {
+  color: #191715;
+}
+footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
+  padding-right: 10px;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -485,6 +527,12 @@ h2 {
   flex: 0 0 100%;
   max-width: 100%;
 }
+.team__column:hover {
+  background: rgba(45, 252, 73, 0.1921568627);
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  box-shadow: -1px 20px 10px 0px rgba(0, 0, 0, 0.212);
+}
 .team__column .team__card {
   margin-bottom: 30px;
 }
@@ -664,4 +712,129 @@ h2 {
   background: coral;
   border: none;
   box-shadow: 0px 5px 5px rgba(255, 0, 0, 0.212);
+}
+
+.questions__wrapper {
+  font-family: "Lato", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.questions__wrapper h2 {
+  font-size: 45px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  padding: 40px 0 0 45px;
+  text-transform: uppercase;
+}
+.questions__wrapper .questions__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 30px;
+  padding-bottom: 156px;
+}
+.questions__wrapper .questions__block .questions__item {
+  display: block;
+  background: rgba(240, 117, 0, 0.42);
+  width: 700px;
+  box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.questions__wrapper .questions__block summary::-webkit-details-marker {
+  display: none;
+}
+.questions__wrapper .questions__block summary::-moz-list-bullet {
+  list-style-type: none;
+}
+.questions__wrapper .questions__block summary::marker {
+  display: none;
+}
+.questions__wrapper .questions__block summary {
+  display: block;
+  padding: 0.3em 1em 0.3em 0.9em;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 1.4em;
+  cursor: pointer;
+  position: relative;
+}
+.questions__wrapper .questions__block summary:before {
+  top: 15px;
+  right: 12px;
+  color: transparent;
+  background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50% 50%/1em 1em;
+  width: 1em;
+  height: 1em;
+  content: "";
+  position: absolute;
+  transition: transform 0.5s;
+}
+.questions__wrapper .questions__block details[open] > summary:before {
+  transform: scale(1, -1);
+}
+.questions__wrapper .questions__block summary ~ * {
+  padding: 0 1em 10px 1.4em;
+}
+.questions__wrapper .questions__block details[open] summary ~ * {
+  -webkit-animation: sweep 0.5s ease-in-out;
+          animation: sweep 0.5s ease-in-out;
+}
+
+.advantages h2 {
+  color: coral;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+.advantages__subtitle {
+  color: gray;
+  font-size: 20px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4%;
+}
+.advantages__wrapper {
+  width: 90%;
+  margin: 2% auto;
+}
+.advantages__block {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  grid-template-rows: repeat(2, 3fr);
+  grid-gap: 3%;
+}
+.advantages__card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+}
+.advantages__card:hover {
+  background: rgba(45, 252, 73, 0.1921568627);
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  box-shadow: -1px 20px 10px 0px rgba(0, 0, 0, 0.212);
+}
+.advantages__card img {
+  width: 30%;
+}
+.advantages__card h4 {
+  margin-top: 5%;
+  color: orangered;
+  font-family: sans-serif;
+  font-weight: 800;
+}
+.advantages__card h5 {
+  padding: 0 10px;
+  color: gray;
+  font-family: sans-serif;
+  text-align: justify;
 }/*# sourceMappingURL=styleMain.css.map */
