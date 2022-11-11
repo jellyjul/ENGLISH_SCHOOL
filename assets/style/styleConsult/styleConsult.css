@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+html,
+body {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 137%;
+  color: rgb(243, 243, 243);
+  font-family: Montserrat;
+}
+
+.consult {
+  background: rgba(6, 6, 6, 0.767);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.consult__content {
+  display: flex;
+  max-width: 800px;
+  background: rgb(255, 255, 255);
+  color: black;
+}
+.consult__left {
+  padding: 20px 0 0 20px;
+  overflow: hidden;
+}
+.consult__left .consult__text h2 {
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.consult__left .consult__text p {
+  font-size: 15px;
+  line-height: 14px;
+  margin-bottom: 25px;
+}
+.consult__left .consult__form {
+  margin-bottom: 25px;
+}
+.consult__left .consult__name:after,
+.consult__left .consult__number:after {
+  content: "";
+  margin: 3% 0;
+  display: block;
+  height: 1px;
+  max-width: 300px;
+  background: rgba(0, 0, 50, 0.4);
+}
+.consult__left input[type=text]:focus,
+.consult__left input[type=number]:focus {
+  outline: none;
+}
+.consult__left .consult__label::placeholder {
+  opacity: 0;
+}
+.consult__left .btn {
+  max-width: 200px;
+}
+.consult__left .btn .btn:link,
+.consult__left .btn .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: absolute;
+}
+.consult__left .btn .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.consult__left .btn .btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.consult__left .btn .btn-orange {
+  background-color: #F08700;
+  color: rgb(255, 255, 255);
+}
+.consult__left .btn .btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.consult__left .btn .btn-orange::after {
+  background-color: rgb(224, 139, 13);
+}
+.consult__left .btn .btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.consult__right img {
+  max-width: 700px;
+  width: 100%;
+}/*# sourceMappingURL=styleConsult.css.map */

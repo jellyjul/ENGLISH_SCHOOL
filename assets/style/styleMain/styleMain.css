@@ -704,7 +704,7 @@ h2 {
   transition: all 0.2s;
   position: absolute;
 }
-.request__text .btn .btn-white {
+.request__text .btn .btn-orange {
   background-color: #F08700;
   color: rgb(255, 255, 255);
 }
@@ -720,16 +720,12 @@ h2 {
   z-index: -1;
   transition: all 0.4s;
 }
-.request__text .btn .btn-white::after {
+.request__text .btn .btn-orange::after {
   background-color: rgb(224, 139, 13);
 }
 .request__text .btn .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
-}
-.request__text .btn .btn-animated {
-  animation: moveInBottom 5s ease-out;
-  animation-fill-mode: backwards;
 }
 
 .questions__wrapper {

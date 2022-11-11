@@ -1,0 +1,100 @@
+@import "../vars/vars.scss";
+.consult {
+    background: rgba(6, 6, 6, 0.767);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__content {
+        display: flex;
+        max-width: 800px;
+        background: rgb(255, 255, 255);
+        color: black;
+    }
+    &__left {
+        padding: 20px 0 0 20px;
+        overflow: hidden;
+        .consult__text {
+            h2 {
+                font-size: 20px;
+                font-weight: 800;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+            }
+            p {
+                font-size: 15px;
+                line-height: 14px;
+                margin-bottom: 25px;
+            }
+        }
+        .consult__form {
+            margin-bottom: 25px;
+        }
+        .consult__name:after,
+        .consult__number:after {
+            content: "";
+            margin: 3% 0;
+            display: block;
+            height: 1px;
+            max-width: 300px;
+            background: rgba(0, 0, 50, 0.4);
+        }
+        input[type="text"]:focus,
+        input[type="number"]:focus {
+            outline: none;
+        }
+        .consult__label::placeholder {
+            opacity: 0;
+        }
+        .btn {
+            max-width: 200px;
+            .btn:link,
+            .btn:visited {
+                text-transform: uppercase;
+                text-decoration: none;
+                padding: 10px 15px;
+                display: inline-block;
+                border-radius: 100px;
+                transition: all .2s;
+                position: absolute;
+            }
+            .btn:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            }
+            .btn:active {
+                transform: translateY(-1px);
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            }
+            .btn-orange {
+                background-color: #F08700;
+                color: rgb(255, 255, 255);
+            }
+            .btn::after {
+                content: "";
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+                border-radius: 100px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: all .4s;
+            }
+            .btn-orange::after {
+                background-color: rgb(224, 139, 13);
+            }
+            .btn:hover::after {
+                transform: scaleX(1.4) scaleY(1.6);
+                opacity: 0;
+            }
+        }
+    }
+    &__right {
+        img {
+            max-width: 700px;
+            width: 100%;
+        }
+    }
+}
