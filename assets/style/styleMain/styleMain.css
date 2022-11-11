@@ -576,9 +576,38 @@ h2 {
   line-height: 22px;
 }
 
+.review .review__title {
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 57px;
+  text-transform: uppercase;
+  color: coral;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  text-align: center;
+}
+.review .review__text {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: black;
+  text-align: center;
+  padding-bottom: 3%;
+}
+.review .carousel-inner {
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(159, 127, 105);
+  overflow: hidden;
+}
+.review .sr-only {
+  color: black;
+}
 .review img {
-  width: 30%;
-  height: 30%;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .price {
@@ -591,7 +620,7 @@ h2 {
   line-height: 57px;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 3%;
+  padding-top: 5%;
   color: coral;
 }
 .price__info {
@@ -617,17 +646,20 @@ h2 {
   content: "✔";
   position: absolute;
   left: -10px;
-  color: black;
+  color: rgb(5, 116, 2);
+  font-weight: bold;
+  font-size: 20px;
 }
 .price__info .no:before {
   content: "❌";
   position: absolute;
+  font-size: 14px;
 }
 .price__info-bag {
   text-align: center;
   width: 100%;
-  box-shadow: -1px 10px 10px 0px rgba(0, 0, 0, 0.171);
-  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 .price__info-bag-description-details {
   text-align: start;
@@ -648,14 +680,15 @@ h2 {
   line-height: 24px;
   font-size: 25px;
   font-weight: bold;
-  color: rgb(255, 115, 0);
+  color: coral;
   padding-bottom: 5px;
 }
 .price__info-bag-description:hover {
   background: rgba(45, 252, 73, 0.1921568627);
   color: rgb(0, 0, 0);
   border-radius: 20px;
-  box-shadow: -1px 20px 10px 0px rgba(0, 0, 0, 0.212);
+  border: solid 4px coral;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 .price__info .bag-light,
 .price__info .bag-standard {
@@ -676,7 +709,7 @@ h2 {
   letter-spacing: 0.1em;
 }
 .price__info .btn:hover {
-  background: rgba(255, 166, 0, 0.788);
+  background: coral;
   border: none;
   box-shadow: 0px 5px 5px rgba(255, 0, 0, 0.212);
 }
