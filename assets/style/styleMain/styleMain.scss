@@ -9,19 +9,19 @@
 }
 
 .container {
-  max-width: 1230px;
-  margin: 0px auto;
-  padding: 0px 15px;
+    max-width: 1230px;
+    margin: 0px auto;
+    padding: 0px 15px;
 }
 
 //---------------------------main__block------------------------
 .image__block {
-  display: flex;
-  min-height: 908px;
-  background: url("../../images/imagesMain/background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+    display: flex;
+    min-height: 908px;
+    background: url("../../images/imagesMain/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 //-------------------------name-------------------------
@@ -222,7 +222,6 @@ h2 {
         color: $paragraph-color;
       }
     }
-  }
 }
 
 //---------------------------team------------------------
@@ -330,9 +329,7 @@ h2 {
           font-weight: 400;
           line-height: 22px;
         }
-      }
     }
-  }
 }
 
 //---------------------------------------review----------------------------------------------//
@@ -371,7 +368,6 @@ h2 {
 }
 
 //-----------------------------------------price---------------------------------------------//
-
 .price {
   @include f-column;
 
@@ -463,74 +459,283 @@ h2 {
       font-size: 12px;
       letter-spacing: 0.1em;
     }
-  }
+}
+
+.request {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    &__img {
+        img {
+            max-width: 700px;
+            width: 100%;
+        }
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        color: #454545;
+        padding-left: 50px;
+        p {
+            margin-bottom: 70px;
+        }
+        .btn {
+            display: flex;
+            .btn:link,
+            .btn:visited {
+                text-transform: uppercase;
+                text-decoration: none;
+                padding: 15px 40px;
+                display: inline-block;
+                border-radius: 100px;
+                transition: all .2s;
+                position: absolute;
+            }
+            // .btn:hover {
+            //     transform: translateY(-3px);
+            //     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            // }
+            // .btn:active {
+            //     transform: translateY(-1px);
+            //     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            // }
+            .btn-orange {
+                background-color: #F08700;
+                color: rgb(255, 255, 255);
+            }
+            .btn::after {
+                content: "";
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+                border-radius: 100px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: all .4s;
+            }
+            .btn-orange::after {
+                background-color: rgb(224, 139, 13);
+            }
+            .btn:hover::after {
+                transform: scaleX(1.4) scaleY(1.6);
+                opacity: 0;
+            }
+        }
+    }
+    .consult {
+        background-color: rgba(0, 0, 0, .7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        // z-index: 4;
+        #popup:target {
+            opacity: 1;
+            visibility: visible;
+        }
+        .consult__content {
+            position: fixed;
+            display: flex;
+            max-width: 800px;
+            min-height: 330px;
+            background: rgb(255, 255, 255);
+            color: black;
+            transform: scale(0);
+            transition: all .5s ease;
+        }
+        #popup:target .concult__content {
+            transform: scale(1);
+        }
+        &__left {
+            padding: 20px 0 0 20px;
+            overflow: hidden;
+            .consult__text {
+                h2 {
+                    font-size: 20px;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    margin-bottom: 15px;
+                }
+                p {
+                    font-size: 15px;
+                    line-height: 14px;
+                    margin-bottom: 25px;
+                }
+            }
+            .consult__form {
+                margin-bottom: 25px;
+            }
+            .consult__name:after,
+            .consult__number:after {
+                content: "";
+                margin: 3% 0;
+                display: block;
+                height: 1px;
+                max-width: 300px;
+                background: rgba(0, 0, 50, 0.4);
+            }
+            input[type="text"]:focus,
+            input[type="number"]:focus {
+                outline: none;
+            }
+            .consult__label::placeholder {
+                opacity: 0;
+            }
+            .btn {
+                max-width: 200px;
+                .btn:link,
+                .btn:visited {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    padding: 10px 15px;
+                    display: inline-block;
+                    border-radius: 100px;
+                    transition: all .2s;
+                    position: absolute;
+                }
+                .btn:hover {
+                    transform: translateY(-3px);
+                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                }
+                .btn:active {
+                    transform: translateY(-1px);
+                    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+                }
+                .btn-orange {
+                    background-color: #F08700;
+                    color: rgb(255, 255, 255);
+                }
+                .btn::after {
+                    content: "";
+                    display: inline-block;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 100px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    transition: all .4s;
+                }
+                .btn-orange::after {
+                    background-color: rgb(224, 139, 13);
+                }
+                .btn:hover::after {
+                    transform: scaleX(1.4) scaleY(1.6);
+                    opacity: 0;
+                }
+            }
+        }
+        &__right {
+            img {
+                max-width: 600px;
+                min-height: 330px;
+                width: 100%;
+            }
+        }
+        .close-popup {
+            position: absolute;
+            right: -10px;
+            top: -10px;
+            width: 40px;
+            height: 40px;
+            background-color: #F08700;
+            color: #e2e8f0;
+            text-decoration: none;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+        }
+    }
 }
 
 .questions {
-  // background-color: #D9D9D9;
-  &__wrapper {
-    font-family: $main-font;
-    max-width: 1200px;
-    margin: 0 auto;
-    h2 {
-      @include h2;
-      letter-spacing: 3px;
-      padding: 40px 0 0 45px;
+    // background-color: #D9D9D9;
+    &__wrapper {
+        font-family: $main-font;
+        max-width: 1200px;
+        margin: 0 auto;
+        h2 {
+            font-size: 45px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            padding: 40px 0 0 45px;
+            text-transform: uppercase;
+        }
+        .questions__block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding-top: 30px;
+            padding-bottom: 156px;
+            .questions__item {
+                display: block;
+                background: rgb(240 117 0 / 42%);
+                width: 700px;
+                box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+                border-radius: 8px;
+                overflow: hidden;
+            }
+            summary::-webkit-details-marker {
+                display: none;
+            }
+            summary::-moz-list-bullet {
+                list-style-type: none;
+            }
+            summary::marker {
+                display: none;
+            }
+            summary {
+                display: block;
+                padding: 20px;
+                border-bottom: 1px solid #e2e8f0;
+                font-size: 1.4em;
+                cursor: pointer;
+                position: relative;
+            }
+            summary:before {
+                top: 15px;
+                right: 12px;
+                color: transparent;
+                background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50% 50% / 1em 1em;
+                width: 1em;
+                height: 1em;
+                content: "";
+                position: absolute;
+                transition: transform 0.5s;
+            }
+            details[open]>summary:before {
+                transform: scale(1, -1);
+            }
+            summary~* {
+                padding: 0 1em 10px 1.4em;
+            }
+            details[open] summary~* {
+                animation: sweep 0.5s ease-in-out;
+            }
+            // @keyframes sweep {
+            //     0% {
+            //         opacity: 0;
+            //     }
+            //     100% {
+            //         opacity: 1;
+            //     }
+            // }
+            // summary:focus {
+            //     outline: 0;
+            //     box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3), inset 0 0 2px rgba(0, 0, 0, 0.3);
+            // }
+        }
     }
-    .questions__block {
-      @include f-column;
-      align-items: center;
-      gap: 20px;
-      padding-top: 30px;
-      padding-bottom: 156px;
-      .questions__item {
-        display: block;
-        background: rgb(240 117 0 / 42%);
-        width: 700px;
-        box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        border-radius: 8px;
-        overflow: hidden;
-      }
-      summary::-webkit-details-marker {
-        display: none;
-      }
-      summary::-moz-list-bullet {
-        list-style-type: none;
-      }
-      summary::marker {
-        display: none;
-      }
-      summary {
-        display: block;
-        padding: 0.3em 1em 0.3em 0.9em;
-        border-bottom: 1px solid #e2e8f0;
-        font-size: 1.4em;
-        cursor: pointer;
-        position: relative;
-      }
-      summary:before {
-        top: 15px;
-        right: 12px;
-        color: transparent;
-        background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50% 50% / 1em
-          1em;
-        width: 1em;
-        height: 1em;
-        content: "";
-        position: absolute;
-        transition: transform 0.5s;
-      }
-      details[open] > summary:before {
-        transform: scale(1, -1);
-      }
-      summary ~ * {
-        padding: 0 1em 10px 1.4em;
-      }
-      details[open] summary ~ * {
-        animation: sweep 0.5s ease-in-out;
-      }
-    }
-  }
 }
 //---------------------------------------advantages----------------------------------------------//
 .advantages {
