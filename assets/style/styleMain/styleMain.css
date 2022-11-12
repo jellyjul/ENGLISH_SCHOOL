@@ -370,8 +370,10 @@ h2 {
   align-items: center;
 }
 .gallery__container {
-  columns: 5 200px;
-  column-gap: 1.5rem;
+  -moz-columns: 5 200px;
+       columns: 5 200px;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
   width: 90%;
   margin: 0 auto;
 }
@@ -693,7 +695,7 @@ h2 {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .request__text .btn .btn-orange {
-  background-color: #F08700;
+  background-color: #f08700;
   color: rgb(255, 255, 255);
 }
 .request__text .btn .btn::after {
@@ -776,6 +778,12 @@ h2 {
 .request .consult__left input[type=number]:focus {
   outline: none;
 }
+.request .consult__left .consult__label::-moz-placeholder {
+  opacity: 0;
+}
+.request .consult__left .consult__label:-ms-input-placeholder {
+  opacity: 0;
+}
 .request .consult__left .consult__label::placeholder {
   opacity: 0;
 }
@@ -801,7 +809,7 @@ h2 {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .request .consult__left .btn .btn-orange {
-  background-color: #F08700;
+  background-color: #f08700;
   color: rgb(255, 255, 255);
 }
 .request .consult__left .btn .btn::after {
@@ -834,7 +842,7 @@ h2 {
   top: -10px;
   width: 40px;
   height: 40px;
-  background-color: #F08700;
+  background-color: #f08700;
   color: #e2e8f0;
   text-decoration: none;
   text-align: center;
@@ -905,7 +913,8 @@ h2 {
   padding: 0 1em 10px 1.4em;
 }
 .questions__wrapper .questions__block details[open] summary ~ * {
-  animation: sweep 0.5s ease-in-out;
+  -webkit-animation: sweep 0.5s ease-in-out;
+          animation: sweep 0.5s ease-in-out;
 }
 
 .advantages h2 {
