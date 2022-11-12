@@ -14,8 +14,8 @@
 
 .header {
   @include font-header;
-  background-color: rgb(244, 141, 72);
-  position: fixed;
+  background-color: $main-orange-color;
+
   width: 100%;
   left: 0;
   top: 35;
@@ -25,16 +25,16 @@
     @include f-center;
     min-height: 100px;
     align-items: center;
-    padding: 5px 0px;
-    margin: 20px 0px;
+    padding: 0px;
+    margin: 0px;
   }
   &__logo-image {
     img {
       max-width: 100%;
     }
-    position: absolute;
-    left: 50%;
-    top: 15%;
+    //position: absolute;
+    // left: 50%;
+    // top: 15%;
     transform: translateX(-50%);
     display: flex;
     max-width: 90px;
@@ -49,12 +49,14 @@
     flex-wrap: wrap;
     padding-left: 0px;
   }
-
+  &__menu-item {
+    align-self: center;
+  }
   &__menu-item_l {
-    padding: 0px 130px 0px 35px;
+    padding: 0px 110px 0px 35px;
   }
   &__menu-item_r {
-    padding: 0px 35px 0px 120px;
+    padding: 0px 35px 0px 25px;
   }
   &__menu-link {
     font-weight: 400;
@@ -63,6 +65,9 @@
 
     text-transform: uppercase;
     color: rgba(243, 243, 243, 1);
+    &:hover {
+      color: rgba(87, 162, 83, 0.979);
+    }
   }
 }
 
