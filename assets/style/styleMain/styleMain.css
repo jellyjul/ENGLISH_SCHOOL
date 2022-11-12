@@ -193,6 +193,7 @@ footer .footer__wrapper .footer__nav .footer__nav-right .hover a:hover {
 }
 footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   padding-right: 10px;
+  max-width: 35px;
 }
 
 .wrapper {
@@ -200,6 +201,26 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   flex-direction: column;
   min-height: 100%;
   overflow: hidden;
+}
+.wrapper .floating-button {
+  position: fixed;
+  z-index: 10;
+  right: 30px;
+  bottom: 30px;
+  background: rgba(240, 136, 0, 0.5529411765);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+.wrapper .floating-button img {
+  position: absolute;
+  max-width: 40px;
+  top: 15px;
+  left: 15px;
+}
+.wrapper .floating-button:hover {
+  background: #f08800;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .container {
@@ -737,6 +758,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 51;
 }
 .request .consult .consult__content {
   position: relative;
@@ -842,6 +864,10 @@ h2 {
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
+}
+.request .consult .close-popup:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .questions__wrapper {

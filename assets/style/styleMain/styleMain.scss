@@ -6,6 +6,26 @@
     @include f-column;
     min-height: 100%;
     overflow: hidden;
+    .floating-button {
+        position: fixed;
+        z-index: 10;
+        right: 30px;
+        bottom: 30px;
+        background: #f088008d;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        img {
+            position: absolute;
+            max-width: 40px;
+            top: 15px;
+            left: 15px;
+        }
+    }
+    .floating-button:hover {
+        background: #f08800;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    }
 }
 
 .container {
@@ -501,7 +521,7 @@ h2 {
         // left: 0;
         // opacity: 0;
         // visibility: hidden;
-        // z-index: 4;
+        z-index: 51;
         .consult__content {
             position: relative;
             display: flex;
@@ -611,6 +631,10 @@ h2 {
             text-align: center;
             line-height: 40px;
             border-radius: 50%;
+        }
+        .close-popup:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
     }
 }
