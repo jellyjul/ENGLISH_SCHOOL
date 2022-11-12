@@ -324,7 +324,34 @@
                 <h2>Lorem, ipsum.</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, asperiores.</p>
                 <div class="request__button btn">
-                    <a href="./consult.html" class="btn btn-orange">Записаться</a>
+                    <a href="#popup" class="btn btn-orange open-popup">Записаться</a>
+                </div>
+            </div>
+            <div class="consult" id="popup">
+                <div class="consult__content">
+                    <div class="consult__left">
+                        <div class="consult__text">
+                            <h2>Запишитесь на занятия</h2>
+                            <p>Внесите свои контактные данные и мы свяжемся с вами в ближайшее время</p>
+                        </div>
+                        <div class="consult__form">
+                            <div class="consult__name">
+                                <label class="consult__label" for="name"></label>
+                                <input type="text" name="name" id="name" placeholder="Имя">
+                            </div>
+                            <div class="consult__number">
+                                <label class="consult__label" for="number"></label>
+                                <input type="number" name="number" id="number" placeholder="Телефон">
+                            </div>
+                        </div>
+                        <div class="consult__button btn">
+                            <a href="#" class="btn btn-orange">Записаться</a>
+                        </div>
+                    </div>
+                    <div class="consult__right">
+                        <img src="./assets/images/imagesMain/big_ben.jpeg" alt="big_ben">
+                    </div>
+                    <a href="#popup-close" class="close-popup">X</a>
                 </div>
             </div>
         </div>
