@@ -21,12 +21,6 @@ a {
   text-decoration: none;
 }
 
-ul,
-ol,
-li {
-  list-style: none;
-}
-
 img {
   vertical-align: top;
 }
@@ -52,12 +46,6 @@ body {
 
 a {
   text-decoration: none;
-}
-
-ul,
-ol,
-li {
-  list-style: none;
 }
 
 img {
@@ -155,12 +143,6 @@ li {
 
 a {
   text-decoration: none;
-}
-
-ul,
-ol,
-li {
-  list-style: none;
 }
 
 img {
@@ -702,6 +684,14 @@ h2 {
   transition: all 0.2s;
   position: absolute;
 }
+.request__text .btn .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.request__text .btn .btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
 .request__text .btn .btn-orange {
   background-color: #F08700;
   color: rgb(255, 255, 255);
@@ -858,14 +848,11 @@ h2 {
   margin: 0 auto;
 }
 .questions__wrapper h2 {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 57px;
-  text-transform: uppercase;
-  color: rgb(244, 141, 72);
-  text-align: center;
+  font-size: 45px;
+  font-weight: 800;
   letter-spacing: 3px;
   padding: 40px 0 0 45px;
+  text-transform: uppercase;
 }
 .questions__wrapper .questions__block {
   display: flex;
@@ -918,8 +905,7 @@ h2 {
   padding: 0 1em 10px 1.4em;
 }
 .questions__wrapper .questions__block details[open] summary ~ * {
-  -webkit-animation: sweep 0.5s ease-in-out;
-          animation: sweep 0.5s ease-in-out;
+  animation: sweep 0.5s ease-in-out;
 }
 
 .advantages h2 {
