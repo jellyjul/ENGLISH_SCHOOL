@@ -23,7 +23,7 @@
         }
     }
     .floating-button:hover {
-        background: #f08800;
+        background: $main-orange-color;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     }
 }
@@ -37,7 +37,7 @@
 //---------------------------main__block------------------------
 .image__block {
     display: flex;
-    min-height: 908px;
+    min-height: 700px;
     background: url("../../images/imagesMain/background.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -57,7 +57,7 @@
         @include f-column;
         flex: 0 1 50%;
         min-height: 1200px;
-        background-color: rgba(244, 141, 72, 1);
+        background-color: $main-orange-color;
     }
     &__top {
         flex: 1 1 auto;
@@ -103,7 +103,7 @@
     text-transform: uppercase;
     text-align: center;
     color: $main-color;
-    background-color: rgba(114, 136, 84, 1);
+    background-color: rgba(87, 162, 83, 0.979);
 }
 
 .button:hover {
@@ -114,7 +114,7 @@
 //--------------------------------about--------------------------
 .about {
     @include font-header;
-    background-color: rgba(159, 127, 105, 1);
+    background-color: white;
     margin-top: -700px;
     &__container {
         margin-bottom: 30px;
@@ -125,10 +125,11 @@
     }
     &__name {
         font-weight: 800;
-        font-size: 150px;
+        font-size: 130px;
         line-height: 105%;
         letter-spacing: -0.04em;
         text-transform: uppercase;
+        color: #425b69;
         padding: 30px 0px;
         position: relative;
         z-index: 5;
@@ -147,9 +148,11 @@
         line-height: 105%;
         text-transform: uppercase;
         padding: 10px 0px;
+        color: #425b69;
     }
     &__text {
         padding: 20px;
+        color: $paragraph-color;
     }
     &__image {
         display: flex;
@@ -200,7 +203,7 @@ h2 {
                 filter: grayscale(0);
             }
             &:hover {
-                border: solid 4px coral;
+                border: solid 4px $main-orange-color;
                 box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
             }
             img {
@@ -293,6 +296,7 @@ h2 {
                     font-size: 25px;
                     font-weight: 400;
                     letter-spacing: 2px;
+                    color: $paragraph-color;
                 }
                 h4 {
                     font-size: 16px;
@@ -323,7 +327,7 @@ h2 {
         text-align: center;
     }
     .review__text {
-        color: gray;
+        color: $paragraph-color;
         font-size: 20px;
         @include f-center;
         margin-bottom: 2%;
@@ -333,7 +337,7 @@ h2 {
         height: auto;
         justify-content: center;
         align-items: center;
-        background-color: rgba(159, 127, 105, 1);
+
         overflow: hidden;
     }
     .sr-only {
@@ -362,13 +366,13 @@ h2 {
             list-style: none;
             padding-left: 0rem;
         }
-        ol>li {
+        ol > li {
             padding-left: 20px;
             position: relative;
             margin: 5px 5px 5px 8px;
-            color: black;
+            color: $paragraph-color;
         }
-        ol>li:before {
+        ol > li:before {
             content: "✔";
             position: absolute;
             left: -10px;
@@ -390,18 +394,19 @@ h2 {
                 &-details {
                     text-align: start;
                     padding-left: 10px;
+                    color: $paragraph-color;
                 }
                 &-title {
                     @include h2;
                     font-size: 20px;
                     font-weight: bold;
-                    color: black;
+                    color: $paragraph-color;
                 }
                 &-rate {
                     @include regular-paragraphs;
                     font-size: 25px;
                     font-weight: bold;
-                    color: coral;
+                    color: $main-orange-color;
                     padding-bottom: 5px;
                 }
             }
@@ -409,7 +414,6 @@ h2 {
                 background: $color-hover;
                 color: rgb(0, 0, 0);
                 border-radius: 20px;
-                border: solid 4px coral;
                 box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
             }
         }
@@ -442,10 +446,12 @@ h2 {
     &__text {
         display: flex;
         flex-direction: column;
-        color: #454545;
+        color: $paragraph-color;
         padding-left: 50px;
+
         p {
             margin-bottom: 70px;
+            @include regular-paragraphs;
         }
         .btn {
             display: flex;
@@ -469,7 +475,7 @@ h2 {
                 box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
             }
             .btn-orange {
-                background-color: #f08700;
+                background-color: $main-orange-color;
                 color: rgb(255, 255, 255);
             }
             .btn::after {
@@ -485,7 +491,7 @@ h2 {
                 transition: all 0.4s;
             }
             .btn-orange::after {
-                background-color: rgb(224, 139, 13);
+                background-color: $main-orange-color;
             }
             .btn:hover::after {
                 transform: scaleX(1.4) scaleY(1.6);
@@ -588,7 +594,7 @@ h2 {
                     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
                 }
                 .btn-orange {
-                    background-color: #f08700;
+                    background-color: $main-orange-color;
                     color: rgb(255, 255, 255);
                 }
                 .btn::after {
@@ -604,7 +610,7 @@ h2 {
                     transition: all 0.4s;
                 }
                 .btn-orange::after {
-                    background-color: rgb(224, 139, 13);
+                    background-color: $main-orange-color;
                 }
                 .btn:hover::after {
                     transform: scaleX(1.4) scaleY(1.6);
@@ -625,7 +631,7 @@ h2 {
             top: -10px;
             width: 40px;
             height: 40px;
-            background-color: #f08700;
+            background-color: $main-orange-color;
             color: #e2e8f0;
             text-decoration: none;
             text-align: center;
@@ -646,11 +652,9 @@ h2 {
         max-width: 1200px;
         margin: 0 auto;
         h2 {
-            font-size: 45px;
-            font-weight: 800;
+            @include h2;
             letter-spacing: 3px;
             padding: 40px 0 0 45px;
-            text-transform: uppercase;
         }
         .questions__block {
             display: flex;
@@ -661,7 +665,8 @@ h2 {
             padding-bottom: 156px;
             .questions__item {
                 display: block;
-                background: rgb(240 117 0 / 42%);
+                background: rgb(252, 132, 20);
+                //background: $color-hover;
                 width: 700px;
                 box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
                 border-radius: 8px;
@@ -683,26 +688,29 @@ h2 {
                 font-size: 1.4em;
                 cursor: pointer;
                 position: relative;
+                color: white;
             }
             summary:before {
                 top: 15px;
                 right: 12px;
                 color: transparent;
-                background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50% 50% / 1em 1em;
+                background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50%
+                    50% / 1em 1em;
                 width: 1em;
                 height: 1em;
                 content: "";
                 position: absolute;
                 transition: transform 0.5s;
             }
-            details[open]>summary:before {
+            details[open] > summary:before {
                 transform: scale(1, -1);
             }
-            summary~* {
+            summary ~ * {
                 padding: 0 1em 10px 1.4em;
             }
-            details[open] summary~* {
+            details[open] summary ~ * {
                 animation: sweep 0.5s ease-in-out;
+                color: white;
             }
             // @keyframes sweep {
             //     0% {
@@ -727,7 +735,7 @@ h2 {
         @include f-center;
     }
     &__subtitle {
-        color: gray;
+        color: $paragraph-color;
         font-size: 20px;
         font-family: sans-serif;
         display: flex;
@@ -762,15 +770,17 @@ h2 {
         }
         h4 {
             margin-top: 5%;
-            color: orangered;
+            color: $main-orange-color;
             font-family: sans-serif;
             font-weight: 800;
+            font-size: 20px;
         }
         h5 {
             padding: 0 10px;
             color: gray;
             font-family: sans-serif;
             text-align: justify;
+            font-size: 16px;
         }
     }
 }
