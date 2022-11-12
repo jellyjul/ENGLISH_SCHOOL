@@ -3,8 +3,7 @@
 @import "../styleFooter/styleFooter.scss";
 //--------------------------------------------------------------------------------------------//
 .wrapper {
-  display: flex;
-  flex-direction: column;
+  @include f-column;
   min-height: 100%;
   overflow: hidden;
 }
@@ -36,9 +35,8 @@
   z-index: 3;
 
   &__body {
-    display: flex;
+    @include f-column;
     flex: 0 1 50%;
-    flex-direction: column;
     min-height: 1200px;
     background-color: rgba(244, 141, 72, 1);
   }
@@ -60,32 +58,28 @@
   }
 
   &__top-button {
-    display: flex;
-    justify-content: center;
+    @include f-center;
     flex-wrap: wrap;
     margin: 20px 0px;
-    background-color: rgba(244, 141, 72, 1);
+    background-color: $main-orange-color;
   }
 
   &__image {
-    img {
-      width: 100%;
-    }
-
     display: flex;
     margin: 0 auto;
     max-width: 462px;
     padding-bottom: 40px;
+    img {
+      width: 100%;
+    }
   }
 }
 
 .button {
   border-radius: 37px;
   margin: 10px 0px;
-
-  display: flex;
+  @include f-center;
   align-items: center;
-  justify-content: center;
   padding: 5px 20px;
   min-height: 48px;
   letter-spacing: 0.2px;
@@ -96,12 +90,12 @@
 
   text-transform: uppercase;
   text-align: center;
-  color: rgba(243, 243, 243, 1);
+  color: $main-color;
   background-color: rgba(114, 136, 84, 1);
 }
 
 .button:hover {
-  background: rgba(243, 243, 243, 1);
+  background: $main-color;
   color: rgba(98, 99, 55, 1);
 }
 
@@ -133,9 +127,8 @@
   }
 
   &__left {
-    display: flex;
+    @include f-column;
     flex: 0 1 50%;
-    flex-direction: column;
   }
 
   &__left-content {
@@ -156,20 +149,18 @@
   }
 
   &__image {
-    img {
-      width: 100%;
-    }
-
     display: flex;
     margin: 0 auto;
     max-width: 462px;
     padding: 20px;
+    img {
+      width: 100%;
+    }
   }
 
   &__right {
-    display: flex;
+    @include f-column;
     flex: 0 1 50%;
-    flex-direction: column;
   }
 
   &__right-content {
@@ -181,10 +172,7 @@
 //---------------------------gallery------------------------
 h2 {
   margin-top: 5%;
-  color: coral;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 35px;
+  @include h2;
 }
 
 .gallery {
@@ -206,7 +194,7 @@ h2 {
       border: solid 2px white;
       margin-top: 10%;
       padding: 5px;
-      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+      box-shadow: $box-shadow;
       border-radius: 5px;
       transition: all 0.25s ease-in-out;
 
@@ -231,7 +219,7 @@ h2 {
         padding: 0;
         text-align: center;
         font-style: italic;
-        color: #454545;
+        color: $paragraph-color;
       }
     }
   }
@@ -241,36 +229,24 @@ h2 {
 .team {
   &__container {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    padding: 0 15px;
+    margin: auto;
   }
 
   &__title {
     flex: 0 0 100%;
     max-width: 100%;
-    margin-bottom: 80px;
-    margin-top: 40px;
+    margin-bottom: 40px 0 80px 0;
     text-align: center;
 
     h2 {
+      @include h2;
       display: inline-block;
-      font-size: 35px;
-      text-transform: uppercase;
-      font-weight: 700;
-      color: coral;
-      margin: 0 0 5px;
+      margin: 0 0 20px;
       position: relative;
 
       &::before {
-        content: "";
-        left: 32%;
-        position: absolute;
-        height: 3px;
-        right: 32%;
-        background-color: #50c5fc;
-        bottom: -5px;
+        @include title-before;
       }
     }
   }
@@ -278,7 +254,7 @@ h2 {
   p {
     padding: 0;
     margin: 0 0 15px 0;
-    color: #454545;
+    color: $paragraph-color;
     font-weight: 300;
   }
 
@@ -297,12 +273,11 @@ h2 {
   &__column {
     position: relative;
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 0 15px;
     flex: 0 0 100%;
     max-width: 100%;
     &:hover {
-      background: #2dfc4931;
+      background: $color-hover;
       color: rgb(0, 0, 0);
       border-radius: 20px;
       box-shadow: -1px 20px 10px 0px rgba(0, 0, 0, 0.212);
@@ -343,7 +318,7 @@ h2 {
         }
 
         h5 {
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 300;
           letter-spacing: 1px;
           font-style: italic;
@@ -362,20 +337,18 @@ h2 {
 
 //---------------------------------------review----------------------------------------------//
 .review {
-
   .review__title {
     @include h2;
-    color: coral;
-    padding-top: 5%;
-    padding-bottom: 3%;
+    padding: 5% 0 1% 0;
     text-align: center;
   }
 
   .review__text {
-    @include regular-paragraphs;
-    color: black;
+    color: gray;
+    font-size: 20px;
+    @include f-center;
+    margin-bottom: 2%;
     text-align: center;
-    padding-bottom: 3%;
   }
 
   .carousel-inner {
@@ -397,12 +370,6 @@ h2 {
   }
 }
 
-
-
-
-
-
-
 //-----------------------------------------price---------------------------------------------//
 
 .price {
@@ -410,16 +377,13 @@ h2 {
 
   &__title {
     @include h2;
-    text-align: center;
     padding-top: 5%;
-    color: coral;
   }
 
   &__info {
     @include regular-paragraphs;
-    display: flex;
+    @include f-space-between;
     flex-direction: row;
-    justify-content: space-between;
     padding: 2% 5% 10% 5%;
 
     ol {
@@ -427,14 +391,14 @@ h2 {
       padding-left: 0rem;
     }
 
-    ol>li {
+    ol > li {
       padding-left: 20px;
       position: relative;
       margin: 5px 5px 5px 8px;
       color: black;
     }
 
-    ol>li:before {
+    ol > li:before {
       content: "✔";
       position: absolute;
       left: -10px;
@@ -478,7 +442,7 @@ h2 {
       }
 
       &-description:hover {
-        background: #2dfc4931;
+        background: $color-hover;
         color: rgb(0, 0, 0);
         border-radius: 20px;
         border: solid 4px coral;
@@ -500,10 +464,8 @@ h2 {
       letter-spacing: 0.1em;
     }
   }
-
 }
 
-}
 .questions {
   // background-color: #D9D9D9;
   &__wrapper {
@@ -511,15 +473,12 @@ h2 {
     max-width: 1200px;
     margin: 0 auto;
     h2 {
-      font-size: 45px;
-      font-weight: 800;
+      @include h2;
       letter-spacing: 3px;
       padding: 40px 0 0 45px;
-      text-transform: uppercase;
     }
     .questions__block {
-      display: flex;
-      flex-direction: column;
+      @include f-column;
       align-items: center;
       gap: 20px;
       padding-top: 30px;
@@ -576,13 +535,8 @@ h2 {
 //---------------------------------------advantages----------------------------------------------//
 .advantages {
   h2 {
-    color: coral;
-    font-size: 35px;
-    text-transform: uppercase;
-    font-family: sans-serif;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
+    @include h2;
+    @include f-center;
   }
   &__subtitle {
     color: gray;
@@ -604,15 +558,14 @@ h2 {
   }
   &__card {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    @include f-column;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
     transition: all 0.25s ease-in-out;
 
     &:hover {
-      background: #2dfc4931;
+      background: $color-hover;
       color: rgb(0, 0, 0);
       border-radius: 20px;
       box-shadow: -1px 20px 10px 0px rgba(0, 0, 0, 0.212);
