@@ -1,8 +1,7 @@
 @import "../vars/vars.scss";
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
+  @include f-column;
   min-height: 100%;
   overflow: hidden;
 }
@@ -23,10 +22,9 @@
   z-index: 50;
 
   &__row {
-    display: flex;
+    @include f-center;
     min-height: 100px;
     align-items: center;
-    justify-content: center;
     padding: 5px 0px;
     margin: 20px 0px;
   }

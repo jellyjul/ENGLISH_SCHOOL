@@ -1,4 +1,7 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -18,33 +21,12 @@ a {
   text-decoration: none;
 }
 
-ul,
-ol,
-li {
-  list-style: none;
-}
-
 img {
   vertical-align: top;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-html,
 body {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 137%;
-  color: rgb(243, 243, 243);
-  font-family: Montserrat;
+  font-family: "Nunito", sans-serif;
 }
 
 * {
@@ -66,33 +48,12 @@ a {
   text-decoration: none;
 }
 
-ul,
-ol,
-li {
-  list-style: none;
-}
-
 img {
   vertical-align: top;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-html,
 body {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 137%;
-  color: rgb(243, 243, 243);
-  font-family: Montserrat;
+  font-family: "Nunito", sans-serif;
 }
 
 .wrapper {
@@ -113,7 +74,6 @@ body {
   font-size: 18px;
   line-height: 137%;
   color: rgb(243, 243, 243);
-  font-family: Montserrat;
   background-color: rgb(244, 141, 72);
   position: fixed;
   width: 100%;
@@ -123,9 +83,9 @@ body {
 }
 .header__row {
   display: flex;
+  justify-content: center;
   min-height: 100px;
   align-items: center;
-  justify-content: center;
   padding: 5px 0px;
   margin: 20px 0px;
 }
@@ -185,37 +145,16 @@ a {
   text-decoration: none;
 }
 
-ul,
-ol,
-li {
-  list-style: none;
-}
-
 img {
   vertical-align: top;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-html,
 body {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 137%;
-  color: rgb(243, 243, 243);
-  font-family: Montserrat;
+  font-family: "Nunito", sans-serif;
 }
 
 footer {
-  font-family: "Lato", sans-serif;
+  font-family: "Nunito", sans-serif;
   background: url("../../images/imagesFooter/bgкопия.jpeg");
 }
 footer .footer__wrapper {
@@ -285,7 +224,6 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   font-size: 18px;
   line-height: 137%;
   color: rgb(243, 243, 243);
-  font-family: Montserrat;
   text-align: center;
   margin-top: -500px;
   position: relative;
@@ -293,8 +231,8 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
 }
 .name__body {
   display: flex;
-  flex: 0 1 50%;
   flex-direction: column;
+  flex: 0 1 50%;
   min-height: 1200px;
   background-color: rgb(244, 141, 72);
 }
@@ -332,8 +270,8 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   border-radius: 37px;
   margin: 10px 0px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   padding: 5px 20px;
   min-height: 48px;
   letter-spacing: 0.2px;
@@ -342,12 +280,12 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   line-height: 105%;
   text-transform: uppercase;
   text-align: center;
-  color: rgb(243, 243, 243);
+  color: white;
   background-color: rgb(114, 136, 84);
 }
 
 .button:hover {
-  background: rgb(243, 243, 243);
+  background: white;
   color: rgb(98, 99, 55);
 }
 
@@ -356,7 +294,6 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   font-size: 18px;
   line-height: 137%;
   color: rgb(243, 243, 243);
-  font-family: Montserrat;
   background-color: rgb(159, 127, 105);
   margin-top: -700px;
 }
@@ -379,8 +316,8 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
 }
 .about__left {
   display: flex;
-  flex: 0 1 50%;
   flex-direction: column;
+  flex: 0 1 50%;
 }
 .about__left-content {
   flex: 1 1 auto;
@@ -407,8 +344,8 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
 }
 .about__right {
   display: flex;
-  flex: 0 1 50%;
   flex-direction: column;
+  flex: 0 1 50%;
 }
 .about__right-content {
   transform: translateY(500px);
@@ -417,10 +354,12 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
 
 h2 {
   margin-top: 5%;
-  color: coral;
-  text-transform: uppercase;
   font-weight: 700;
-  font-size: 35px;
+  font-size: 40px;
+  line-height: 57px;
+  text-transform: uppercase;
+  color: rgb(244, 141, 72);
+  text-align: center;
 }
 
 .gallery {
@@ -473,25 +412,24 @@ h2 {
 
 .team__container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 0 15px;
+  margin: auto;
 }
 .team__title {
   flex: 0 0 100%;
   max-width: 100%;
-  margin-bottom: 80px;
-  margin-top: 40px;
+  margin-bottom: 40px 0 80px 0;
   text-align: center;
 }
 .team__title h2 {
-  display: inline-block;
-  font-size: 35px;
-  text-transform: uppercase;
   font-weight: 700;
-  color: coral;
-  margin: 0 0 5px;
+  font-size: 40px;
+  line-height: 57px;
+  text-transform: uppercase;
+  color: rgb(244, 141, 72);
+  text-align: center;
+  display: inline-block;
+  margin: 0 0 20px;
   position: relative;
 }
 .team__title h2::before {
@@ -500,7 +438,7 @@ h2 {
   position: absolute;
   height: 3px;
   right: 32%;
-  background-color: #50c5fc;
+  background-color: #42c809;
   bottom: -5px;
 }
 .team p {
@@ -522,8 +460,7 @@ h2 {
 .team__column {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 0 15px;
   flex: 0 0 100%;
   max-width: 100%;
 }
@@ -564,7 +501,7 @@ h2 {
   font-weight: 300;
 }
 .team__column .team__card .team__content h5 {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   letter-spacing: 1px;
   font-style: italic;
@@ -577,22 +514,22 @@ h2 {
 }
 
 .review .review__title {
-  font-weight: 400;
-  font-size: 52px;
+  font-weight: 700;
+  font-size: 40px;
   line-height: 57px;
   text-transform: uppercase;
-  color: coral;
-  padding-top: 5%;
-  padding-bottom: 3%;
+  color: rgb(244, 141, 72);
+  text-align: center;
+  padding: 5% 0 1% 0;
   text-align: center;
 }
 .review .review__text {
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 24px;
-  color: black;
+  color: gray;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
   text-align: center;
-  padding-bottom: 3%;
 }
 .review .carousel-inner {
   height: auto;
@@ -615,21 +552,22 @@ h2 {
   flex-direction: column;
 }
 .price__title {
-  font-weight: 400;
-  font-size: 52px;
+  font-weight: 700;
+  font-size: 40px;
   line-height: 57px;
   text-transform: uppercase;
+  color: rgb(244, 141, 72);
   text-align: center;
   padding-top: 5%;
-  color: coral;
 }
 .price__info {
   font-weight: 400;
   font-size: 17px;
   line-height: 24px;
+  color: #454545;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  flex-direction: row;
   padding: 2% 5% 10% 5%;
 }
 .price__info ol {
@@ -666,10 +604,12 @@ h2 {
   padding-left: 10px;
 }
 .price__info-bag-description-title {
-  font-weight: 400;
-  font-size: 52px;
+  font-weight: 700;
+  font-size: 40px;
   line-height: 57px;
   text-transform: uppercase;
+  color: rgb(244, 141, 72);
+  text-align: center;
   font-size: 20px;
   font-weight: bold;
   color: black;
@@ -678,6 +618,7 @@ h2 {
   font-weight: 400;
   font-size: 17px;
   line-height: 24px;
+  color: #454545;
   font-size: 25px;
   font-weight: bold;
   color: coral;
@@ -714,8 +655,203 @@ h2 {
   box-shadow: 0px 5px 5px rgba(255, 0, 0, 0.212);
 }
 
+.request {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.request__img img {
+  max-width: 700px;
+  width: 100%;
+}
+.request__text {
+  display: flex;
+  flex-direction: column;
+  color: #454545;
+  padding-left: 50px;
+}
+.request__text p {
+  margin-bottom: 70px;
+}
+.request__text .btn {
+  display: flex;
+}
+.request__text .btn .btn:link,
+.request__text .btn .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: absolute;
+}
+.request__text .btn .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.request__text .btn .btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.request__text .btn .btn-orange {
+  background-color: #f08700;
+  color: rgb(255, 255, 255);
+}
+.request__text .btn .btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.request__text .btn .btn-orange::after {
+  background-color: rgb(224, 139, 13);
+}
+.request__text .btn .btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.request .consult {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.request .consult #popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+.request .consult .consult__content {
+  position: fixed;
+  display: flex;
+  max-width: 800px;
+  min-height: 330px;
+  background: rgb(255, 255, 255);
+  color: black;
+  transform: scale(0);
+  transition: all 0.5s ease;
+}
+.request .consult #popup:target .concult__content {
+  transform: scale(1);
+}
+.request .consult__left {
+  padding: 20px 0 0 20px;
+  overflow: hidden;
+}
+.request .consult__left .consult__text h2 {
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.request .consult__left .consult__text p {
+  font-size: 15px;
+  line-height: 14px;
+  margin-bottom: 25px;
+}
+.request .consult__left .consult__form {
+  margin-bottom: 25px;
+}
+.request .consult__left .consult__name:after,
+.request .consult__left .consult__number:after {
+  content: "";
+  margin: 3% 0;
+  display: block;
+  height: 1px;
+  max-width: 300px;
+  background: rgba(0, 0, 50, 0.4);
+}
+.request .consult__left input[type=text]:focus,
+.request .consult__left input[type=number]:focus {
+  outline: none;
+}
+.request .consult__left .consult__label::-moz-placeholder {
+  opacity: 0;
+}
+.request .consult__left .consult__label:-ms-input-placeholder {
+  opacity: 0;
+}
+.request .consult__left .consult__label::placeholder {
+  opacity: 0;
+}
+.request .consult__left .btn {
+  max-width: 200px;
+}
+.request .consult__left .btn .btn:link,
+.request .consult__left .btn .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: absolute;
+}
+.request .consult__left .btn .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.request .consult__left .btn .btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.request .consult__left .btn .btn-orange {
+  background-color: #f08700;
+  color: rgb(255, 255, 255);
+}
+.request .consult__left .btn .btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.request .consult__left .btn .btn-orange::after {
+  background-color: rgb(224, 139, 13);
+}
+.request .consult__left .btn .btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.request .consult__right img {
+  max-width: 600px;
+  min-height: 330px;
+  width: 100%;
+}
+.request .consult .close-popup {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 40px;
+  height: 40px;
+  background-color: #f08700;
+  color: #e2e8f0;
+  text-decoration: none;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
 .questions__wrapper {
-  font-family: "Lato", sans-serif;
+  font-family: "Nunito", sans-serif;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -753,7 +889,7 @@ h2 {
 }
 .questions__wrapper .questions__block summary {
   display: block;
-  padding: 0.3em 1em 0.3em 0.9em;
+  padding: 20px;
   border-bottom: 1px solid #e2e8f0;
   font-size: 1.4em;
   cursor: pointer;
@@ -782,11 +918,12 @@ h2 {
 }
 
 .advantages h2 {
-  color: coral;
-  font-size: 35px;
-  text-transform: uppercase;
-  font-family: sans-serif;
   font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  text-transform: uppercase;
+  color: rgb(244, 141, 72);
+  text-align: center;
   display: flex;
   justify-content: center;
 }

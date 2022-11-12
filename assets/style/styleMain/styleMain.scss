@@ -4,8 +4,7 @@
 
 //--------------------------------------------------------------------------------------------//
 .wrapper {
-  display: flex;
-  flex-direction: column;
+  @include f-column;
   min-height: 100%;
   overflow: hidden;
 }
@@ -37,9 +36,8 @@
   z-index: 3;
 
   &__body {
-    display: flex;
+    @include f-column;
     flex: 0 1 50%;
-    flex-direction: column;
     min-height: 1200px;
     background-color: rgba(244, 141, 72, 1);
   }
@@ -61,48 +59,43 @@
   }
 
   &__top-button {
-    display: flex;
-    justify-content: center;
+    @include f-center;
     flex-wrap: wrap;
     margin: 20px 0px;
-    background-color: rgba(244, 141, 72, 1);
+    background-color: $main-orange-color;
   }
 
   &__image {
-    img {
-      width: 100%;
-    }
-
     display: flex;
     margin: 0 auto;
     max-width: 462px;
     padding-bottom: 40px;
+
+    img {
+      width: 100%;
+    }
   }
 }
 
 .button {
   border-radius: 37px;
   margin: 10px 0px;
-
-  display: flex;
+  @include f-center;
   align-items: center;
-  justify-content: center;
   padding: 5px 20px;
   min-height: 48px;
   letter-spacing: 0.2px;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 105%;
-
   text-transform: uppercase;
   text-align: center;
-  color: rgba(243, 243, 243, 1);
+  color: $main-color;
   background-color: rgba(114, 136, 84, 1);
 }
 
 .button:hover {
-  background: rgba(243, 243, 243, 1);
+  background: $main-color;
   color: rgba(98, 99, 55, 1);
 }
 
@@ -125,7 +118,6 @@
     font-weight: 800;
     font-size: 150px;
     line-height: 105%;
-
     letter-spacing: -0.04em;
     text-transform: uppercase;
     padding: 30px 0px;
@@ -134,9 +126,8 @@
   }
 
   &__left {
-    display: flex;
+    @include f-column;
     flex: 0 1 50%;
-    flex-direction: column;
   }
 
   &__left-content {
@@ -157,20 +148,19 @@
   }
 
   &__image {
-    img {
-      width: 100%;
-    }
-
     display: flex;
     margin: 0 auto;
     max-width: 462px;
     padding: 20px;
+
+    img {
+      width: 100%;
+    }
   }
 
   &__right {
-    display: flex;
+    @include f-column;
     flex: 0 1 50%;
-    flex-direction: column;
   }
 
   &__right-content {
@@ -182,10 +172,7 @@
 //---------------------------gallery------------------------
 h2 {
   margin-top: 5%;
-  color: coral;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 35px;
+  @include h2;
 }
 
 .gallery {
@@ -207,7 +194,7 @@ h2 {
       border: solid 2px white;
       margin-top: 10%;
       padding: 5px;
-      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+      box-shadow: $box-shadow;
       border-radius: 5px;
       transition: all 0.25s ease-in-out;
 
@@ -232,7 +219,7 @@ h2 {
         padding: 0;
         text-align: center;
         font-style: italic;
-        color: #454545;
+        color: $paragraph-color;
       }
     }
   }
@@ -242,36 +229,24 @@ h2 {
 .team {
   &__container {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    padding: 0 15px;
+    margin: auto;
   }
 
   &__title {
     flex: 0 0 100%;
     max-width: 100%;
-    margin-bottom: 80px;
-    margin-top: 40px;
+    margin-bottom: 40px 0 80px 0;
     text-align: center;
 
     h2 {
+      @include h2;
       display: inline-block;
-      font-size: 35px;
-      text-transform: uppercase;
-      font-weight: 700;
-      color: coral;
-      margin: 0 0 5px;
+      margin: 0 0 20px;
       position: relative;
 
       &::before {
-        content: "";
-        left: 32%;
-        position: absolute;
-        height: 3px;
-        right: 32%;
-        background-color: #50c5fc;
-        bottom: -5px;
+        @include title-before;
       }
     }
   }
@@ -279,7 +254,7 @@ h2 {
   p {
     padding: 0;
     margin: 0 0 15px 0;
-    color: #454545;
+    color: $paragraph-color;
     font-weight: 300;
   }
 
@@ -298,13 +273,12 @@ h2 {
   &__column {
     position: relative;
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 0 15px;
     flex: 0 0 100%;
     max-width: 100%;
 
     &:hover {
-      background: #2dfc4931;
+      background: $color-hover;
       color: rgb(0, 0, 0);
       border-radius: 20px;
       box-shadow: -1px 20px 10px 0px rgba(0, 0, 0, 0.212);
@@ -345,7 +319,7 @@ h2 {
         }
 
         h5 {
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 300;
           letter-spacing: 1px;
           font-style: italic;
@@ -364,20 +338,18 @@ h2 {
 
 //---------------------------------------review----------------------------------------------//
 .review {
-
   .review__title {
     @include h2;
-    color: coral;
-    padding-top: 5%;
-    padding-bottom: 3%;
+    padding: 5% 0 1% 0;
     text-align: center;
   }
 
   .review__text {
-    @include regular-paragraphs;
-    color: black;
+    color: gray;
+    font-size: 20px;
+    @include f-center;
+    margin-bottom: 2%;
     text-align: center;
-    padding-bottom: 3%;
   }
 
   .carousel-inner {
@@ -399,29 +371,19 @@ h2 {
   }
 }
 
-
-
-
-
-
-
 //-----------------------------------------price---------------------------------------------//
-
 .price {
   @include f-column;
 
   &__title {
     @include h2;
-    text-align: center;
     padding-top: 5%;
-    color: coral;
   }
 
   &__info {
     @include regular-paragraphs;
-    display: flex;
+    @include f-space-between;
     flex-direction: row;
-    justify-content: space-between;
     padding: 2% 5% 10% 5%;
 
     ol {
@@ -480,7 +442,7 @@ h2 {
       }
 
       &-description:hover {
-        background: #2dfc4931;
+        background: $color-hover;
         color: rgb(0, 0, 0);
         border-radius: 20px;
         border: solid 4px coral;
@@ -502,9 +464,236 @@ h2 {
       letter-spacing: 0.1em;
     }
   }
-
 }
 
+//-----------------------------------------request---------------------------------------------//
+.request {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &__img {
+    img {
+      max-width: 700px;
+      width: 100%;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    color: #454545;
+    padding-left: 50px;
+
+    p {
+      margin-bottom: 70px;
+    }
+
+    .btn {
+      display: flex;
+
+      .btn:link,
+      .btn:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 15px 40px;
+        display: inline-block;
+        border-radius: 100px;
+        transition: all 0.2s;
+        position: absolute;
+      }
+
+      .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .btn:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .btn-orange {
+        background-color: #f08700;
+        color: rgb(255, 255, 255);
+      }
+
+      .btn::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.4s;
+      }
+
+      .btn-orange::after {
+        background-color: rgb(224, 139, 13);
+      }
+
+      .btn:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+      }
+    }
+  }
+
+  .consult {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+
+    // z-index: 4;
+    #popup:target {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .consult__content {
+      position: fixed;
+      display: flex;
+      max-width: 800px;
+      min-height: 330px;
+      background: rgb(255, 255, 255);
+      color: black;
+      transform: scale(0);
+      transition: all 0.5s ease;
+    }
+
+    #popup:target .concult__content {
+      transform: scale(1);
+    }
+
+    &__left {
+      padding: 20px 0 0 20px;
+      overflow: hidden;
+
+      .consult__text {
+        h2 {
+          font-size: 20px;
+          font-weight: 800;
+          text-transform: uppercase;
+          margin-bottom: 15px;
+        }
+
+        p {
+          font-size: 15px;
+          line-height: 14px;
+          margin-bottom: 25px;
+        }
+      }
+
+      .consult__form {
+        margin-bottom: 25px;
+      }
+
+      .consult__name:after,
+      .consult__number:after {
+        content: "";
+        margin: 3% 0;
+        display: block;
+        height: 1px;
+        max-width: 300px;
+        background: rgba(0, 0, 50, 0.4);
+      }
+
+      input[type="text"]:focus,
+      input[type="number"]:focus {
+        outline: none;
+      }
+
+      .consult__label::placeholder {
+        opacity: 0;
+      }
+
+      .btn {
+        max-width: 200px;
+
+        .btn:link,
+        .btn:visited {
+          text-transform: uppercase;
+          text-decoration: none;
+          padding: 10px 15px;
+          display: inline-block;
+          border-radius: 100px;
+          transition: all 0.2s;
+          position: absolute;
+        }
+
+        .btn:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:active {
+          transform: translateY(-1px);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-orange {
+          background-color: #f08700;
+          color: rgb(255, 255, 255);
+        }
+
+        .btn::after {
+          content: "";
+          display: inline-block;
+          height: 100%;
+          width: 100%;
+          border-radius: 100px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          transition: all 0.4s;
+        }
+
+        .btn-orange::after {
+          background-color: rgb(224, 139, 13);
+        }
+
+        .btn:hover::after {
+          transform: scaleX(1.4) scaleY(1.6);
+          opacity: 0;
+        }
+      }
+    }
+
+    &__right {
+      img {
+        max-width: 600px;
+        min-height: 330px;
+        width: 100%;
+      }
+    }
+
+    .close-popup {
+      position: absolute;
+      right: -10px;
+      top: -10px;
+      width: 40px;
+      height: 40px;
+      background-color: #f08700;
+      color: #e2e8f0;
+      text-decoration: none;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+    }
+  }
+}
 
 .questions {
 
@@ -553,7 +742,7 @@ h2 {
 
       summary {
         display: block;
-        padding: 0.3em 1em 0.3em 0.9em;
+        padding: 20px;
         border-bottom: 1px solid #e2e8f0;
         font-size: 1.4em;
         cursor: pointer;
@@ -583,6 +772,19 @@ h2 {
       details[open] summary~* {
         animation: sweep 0.5s ease-in-out;
       }
+
+      // @keyframes sweep {
+      //     0% {
+      //         opacity: 0;
+      //     }
+      //     100% {
+      //         opacity: 1;
+      //     }
+      // }
+      // summary:focus {
+      //     outline: 0;
+      //     box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3), inset 0 0 2px rgba(0, 0, 0, 0.3);
+      // }
     }
   }
 }
@@ -590,13 +792,8 @@ h2 {
 //---------------------------------------advantages----------------------------------------------//
 .advantages {
   h2 {
-    color: coral;
-    font-size: 35px;
-    text-transform: uppercase;
-    font-family: sans-serif;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
+    @include h2;
+    @include f-center;
   }
 
   &__subtitle {
@@ -622,15 +819,14 @@ h2 {
 
   &__card {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    @include f-column;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
     transition: all 0.25s ease-in-out;
 
     &:hover {
-      background: #2dfc4931;
+      background: $color-hover;
       color: rgb(0, 0, 0);
       border-radius: 20px;
       box-shadow: -1px 20px 10px 0px rgba(0, 0, 0, 0.212);
