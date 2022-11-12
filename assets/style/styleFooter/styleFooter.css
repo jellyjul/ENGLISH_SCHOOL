@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -17,31 +19,53 @@ a {
   text-decoration: none;
 }
 
-ul,
-ol,
-li {
-  list-style: none;
-}
-
 img {
   vertical-align: top;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
+body {
+  font-family: "Nunito", sans-serif;
 }
 
-html,
-body {
+footer {
+  font-family: "Nunito", sans-serif;
+  background: url("../../images/imagesFooter/bgкопия.jpeg");
+}
+footer .footer__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+footer .footer__wrapper .logo {
+  max-width: 100px;
+  border-radius: 50px;
+}
+footer .footer__wrapper .footer__nav {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 70px;
+}
+footer .footer__wrapper .footer__nav .footer__nav-right {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 42%;
+  gap: 80px;
+}
+footer .footer__wrapper .footer__nav .footer__nav-right .footer__nav-contacts {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer__wrapper .footer__nav .footer__nav-right .footer__nav-contacts a {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 137%;
-  color: rgb(243, 243, 243);
-  font-family: Montserrat;
+  font-size: 17px;
+  text-decoration: none;
+  color: white;
+  padding-bottom: 5px;
+}
+footer .footer__wrapper .footer__nav .footer__nav-right .hover a:hover {
+  color: #191715;
+}
+footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
+  padding-right: 10px;
+  max-width: 35px;
 }/*# sourceMappingURL=styleFooter.css.map */

@@ -1,13 +1,17 @@
-$main-font: "Lato", sans-serif;
-$main-color: black;
-$paragraph-color: rgba(255, 255, 255, 0.8);
-$color-hover: rgba(80, 39, 198, 1);
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+$main-font: "Nunito", sans-serif;
+$main-color: white;
+$main-orange-color: rgb(244, 141, 72);
+$paragraph-color: #454545;
+$color-hover: #2dfc4931;
+$box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
@@ -20,66 +24,78 @@ $color-hover: rgba(80, 39, 198, 1);
 a {
   text-decoration: none;
 }
-ul,
-ol,
-li {
-  list-style: none;
-}
+
 img {
   vertical-align: top;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
+body {
+  font-family: $main-font;
 }
 
-html,
-body {
+@mixin main-button {
+  color: #030303;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 137%;
-  color: rgba(243, 243, 243, 1);
-  font-family: Montserrat;
+  font-size: 14px;
+  text-transform: uppercase;
+  background: none;
+  border: 1px solid;
+  border-radius: 67px;
+
+  &:hover {
+    background: coral;
+    border: none;
+    box-shadow: 0px 5px 5px rgba(255, 0, 0, 0.212);
+  }
 }
 
 @mixin h2 {
-  font-weight: 400;
-  font-size: 52px;
+  font-weight: 700;
+  font-size: 40px;
   line-height: 57px;
   text-transform: uppercase;
+  color: $main-orange-color;
+  text-align: center;
 }
+
 @mixin regular-paragraphs {
   font-weight: 400;
   font-size: 17px;
   line-height: 24px;
+  color: #454545;
 }
 
 @mixin f-column {
   display: flex;
   flex-direction: column;
 }
+
 @mixin f-center {
   display: flex;
   justify-content: center;
 }
+
 @mixin f-space-around {
   display: flex;
   justify-content: space-around;
 }
+
 @mixin f-space-between {
   display: flex;
   justify-content: space-between;
 }
+
 @mixin font-header {
   font-weight: 400;
   font-size: 18px;
   line-height: 137%;
   color: rgba(243, 243, 243, 1);
-  font-family: Montserrat;
+}
+@mixin title-before {
+  content: "";
+  left: 32%;
+  position: absolute;
+  height: 3px;
+  right: 32%;
+  background-color: #42c809;
+  bottom: -5px;
 }
