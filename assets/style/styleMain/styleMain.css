@@ -21,12 +21,6 @@ a {
   text-decoration: none;
 }
 
-ul,
-ol,
-li {
-  list-style: none;
-}
-
 img {
   vertical-align: top;
 }
@@ -52,12 +46,6 @@ body {
 
 a {
   text-decoration: none;
-}
-
-ul,
-ol,
-li {
-  list-style: none;
 }
 
 img {
@@ -155,12 +143,6 @@ li {
 
 a {
   text-decoration: none;
-}
-
-ul,
-ol,
-li {
-  list-style: none;
 }
 
 img {
@@ -673,20 +655,212 @@ h2 {
   box-shadow: 0px 5px 5px rgba(255, 0, 0, 0.212);
 }
 
+.request {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.request__img img {
+  max-width: 700px;
+  width: 100%;
+}
+.request__text {
+  display: flex;
+  flex-direction: column;
+  color: #454545;
+  padding-left: 50px;
+}
+.request__text p {
+  margin-bottom: 70px;
+}
+.request__text .btn {
+  display: flex;
+}
+.request__text .btn .btn:link,
+.request__text .btn .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: absolute;
+}
+.request__text .btn .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.request__text .btn .btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.request__text .btn .btn-orange {
+  background-color: #f08700;
+  color: rgb(255, 255, 255);
+}
+.request__text .btn .btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.request__text .btn .btn-orange::after {
+  background-color: rgb(224, 139, 13);
+}
+.request__text .btn .btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.request .consult {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.request .consult #popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+.request .consult .consult__content {
+  position: fixed;
+  display: flex;
+  max-width: 800px;
+  min-height: 330px;
+  background: rgb(255, 255, 255);
+  color: black;
+  transform: scale(0);
+  transition: all 0.5s ease;
+}
+.request .consult #popup:target .concult__content {
+  transform: scale(1);
+}
+.request .consult__left {
+  padding: 20px 0 0 20px;
+  overflow: hidden;
+}
+.request .consult__left .consult__text h2 {
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.request .consult__left .consult__text p {
+  font-size: 15px;
+  line-height: 14px;
+  margin-bottom: 25px;
+}
+.request .consult__left .consult__form {
+  margin-bottom: 25px;
+}
+.request .consult__left .consult__name:after,
+.request .consult__left .consult__number:after {
+  content: "";
+  margin: 3% 0;
+  display: block;
+  height: 1px;
+  max-width: 300px;
+  background: rgba(0, 0, 50, 0.4);
+}
+.request .consult__left input[type=text]:focus,
+.request .consult__left input[type=number]:focus {
+  outline: none;
+}
+.request .consult__left .consult__label::-moz-placeholder {
+  opacity: 0;
+}
+.request .consult__left .consult__label:-ms-input-placeholder {
+  opacity: 0;
+}
+.request .consult__left .consult__label::placeholder {
+  opacity: 0;
+}
+.request .consult__left .btn {
+  max-width: 200px;
+}
+.request .consult__left .btn .btn:link,
+.request .consult__left .btn .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: absolute;
+}
+.request .consult__left .btn .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.request .consult__left .btn .btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.request .consult__left .btn .btn-orange {
+  background-color: #f08700;
+  color: rgb(255, 255, 255);
+}
+.request .consult__left .btn .btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.request .consult__left .btn .btn-orange::after {
+  background-color: rgb(224, 139, 13);
+}
+.request .consult__left .btn .btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.request .consult__right img {
+  max-width: 600px;
+  min-height: 330px;
+  width: 100%;
+}
+.request .consult .close-popup {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 40px;
+  height: 40px;
+  background-color: #f08700;
+  color: #e2e8f0;
+  text-decoration: none;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
 .questions__wrapper {
   font-family: "Nunito", sans-serif;
   max-width: 1200px;
   margin: 0 auto;
 }
 .questions__wrapper h2 {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 57px;
-  text-transform: uppercase;
-  color: rgb(244, 141, 72);
-  text-align: center;
+  font-size: 45px;
+  font-weight: 800;
   letter-spacing: 3px;
   padding: 40px 0 0 45px;
+  text-transform: uppercase;
 }
 .questions__wrapper .questions__block {
   display: flex;
@@ -715,7 +889,7 @@ h2 {
 }
 .questions__wrapper .questions__block summary {
   display: block;
-  padding: 0.3em 1em 0.3em 0.9em;
+  padding: 20px;
   border-bottom: 1px solid #e2e8f0;
   font-size: 1.4em;
   cursor: pointer;
