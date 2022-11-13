@@ -153,6 +153,7 @@
     &__text {
         padding: 20px;
         color: $paragraph-color;
+        text-align: justify;
     }
     &__image {
         display: flex;
@@ -313,6 +314,7 @@ h2 {
                     font-size: 16px;
                     font-weight: 400;
                     line-height: 22px;
+                    font-style: italic;
                 }
             }
         }
@@ -355,6 +357,7 @@ h2 {
     &__title {
         @include h2;
         padding-top: 5%;
+        color: #425b69;
     }
     &__info {
         @include regular-paragraphs;
@@ -365,13 +368,13 @@ h2 {
             list-style: none;
             padding-left: 0rem;
         }
-        ol>li {
+        ol > li {
             padding-left: 20px;
             position: relative;
             margin: 5px 5px 5px 8px;
             color: $paragraph-color;
         }
-        ol>li:before {
+        ol > li:before {
             content: "✔";
             position: absolute;
             left: -10px;
@@ -433,9 +436,11 @@ h2 {
 
 //-----------------------------------------request---------------------------------------------//
 .request {
+    background-image: url(../../images/imagesMain/imgRequest/Group\ 48096206.png);
     display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
+    height: 420px;
+    //max-width: 1200px;
+    //margin: 0 auto;
     &__img {
         img {
             max-width: 700px;
@@ -445,14 +450,29 @@ h2 {
     &__text {
         display: flex;
         flex-direction: column;
-        color: $paragraph-color;
+        color: $main-color;
         padding-left: 50px;
+        margin: auto;
+        margin-bottom: 10%;
+        h2 {
+            color: $main-color;
+            &:after {
+                content: "";
+                margin-bottom: 30px;
+                display: block;
+                height: 2px;
+                background: white;
+                width: 100%;
+            }
+        }
         p {
-            margin-bottom: 70px;
+            margin-bottom: 20px;
             @include regular-paragraphs;
+            color: $main-color;
         }
         .btn {
             display: flex;
+            justify-content: center;
             position: relative;
             .btn:link,
             .btn:visited {
@@ -692,20 +712,21 @@ h2 {
                 top: 26px;
                 right: 12px;
                 color: transparent;
-                background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50% 50% / 1em 1em;
+                background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50%
+                    50% / 1em 1em;
                 width: 1em;
                 height: 1em;
                 content: "";
                 position: absolute;
                 transition: transform 0.5s;
             }
-            details[open]>summary:before {
+            details[open] > summary:before {
                 transform: scale(1, -1);
             }
-            summary~* {
+            summary ~ * {
                 padding: 0 1em 10px 1.4em;
             }
-            details[open] summary~* {
+            details[open] summary ~ * {
                 animation: sweep 0.5s ease-in-out;
                 color: white;
             }
