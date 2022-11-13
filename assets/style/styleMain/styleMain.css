@@ -176,6 +176,8 @@ body {
 footer {
   font-family: "Roboto Slab", serif;
   background: url("../../images/imagesFooter/bgкопия.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 footer .footer__wrapper {
   max-width: 1200px;
@@ -414,10 +416,8 @@ h2 {
   align-items: center;
 }
 .gallery__container {
-  -moz-columns: 5 200px;
-       columns: 5 200px;
-  -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
+  columns: 5 200px;
+  column-gap: 1.5rem;
   width: 90%;
   margin: 0 auto;
 }
@@ -829,12 +829,6 @@ h2 {
 .request .consult__left input[type=number]:focus {
   outline: none;
 }
-.request .consult__left .consult__label::-moz-placeholder {
-  opacity: 0;
-}
-.request .consult__left .consult__label:-ms-input-placeholder {
-  opacity: 0;
-}
 .request .consult__left .consult__label::placeholder {
   opacity: 0;
 }
@@ -955,7 +949,7 @@ h2 {
   color: white;
 }
 .questions__wrapper .questions__block summary:before {
-  top: 15px;
+  top: 26px;
   right: 12px;
   color: transparent;
   background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50% 50%/1em 1em;
@@ -972,9 +966,12 @@ h2 {
   padding: 0 1em 10px 1.4em;
 }
 .questions__wrapper .questions__block details[open] summary ~ * {
-  -webkit-animation: sweep 0.5s ease-in-out;
-          animation: sweep 0.5s ease-in-out;
+  animation: sweep 0.5s ease-in-out;
   color: white;
+}
+.questions__wrapper .questions__block summary:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .advantages h2 {

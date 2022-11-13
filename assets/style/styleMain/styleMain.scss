@@ -337,7 +337,6 @@ h2 {
         height: auto;
         justify-content: center;
         align-items: center;
-
         overflow: hidden;
     }
     .sr-only {
@@ -366,13 +365,13 @@ h2 {
             list-style: none;
             padding-left: 0rem;
         }
-        ol > li {
+        ol>li {
             padding-left: 20px;
             position: relative;
             margin: 5px 5px 5px 8px;
             color: $paragraph-color;
         }
-        ol > li:before {
+        ol>li:before {
             content: "✔";
             position: absolute;
             left: -10px;
@@ -448,7 +447,6 @@ h2 {
         flex-direction: column;
         color: $paragraph-color;
         padding-left: 50px;
-
         p {
             margin-bottom: 70px;
             @include regular-paragraphs;
@@ -691,26 +689,29 @@ h2 {
                 color: white;
             }
             summary:before {
-                top: 15px;
+                top: 26px;
                 right: 12px;
                 color: transparent;
-                background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50%
-                    50% / 1em 1em;
+                background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50% 50% / 1em 1em;
                 width: 1em;
                 height: 1em;
                 content: "";
                 position: absolute;
                 transition: transform 0.5s;
             }
-            details[open] > summary:before {
+            details[open]>summary:before {
                 transform: scale(1, -1);
             }
-            summary ~ * {
+            summary~* {
                 padding: 0 1em 10px 1.4em;
             }
-            details[open] summary ~ * {
+            details[open] summary~* {
                 animation: sweep 0.5s ease-in-out;
                 color: white;
+            }
+            summary:hover {
+                transform: translateY(-7px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             }
             // @keyframes sweep {
             //     0% {
