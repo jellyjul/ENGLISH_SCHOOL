@@ -416,8 +416,10 @@ h2 {
   align-items: center;
 }
 .gallery__container {
-  columns: 5 200px;
-  column-gap: 1.5rem;
+  -moz-columns: 5 200px;
+       columns: 5 200px;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
   width: 90%;
   margin: 0 auto;
 }
@@ -829,6 +831,12 @@ h2 {
 .request .consult__left input[type=number]:focus {
   outline: none;
 }
+.request .consult__left .consult__label::-moz-placeholder {
+  opacity: 0;
+}
+.request .consult__left .consult__label:-ms-input-placeholder {
+  opacity: 0;
+}
 .request .consult__left .consult__label::placeholder {
   opacity: 0;
 }
@@ -966,7 +974,8 @@ h2 {
   padding: 0 1em 10px 1.4em;
 }
 .questions__wrapper .questions__block details[open] summary ~ * {
-  animation: sweep 0.5s ease-in-out;
+  -webkit-animation: sweep 0.5s ease-in-out;
+          animation: sweep 0.5s ease-in-out;
   color: white;
 }
 .questions__wrapper .questions__block summary:hover {
