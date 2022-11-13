@@ -378,6 +378,7 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
 .about__text {
   padding: 20px;
   color: #454545;
+  text-align: justify;
 }
 .about__image {
   display: flex;
@@ -606,6 +607,7 @@ h2 {
   color: #f08700;
   text-align: center;
   padding-top: 5%;
+  color: #425b69;
 }
 .price__info {
   font-weight: 400;
@@ -703,9 +705,9 @@ h2 {
 }
 
 .request {
+  background-image: url(../../images/imagesMain/imgRequest/Group\ 48096206.png);
   display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
+  height: 420px;
 }
 .request__img img {
   max-width: 700px;
@@ -714,18 +716,33 @@ h2 {
 .request__text {
   display: flex;
   flex-direction: column;
-  color: #454545;
+  color: white;
   padding-left: 50px;
+  margin: auto;
+  margin-bottom: 10%;
+}
+.request__text h2 {
+  color: white;
+}
+.request__text h2:after {
+  content: "";
+  margin-bottom: 30px;
+  display: block;
+  height: 2px;
+  background: white;
+  width: 100%;
 }
 .request__text p {
-  margin-bottom: 70px;
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 17px;
   line-height: 24px;
   color: #454545;
+  color: white;
 }
 .request__text .btn {
   display: flex;
+  justify-content: center;
   position: relative;
 }
 .request__text .btn .btn:link,
