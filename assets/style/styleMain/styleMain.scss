@@ -436,9 +436,9 @@ h2 {
 
 //-----------------------------------------request---------------------------------------------//
 .request {
-    background-image: url(../../images/imagesMain/imgRequest/Group\ 48096206.png);
+    background-image: url(../../images/imagesMain/imgRequest/back2.png);
     display: flex;
-    height: 420px;
+    min-height: 430px;
     //max-width: 1200px;
     //margin: 0 auto;
     &__img {
@@ -451,9 +451,10 @@ h2 {
         display: flex;
         flex-direction: column;
         color: $main-color;
-        padding-left: 50px;
-        margin: auto;
-        margin-bottom: 10%;
+        padding-left: 100px;
+        margin: auto auto 10% 40%;
+        // margin: auto;
+        // margin-bottom: 10%;
         h2 {
             color: $main-color;
             &:after {
