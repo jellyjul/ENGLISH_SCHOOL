@@ -88,17 +88,13 @@ body {
   color: rgb(243, 243, 243);
   background-color: #f08700;
   width: 100%;
-  left: 0;
-  top: 35;
-  z-index: 50;
 }
 .header__row {
   display: flex;
   justify-content: center;
   min-height: 100px;
   align-items: center;
-  padding: 0px;
-  margin: 0px;
+  padding: 15px 0px;
 }
 .header__logo-image {
   transform: translateX(-50%);
@@ -253,7 +249,7 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
 
 .image__block {
   display: flex;
-  min-height: 700px;
+  min-height: 740px;
   background: url("../../images/imagesMain/background.png");
   background-size: cover;
   background-repeat: no-repeat;
