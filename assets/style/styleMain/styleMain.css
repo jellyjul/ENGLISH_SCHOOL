@@ -171,8 +171,9 @@ body {
 
 footer {
   font-family: "Roboto Slab", serif;
-  background: url("../../images/imagesFooter/bg_3.jpeg");
+  background: url("../../images/imagesFooter/bg_4.jpeg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 footer .footer__wrapper {
   max-width: 1200px;
@@ -203,7 +204,7 @@ footer .footer__wrapper .footer__nav .footer__nav-right .footer__nav-contacts a 
   font-weight: 400;
   font-size: 17px;
   text-decoration: none;
-  color: white;
+  color: #000000;
   padding-bottom: 5px;
 }
 footer .footer__wrapper .footer__nav .footer__nav-right .footer__nav-contacts .nav-2 {
@@ -219,10 +220,10 @@ footer .footer__wrapper .footer__nav .footer__nav-right .footer__nav-adress a {
   font-size: 17px;
   text-decoration: none;
   line-height: 20px;
-  color: white;
+  color: #000000;
 }
 footer .footer__wrapper .footer__nav .footer__nav-right .hover a:hover {
-  color: #191715;
+  color: #fbfbfb;
 }
 footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   padding-right: 10px;
@@ -242,7 +243,7 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   z-index: 10;
   right: 30px;
   bottom: 30px;
-  background: #DDDBF1;
+  background-color: rgba(233, 116, 47, 0.72);
   border-radius: 50%;
   width: 70px;
   height: 70px;
@@ -498,6 +499,7 @@ h2 {
   right: 32%;
   background-color: #42c809;
   bottom: -5px;
+  background-color: #425b69;
 }
 .team p {
   padding: 0;
@@ -815,26 +817,27 @@ h2 {
 .request .consult {
   background-color: rgba(0, 0, 0, 0.7);
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 51;
+  z-index: 10;
 }
 .request .consult .consult__content {
   position: relative;
-  display: flex;
-  max-width: 800px;
-  min-height: 350px;
-  background: rgb(255, 255, 255);
+  max-width: 400px;
+  min-height: 600px;
+  background-image: url("../../images/imagesMain/imgRequest/2_2.jpeg");
   color: black;
   border-radius: 20px;
   transition: all 0.5s ease;
 }
 .request .consult__left {
-  padding: 20px 0 0 20px;
+  padding: 24px 0 0 43px;
   overflow: hidden;
 }
 .request .consult__left .consult__text h2 {
+  color: #425b69;
   font-size: 20px;
   font-weight: 800;
   text-transform: uppercase;
@@ -849,21 +852,21 @@ h2 {
 .request .consult__left .consult__form {
   margin-bottom: 25px;
 }
-.request .consult__left .consult__name:after,
-.request .consult__left .consult__number:after {
+.request .consult__left .consult__form .consult__name input {
+  border: none;
+  outline: none;
+}
+.request .consult__left .consult__form .form__reg:focus::placeholder {
+  opacity: 0;
+}
+.request .consult__left .consult__form .consult__name:after,
+.request .consult__left .consult__form .consult__number:after {
   content: "";
   margin: 3% 0;
   display: block;
   height: 1px;
   max-width: 300px;
   background: rgba(0, 0, 50, 0.4);
-}
-.request .consult__left input[type=text]:focus,
-.request .consult__left input[type=number]:focus {
-  outline: none;
-}
-.request .consult__left .consult__label::placeholder {
-  opacity: 0;
 }
 .request .consult__left .btn {
   max-width: 200px;
@@ -1056,7 +1059,7 @@ h2 {
 }
 .advantages__card h4 {
   margin-top: 5%;
-  color: #f08700;
+  color: #425b69;
   font-family: sans-serif;
   font-weight: 800;
   font-size: 20px;

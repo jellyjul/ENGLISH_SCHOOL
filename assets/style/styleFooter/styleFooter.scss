@@ -2,9 +2,9 @@
     footer {
         font-family: $main-font;
         // background-color: #D9D9D9;
-        background: url("../../images/imagesFooter/bg_3.jpeg");
+        background: url("../../images/imagesFooter/bg_4.jpeg");
         background-repeat: no-repeat;
-        // background-size: cover;
+        background-size: cover;
         .footer__wrapper {
             max-width: 1200px;
             margin: 0 auto;
@@ -30,7 +30,8 @@
                             font-weight: 400;
                             font-size: 17px;
                             text-decoration: none;
-                            color: #ffff;
+                            // color: #ffff;
+                            color: #000000;
                             padding-bottom: 5px;
                         }
                         .nav-2 {
@@ -46,7 +47,8 @@
                             font-size: 17px;
                             text-decoration: none;
                             line-height: 20px;
-                            color: #ffff;
+                            // color: #ffff;
+                            color: #000000;
                         }
                         // .nav-adress__tel::before {
                         //         position: relative;
@@ -57,7 +59,7 @@
                     }
                     .hover {
                         a:hover {
-                            color: #191715;
+                            color: #fbfbfb;
                         }
                     }
                 }

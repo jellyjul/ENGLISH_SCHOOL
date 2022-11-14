@@ -34,8 +34,9 @@ body {
 
 footer {
   font-family: "Roboto Slab", serif;
-  background: url("../../images/imagesFooter/bg_3.jpeg");
+  background: url("../../images/imagesFooter/bg_4.jpeg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 footer .footer__wrapper {
   max-width: 1200px;
@@ -66,7 +67,7 @@ footer .footer__wrapper .footer__nav .footer__nav-right .footer__nav-contacts a 
   font-weight: 400;
   font-size: 17px;
   text-decoration: none;
-  color: white;
+  color: #000000;
   padding-bottom: 5px;
 }
 footer .footer__wrapper .footer__nav .footer__nav-right .footer__nav-contacts .nav-2 {
@@ -82,10 +83,10 @@ footer .footer__wrapper .footer__nav .footer__nav-right .footer__nav-adress a {
   font-size: 17px;
   text-decoration: none;
   line-height: 20px;
-  color: white;
+  color: #000000;
 }
 footer .footer__wrapper .footer__nav .footer__nav-right .hover a:hover {
-  color: #191715;
+  color: #fbfbfb;
 }
 footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   padding-right: 10px;

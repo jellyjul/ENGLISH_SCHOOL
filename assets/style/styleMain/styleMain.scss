@@ -3,6 +3,7 @@
 @import "../styleFooter/styleFooter.scss";
 //--------------------------------------------------------------------------------------------//
 .wrapper {
+    // background-color: #fff4f0;
     @include f-column;
     min-height: 100%;
     overflow: hidden;
@@ -12,8 +13,9 @@
         z-index: 10;
         right: 30px;
         bottom: 30px;
-        background: #DDDBF1;
-        // background: #f088008d;
+        // background-color: #ad6cb087;
+        // ;
+        background-color: rgb(233 116 47 / 72%);
         border-radius: 50%;
         width: 70px;
         height: 70px;
@@ -117,6 +119,7 @@
 .about {
     @include font-header;
     background-color: white;
+    // background-color: #fff4f08a;
     margin-top: -700px;
     &__container {
         margin-bottom: 30px;
@@ -245,6 +248,7 @@ h2 {
             position: relative;
             &::before {
                 @include title-before;
+                background-color: #425b69;
             }
         }
     }
@@ -539,34 +543,29 @@ h2 {
     }
     .consult {
         background-color: rgba(0, 0, 0, 0.7);
+        // background-image: url("../../images/imagesMain/imgRequest/1613503494_16-p-fon-dlya-prezentatsii-po-angliiskomu-yazik-21.jpeg");
         background-repeat: no-repeat;
+        background-size: cover;
         display: flex;
         justify-content: center;
         align-items: center;
-        // position: fixed;
-        // width: 100%;
-        // height: 100vh;
-        // top: 0;
-        // left: 0;
-        // opacity: 0;
-        // visibility: hidden;
-        z-index: 51;
+        z-index: 10;
         .consult__content {
             position: relative;
-            display: flex;
-            max-width: 800px;
-            min-height: 350px;
-            background: rgb(255, 255, 255);
+            max-width: 400px;
+            min-height: 600px;
+            // background: rgb(255, 255, 255);
+            background-image: url("../../images/imagesMain/imgRequest/2_2.jpeg");
             color: black;
             border-radius: 20px;
-            // transform: scale(0);
             transition: all 0.5s ease;
         }
         &__left {
-            padding: 20px 0 0 20px;
+            padding: 24px 0 0 43px;
             overflow: hidden;
             .consult__text {
                 h2 {
+                    color: #425b69;
                     font-size: 20px;
                     font-weight: 800;
                     text-transform: uppercase;
@@ -581,23 +580,35 @@ h2 {
             }
             .consult__form {
                 margin-bottom: 25px;
+                .consult__name {
+                    input {
+                        border: none;
+                        outline: none;
+                    }
+                }
+                .form__reg:focus::placeholder {
+                    opacity: 0;
+                }
+                .consult__name:after,
+                .consult__number:after {
+                    content: "";
+                    margin: 3% 0;
+                    display: block;
+                    height: 1px;
+                    max-width: 300px;
+                    background: rgba(0, 0, 50, 0.4);
+                }
             }
-            .consult__name:after,
-            .consult__number:after {
-                content: "";
-                margin: 3% 0;
-                display: block;
-                height: 1px;
-                max-width: 300px;
-                background: rgba(0, 0, 50, 0.4);
-            }
-            input[type="text"]:focus,
-            input[type="number"]:focus {
-                outline: none;
-            }
-            .consult__label::placeholder {
-                opacity: 0;
-            }
+            // input {
+            //     outline: none;
+            // }
+            // input[type="text"]:focus,
+            // input[type="number"]:focus {
+            //     outline: none;
+            // }
+            // .consult__label::placeholder {
+            //     opacity: 0;
+            // }
             .btn {
                 max-width: 200px;
                 .btn:link,
@@ -801,7 +812,8 @@ h2 {
         }
         h4 {
             margin-top: 5%;
-            color: $main-orange-color;
+            // color: $main-orange-color;
+            color: #425b69;
             font-family: sans-serif;
             font-weight: 800;
             font-size: 20px;
