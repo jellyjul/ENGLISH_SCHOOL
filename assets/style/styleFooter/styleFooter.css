@@ -36,6 +36,8 @@ body {
 footer {
   font-family: "Roboto Slab", serif;
   background: url("../../images/imagesFooter/bgкопия.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 footer .footer__wrapper {
   max-width: 1200px;

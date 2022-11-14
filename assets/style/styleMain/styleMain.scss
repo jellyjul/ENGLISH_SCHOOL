@@ -171,6 +171,7 @@
   &__text {
     padding: 20px;
     color: $paragraph-color;
+    text-align: justify;
   }
 
   &__image {
@@ -357,6 +358,7 @@ h2 {
           font-size: 16px;
           font-weight: 400;
           line-height: 22px;
+          font-style: italic;
         }
       }
     }
@@ -383,7 +385,6 @@ h2 {
     height: auto;
     justify-content: center;
     align-items: center;
-
     overflow: hidden;
   }
 
@@ -405,6 +406,7 @@ h2 {
   &__title {
     @include h2;
     padding-top: 5%;
+    color: #425b69;
   }
 
   &__info {
@@ -495,10 +497,12 @@ h2 {
 
 //-----------------------------------------request---------------------------------------------//
 .request {
+  background-image: url(../../images/imagesMain/imgRequest/back2.png);
   display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
+  min-height: 430px;
 
+  //max-width: 1200px;
+  //margin: 0 auto;
   &__img {
     img {
       max-width: 700px;
@@ -509,16 +513,34 @@ h2 {
   &__text {
     display: flex;
     flex-direction: column;
-    color: $paragraph-color;
-    padding-left: 50px;
+    color: $main-color;
+    padding-left: 100px;
+    margin: auto auto 10% 40%;
+
+    // margin: auto;
+    // margin-bottom: 10%;
+    h2 {
+      color: $main-color;
+
+      &:after {
+        content: "";
+        margin-bottom: 30px;
+        display: block;
+        height: 2px;
+        background: white;
+        width: 100%;
+      }
+    }
 
     p {
-      margin-bottom: 70px;
+      margin-bottom: 20px;
       @include regular-paragraphs;
+      color: $main-color;
     }
 
     .btn {
       display: flex;
+      justify-content: center;
       position: relative;
 
       .btn:link,
@@ -794,7 +816,7 @@ h2 {
       }
 
       summary:before {
-        top: 15px;
+        top: 26px;
         right: 12px;
         color: transparent;
         background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50% 50% / 1em 1em;
@@ -816,6 +838,11 @@ h2 {
       details[open] summary~* {
         animation: sweep 0.5s ease-in-out;
         color: white;
+      }
+
+      summary:hover {
+        transform: translateY(-7px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
       }
 
       // @keyframes sweep {
