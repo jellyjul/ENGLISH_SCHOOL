@@ -1,61 +1,75 @@
-@import "../vars/vars.scss";
-
-footer {
-    font-family: $main-font;
-    // background-color: #D9D9D9;
-    background: url("../../images/imagesFooter/bgкопия.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    .footer__wrapper {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding-top: 40px;
-
-        .logo {
-            max-width: 100px;
-            border-radius: 50px;
-        }
-
-        .footer__nav {
-            display: flex;
-            justify-content: space-between;
-            padding-bottom: 70px;
-
-            .footer__nav-right {
+    @import "../vars/vars.scss";
+    footer {
+        font-family: $main-font;
+        // background-color: #D9D9D9;
+        background: url("../../images/imagesFooter/bg_3.jpeg");
+        background-repeat: no-repeat;
+        // background-size: cover;
+        .footer__wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 64px 0 60px 0;
+            .logo {
+                max-width: 100px;
+                border-radius: 50px;
+            }
+            .footer__nav {
                 display: flex;
                 justify-content: space-between;
-                flex-basis: 42%;
-                gap: 80px;
-
-                .footer__nav-contacts {
+                padding-bottom: 70px;
+                .footer__nav-right {
                     display: flex;
-                    flex-direction: column;
-
-                    a {
-                        font-weight: 400;
-                        font-size: 17px;
-                        text-decoration: none;
-                        color: #ffff;
-                        padding-bottom: 5px;
+                    justify-content: space-between;
+                    flex-basis: 55%;
+                    gap: 30px;
+                    .footer__nav-contacts {
+                        display: flex;
+                        flex-direction: column;
+                        padding-right: 60px;
+                        a {
+                            font-weight: 400;
+                            font-size: 17px;
+                            text-decoration: none;
+                            color: #ffff;
+                            padding-bottom: 5px;
+                        }
+                        .nav-2 {
+                            padding-right: 50px;
+                        }
+                    }
+                    .footer__nav-adress {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        a {
+                            font-weight: 400;
+                            font-size: 17px;
+                            text-decoration: none;
+                            line-height: 20px;
+                            color: #ffff;
+                        }
+                        // .nav-adress__tel::before {
+                        //         position: relative;
+                        //         bottom: -7px;
+                        //         content: url("../../images/imagesFooter/footer_nav/tel.png");
+                        //         padding-right: 23px;
+                        //     }
+                    }
+                    .hover {
+                        a:hover {
+                            color: #191715;
+                        }
                     }
                 }
-
-                .hover {
-                    a:hover {
-                        color: #191715;
-                    }
-                }
-            }
-
-            .footer__nav-social {
-                .footer-social {
-                    img {
-                        padding-right: 10px;
-                        max-width: 35px;
+                .footer__nav-social {
+                    .footer-social {
+                        img {
+                            padding-right: 10px;
+                            max-width: 35px;
+                            margin-bottom: 72px;
+                        }
                     }
                 }
             }
         }
     }
-}
