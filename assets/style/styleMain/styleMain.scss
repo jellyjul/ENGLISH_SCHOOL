@@ -539,6 +539,7 @@ h2 {
     }
     .consult {
         background-color: rgba(0, 0, 0, 0.7);
+        background-repeat: no-repeat;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -731,11 +732,12 @@ h2 {
                 transform: scale(1, -1);
             }
             summary~* {
-                padding: 0 1em 10px 1.4em;
+                padding: 20px 20px 0 20px;
             }
             details[open] summary~* {
                 animation: sweep 0.5s ease-in-out;
-                color: white;
+                // color: white;
+                color: #425b69;
             }
             summary:hover {
                 transform: translateY(-7px);

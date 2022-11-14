@@ -191,13 +191,13 @@ footer .footer__wrapper .footer__nav {
 footer .footer__wrapper .footer__nav .footer__nav-right {
   display: flex;
   justify-content: space-between;
-  flex-basis: 55%;
+  flex-basis: 47%;
   gap: 30px;
 }
 footer .footer__wrapper .footer__nav .footer__nav-right .footer__nav-contacts {
   display: flex;
   flex-direction: column;
-  padding-right: 60px;
+  padding-right: 65px;
 }
 footer .footer__wrapper .footer__nav .footer__nav-right .footer__nav-contacts a {
   font-weight: 400;
@@ -227,7 +227,7 @@ footer .footer__wrapper .footer__nav .footer__nav-right .hover a:hover {
 footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   padding-right: 10px;
   max-width: 35px;
-  margin-bottom: 83px;
+  margin-bottom: 72px;
 }
 
 .wrapper {
@@ -814,6 +814,7 @@ h2 {
 }
 .request .consult {
   background-color: rgba(0, 0, 0, 0.7);
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -996,11 +997,11 @@ h2 {
   transform: scale(1, -1);
 }
 .questions__wrapper .questions__block summary ~ * {
-  padding: 0 1em 10px 1.4em;
+  padding: 20px 20px 0 20px;
 }
 .questions__wrapper .questions__block details[open] summary ~ * {
   animation: sweep 0.5s ease-in-out;
-  color: white;
+  color: #425b69;
 }
 .questions__wrapper .questions__block summary:hover {
   transform: translateY(-7px);
