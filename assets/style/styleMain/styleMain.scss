@@ -70,28 +70,42 @@
   &__top-title {
     font-weight: 800;
     font-size: 50px;
-    line-height: 105%;
     text-transform: uppercase;
     padding: 30px 0px;
   }
   &__top-text {
-    padding: 0px 30px;
+    padding: 10px 20px;
     color: #425b69;
     h5 {
       text-transform: uppercase;
       font-size: 20px;
       color: #425b69;
+      color: white;
     }
-    h6 {
-      //text-transform: uppercase;
-      margin-top: 20px;
-      text-align: justify;
+    .name__adv {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      padding: 20px 20px 0 20px;
+      color: #425b69;
+      text-transform: uppercase;
+      font-size: 15px;
+      h6 {
+        //text-transform: uppercase;
+        margin-top: 20px;
+        //text-align: justify;
+        color: #f3f4fa;
+      }
+      img {
+        width: 15%;
+      }
     }
   }
+
   &__top-button {
     @include f-center;
     flex-wrap: wrap;
-    margin: 20px 0px;
+    margin: 10px 0px;
     background-color: $main-orange-color;
   }
   &__image {
@@ -120,11 +134,11 @@
   text-align: center;
   color: $main-color;
   background-color: rgba(87, 162, 83, 0.979);
-}
 
-.button:hover {
-  background: $main-color;
-  color: rgba(98, 99, 55, 1);
+  &:hover {
+    background: $main-color;
+    color: rgba(98, 99, 55, 1);
+  }
 }
 
 //--------------------------------about--------------------------
@@ -192,15 +206,30 @@
 }
 
 //---------------------------gallery------------------------
-h2 {
-  margin-top: 5%;
-  @include h2;
-}
 
 .gallery {
   @include f-center;
   @include f-column;
   align-items: center;
+  h2 {
+    margin-top: 5%;
+    @include h2;
+  }
+  &__flags {
+    @include f-center;
+    gap: 20px;
+    img {
+      max-width: 5%;
+    }
+  }
+  &__text {
+    //text-align: center;
+    color: $paragraph-color;
+
+    .bold {
+      font-weight: bold;
+    }
+  }
   &__container {
     columns: 5 200px;
     column-gap: 1.5rem;
@@ -236,21 +265,15 @@ h2 {
         text-align: center;
         font-style: italic;
         color: $paragraph-color;
+        &:last-child {
+          color: $main-orange-color;
+        }
       }
     }
   }
   @include f-center;
   @include f-column;
   align-items: center;
-
-  &__text {
-    text-align: center;
-    color: $paragraph-color;
-
-    .bold {
-      font-weight: bold;
-    }
-  }
 
   &__container {
     columns: 5 200px;
