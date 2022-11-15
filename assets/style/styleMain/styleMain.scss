@@ -559,9 +559,8 @@ h2 {
             color: black;
             border-radius: 20px;
             transition: all 0.5s ease;
-        }
-        &__left {
-            padding: 24px 0 0 43px;
+            padding: 36px;
+            border: none;
             overflow: hidden;
             .consult__text {
                 h2 {
@@ -580,14 +579,15 @@ h2 {
             }
             .consult__form {
                 margin-bottom: 25px;
-                .consult__name {
-                    input {
-                        border: none;
-                        outline: none;
-                    }
-                }
                 .form__reg:focus::placeholder {
                     opacity: 0;
+                }
+                .form__reg {
+                    background: transparent;
+                    border: none;
+                }
+                .form__reg::placeholder {
+                    color: #425b69;
                 }
                 .consult__name:after,
                 .consult__number:after {
@@ -599,66 +599,54 @@ h2 {
                     background: rgba(0, 0, 50, 0.4);
                 }
             }
-            // input {
-            //     outline: none;
-            // }
-            // input[type="text"]:focus,
-            // input[type="number"]:focus {
-            //     outline: none;
-            // }
-            // .consult__label::placeholder {
-            //     opacity: 0;
-            // }
-            .btn {
-                max-width: 200px;
-                .btn:link,
-                .btn:visited {
-                    text-transform: uppercase;
-                    text-decoration: none;
-                    padding: 10px 15px;
-                    display: inline-block;
-                    border-radius: 100px;
-                    transition: all 0.2s;
-                    position: absolute;
-                }
-                .btn:hover {
-                    transform: translateY(-3px);
-                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-                }
-                .btn:active {
-                    transform: translateY(-1px);
-                    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-                }
-                .btn-orange {
-                    background-color: $main-orange-color;
-                    color: rgb(255, 255, 255);
-                }
-                .btn::after {
-                    content: "";
-                    display: inline-block;
-                    height: 100%;
-                    width: 100%;
-                    border-radius: 100px;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    z-index: -1;
-                    transition: all 0.4s;
-                }
-                .btn-orange::after {
-                    background-color: $main-orange-color;
-                }
-                .btn:hover::after {
-                    transform: scaleX(1.4) scaleY(1.6);
-                    opacity: 0;
-                }
-            }
         }
-        &__right {
-            img {
-                max-width: 600px;
-                min-height: 350px;
+        input[type="text"]:focus,
+        input[type="number"]:focus {
+            outline: none;
+        }
+        .btn {
+            max-width: 200px;
+            font-size: 15px;
+            .btn:link,
+            .btn:visited {
+                text-transform: uppercase;
+                text-decoration: none;
+                padding: 10px 15px;
+                display: inline-block;
+                border-radius: 100px;
+                transition: all 0.2s;
+                position: absolute;
+            }
+            .btn:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            }
+            .btn:active {
+                transform: translateY(-1px);
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            }
+            .btn-orange {
+                background-color: $main-orange-color;
+                color: rgb(255, 255, 255);
+            }
+            .btn::after {
+                content: "";
+                display: inline-block;
+                height: 100%;
                 width: 100%;
+                border-radius: 100px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: all 0.4s;
+            }
+            .btn-orange::after {
+                background-color: $main-orange-color;
+            }
+            .btn:hover::after {
+                transform: scaleX(1.4) scaleY(1.6);
+                opacity: 0;
             }
         }
         .close-popup {

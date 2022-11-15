@@ -222,6 +222,13 @@ footer .footer__wrapper .footer__nav .footer__nav-right .footer__nav-adress a {
   line-height: 20px;
   color: #000000;
 }
+footer .footer__wrapper .footer__nav .footer__nav-right .nav-adress__tel::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url("../../images/imagesFooter/footer_nav/insta.png");
+}
 footer .footer__wrapper .footer__nav .footer__nav-right .hover a:hover {
   color: #fbfbfb;
 }
@@ -831,12 +838,11 @@ h2 {
   color: black;
   border-radius: 20px;
   transition: all 0.5s ease;
-}
-.request .consult__left {
-  padding: 24px 0 0 43px;
+  padding: 36px;
+  border: none;
   overflow: hidden;
 }
-.request .consult__left .consult__text h2 {
+.request .consult .consult__content .consult__text h2 {
   color: #425b69;
   font-size: 20px;
   font-weight: 800;
@@ -844,23 +850,26 @@ h2 {
   margin-bottom: 15px;
   letter-spacing: 2px;
 }
-.request .consult__left .consult__text p {
+.request .consult .consult__content .consult__text p {
   font-size: 15px;
   line-height: 20px;
   margin-bottom: 25px;
 }
-.request .consult__left .consult__form {
+.request .consult .consult__content .consult__form {
   margin-bottom: 25px;
 }
-.request .consult__left .consult__form .consult__name input {
-  border: none;
-  outline: none;
-}
-.request .consult__left .consult__form .form__reg:focus::placeholder {
+.request .consult .consult__content .consult__form .form__reg:focus::placeholder {
   opacity: 0;
 }
-.request .consult__left .consult__form .consult__name:after,
-.request .consult__left .consult__form .consult__number:after {
+.request .consult .consult__content .consult__form .form__reg {
+  background: transparent;
+  border: none;
+}
+.request .consult .consult__content .consult__form .form__reg::placeholder {
+  color: #425b69;
+}
+.request .consult .consult__content .consult__form .consult__name:after,
+.request .consult .consult__content .consult__form .consult__number:after {
   content: "";
   margin: 3% 0;
   display: block;
@@ -868,11 +877,16 @@ h2 {
   max-width: 300px;
   background: rgba(0, 0, 50, 0.4);
 }
-.request .consult__left .btn {
-  max-width: 200px;
+.request .consult input[type=text]:focus,
+.request .consult input[type=number]:focus {
+  outline: none;
 }
-.request .consult__left .btn .btn:link,
-.request .consult__left .btn .btn:visited {
+.request .consult .btn {
+  max-width: 200px;
+  font-size: 15px;
+}
+.request .consult .btn .btn:link,
+.request .consult .btn .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 10px 15px;
@@ -881,19 +895,19 @@ h2 {
   transition: all 0.2s;
   position: absolute;
 }
-.request .consult__left .btn .btn:hover {
+.request .consult .btn .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-.request .consult__left .btn .btn:active {
+.request .consult .btn .btn:active {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-.request .consult__left .btn .btn-orange {
+.request .consult .btn .btn-orange {
   background-color: #f08700;
   color: rgb(255, 255, 255);
 }
-.request .consult__left .btn .btn::after {
+.request .consult .btn .btn::after {
   content: "";
   display: inline-block;
   height: 100%;
@@ -905,17 +919,12 @@ h2 {
   z-index: -1;
   transition: all 0.4s;
 }
-.request .consult__left .btn .btn-orange::after {
+.request .consult .btn .btn-orange::after {
   background-color: #f08700;
 }
-.request .consult__left .btn .btn:hover::after {
+.request .consult .btn .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
-}
-.request .consult__right img {
-  max-width: 600px;
-  min-height: 350px;
-  width: 100%;
 }
 .request .consult .close-popup {
   position: absolute;
