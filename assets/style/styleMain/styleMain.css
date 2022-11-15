@@ -301,10 +301,19 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   font-size: 50px;
   line-height: 105%;
   text-transform: uppercase;
-  padding: 40px 0px;
+  padding: 30px 0px;
 }
 .name__top-text {
-  padding-bottom: 20px;
+  padding: 0px 30px;
+  color: #425b69;
+}
+.name__top-text h5 {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #425b69;
+}
+.name__top-text h6 {
+  text-transform: uppercase;
 }
 .name__top-button {
   display: flex;
@@ -431,8 +440,10 @@ h2 {
   align-items: center;
 }
 .gallery__container {
-  columns: 5 200px;
-  column-gap: 1.5rem;
+  -moz-columns: 5 200px;
+       columns: 5 200px;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
   width: 90%;
   margin: 0 auto;
 }
@@ -856,6 +867,12 @@ h2 {
   border: none;
   outline: none;
 }
+.request .consult__left .consult__form .form__reg:focus::-moz-placeholder {
+  opacity: 0;
+}
+.request .consult__left .consult__form .form__reg:focus:-ms-input-placeholder {
+  opacity: 0;
+}
 .request .consult__left .consult__form .form__reg:focus::placeholder {
   opacity: 0;
 }
@@ -1003,7 +1020,8 @@ h2 {
   padding: 20px 20px 0 20px;
 }
 .questions__wrapper .questions__block details[open] summary ~ * {
-  animation: sweep 0.5s ease-in-out;
+  -webkit-animation: sweep 0.5s ease-in-out;
+          animation: sweep 0.5s ease-in-out;
   color: #425b69;
 }
 .questions__wrapper .questions__block summary:hover {
