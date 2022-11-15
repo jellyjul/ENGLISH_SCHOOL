@@ -745,9 +745,13 @@ h2 {
       color: black;
       border-radius: 20px;
       transition: all 0.5s ease;
-      padding: 36px;
-      border: none;
+      // padding: 36px;
+      // border: none;
+    }
+    &__left {
+      padding: 24px 0 0 43px;
       overflow: hidden;
+
       .consult__text {
         h2 {
           color: #425b69;
