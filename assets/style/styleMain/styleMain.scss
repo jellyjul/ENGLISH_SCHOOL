@@ -9,7 +9,6 @@
   min-height: 100%;
   overflow: hidden;
   font-family: "Roboto Slab";
-
   .floating-button {
     position: fixed;
     z-index: 10;
@@ -21,7 +20,6 @@
     border-radius: 50%;
     width: 70px;
     height: 70px;
-
     img {
       position: absolute;
       max-width: 40px;
@@ -29,7 +27,6 @@
       left: 15px;
     }
   }
-
   .floating-button:hover {
     background: $main-orange-color;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
@@ -61,43 +58,47 @@
   margin-top: -500px;
   position: relative;
   z-index: 3;
-
   &__body {
     @include f-column;
     flex: 0 1 50%;
     min-height: 1200px;
     background-color: $main-orange-color;
   }
-
   &__top {
     flex: 1 1 auto;
   }
-
   &__top-title {
     font-weight: 800;
     font-size: 50px;
     line-height: 105%;
     text-transform: uppercase;
-    padding: 40px 0px;
+    padding: 30px 0px;
   }
-
   &__top-text {
-    padding-bottom: 20px;
+    padding: 0px 30px;
+    color: #425b69;
+    h5 {
+      text-transform: uppercase;
+      font-size: 20px;
+      color: #425b69;
+    }
+    h6 {
+      //text-transform: uppercase;
+      margin-top: 20px;
+      text-align: justify;
+    }
   }
-
   &__top-button {
     @include f-center;
     flex-wrap: wrap;
     margin: 20px 0px;
     background-color: $main-orange-color;
   }
-
   &__image {
     display: flex;
     margin: 0 auto;
     max-width: 462px;
     padding-bottom: 40px;
-
     img {
       width: 100%;
     }
@@ -132,16 +133,13 @@
   background-color: white;
   // background-color: #fff4f08a;
   margin-top: -700px;
-
   &__container {
     margin-bottom: 30px;
   }
-
   &__body {
     display: flex;
     min-height: 900px;
   }
-
   &__name {
     font-weight: 800;
     font-size: 130px;
@@ -153,16 +151,13 @@
     position: relative;
     z-index: 5;
   }
-
   &__left {
     @include f-column;
     flex: 0 1 50%;
   }
-
   &__left-content {
     flex: 1 1 auto;
   }
-
   &__title {
     text-align: center;
     font-weight: 500;
@@ -172,29 +167,24 @@
     padding: 10px 0px;
     color: #425b69;
   }
-
   &__text {
     padding: 20px;
     color: $paragraph-color;
     text-align: justify;
   }
-
   &__image {
     display: flex;
     margin: 0 auto;
     max-width: 462px;
     padding: 20px;
-
     img {
       width: 100%;
     }
   }
-
   &__right {
     @include f-column;
     flex: 0 1 50%;
   }
-
   &__right-content {
     transform: translateY(500px);
     margin-bottom: 20px;
@@ -208,6 +198,47 @@ h2 {
 }
 
 .gallery {
+  @include f-center;
+  @include f-column;
+  align-items: center;
+  &__container {
+    columns: 5 200px;
+    column-gap: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+    div {
+      width: 150px;
+      margin: 0 1.5rem 1.5rem 0;
+      display: inline-block;
+      width: 100%;
+      border: solid 2px white;
+      margin-top: 10%;
+      padding: 5px;
+      box-shadow: $box-shadow;
+      border-radius: 5px;
+      transition: all 0.25s ease-in-out;
+      &:hover img {
+        filter: grayscale(0);
+      }
+      &:hover {
+        border: solid 4px $main-orange-color;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+      img {
+        width: 100%;
+        filter: grayscale(100%);
+        border-radius: 5px;
+        transition: all 0.25s ease-in-out;
+      }
+      p {
+        margin: 5px 0;
+        padding: 0;
+        text-align: center;
+        font-style: italic;
+        color: $paragraph-color;
+      }
+    }
+  }
   @include f-center;
   @include f-column;
   align-items: center;
@@ -273,67 +304,56 @@ h2 {
     padding: 0 15px;
     margin: auto;
   }
-
   &__title {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 40px 0 80px 0;
     text-align: center;
-
     h2 {
       @include h2;
       display: inline-block;
       margin: 0 0 20px;
       position: relative;
-
       &::before {
         @include title-before;
         background-color: #425b69;
       }
     }
   }
-
   p {
     padding: 0;
     margin: 0 0 15px 0;
     color: $paragraph-color;
     font-weight: 300;
   }
-
   img {
     width: 100%;
     height: auto;
   }
-
   &__row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-right: -15px;
     margin-left: -15px;
   }
-
   &__column {
     position: relative;
     width: 100%;
     padding: 0 15px;
     flex: 0 0 100%;
     max-width: 100%;
-
     &:hover {
       background: $color-hover;
       color: rgb(0, 0, 0);
       border-radius: 20px;
       box-shadow: -1px 20px 10px 0px rgba(0, 0, 0, 0.212);
     }
-
     .team__card {
       margin-bottom: 30px;
-
       .team__img {
         position: relative;
         font-size: 0;
         text-align: center;
-
         img {
           width: 100%;
           height: auto;
@@ -341,26 +361,22 @@ h2 {
           border: 20px solid #f3f4fa;
         }
       }
-
       .team__content {
         padding: 80px 20px 20px 20px;
         margin-top: -80px;
         text-align: center;
         background: #f3f4fa;
         border-radius: 10px;
-
         h3 {
           font-size: 25px;
           font-weight: 400;
           letter-spacing: 2px;
           color: $paragraph-color;
         }
-
         h4 {
           font-size: 16px;
           font-weight: 300;
         }
-
         h5 {
           font-size: 14px;
           font-weight: 300;
@@ -368,7 +384,6 @@ h2 {
           font-style: italic;
           margin-bottom: 0;
         }
-
         p {
           font-size: 16px;
           font-weight: 400;
@@ -434,12 +449,89 @@ h2 {
   .sr-only {
     color: black;
   }
-
 }
-
 
 //-----------------------------------------price---------------------------------------------//
 .price {
+  @include f-column;
+  &__title {
+    @include h2;
+    padding-top: 5%;
+    color: #425b69;
+  }
+  &__info {
+    @include regular-paragraphs;
+    @include f-space-between;
+    flex-direction: row;
+    padding: 2% 5% 10% 5%;
+    ol {
+      list-style: none;
+      padding-left: 0rem;
+    }
+    ol > li {
+      padding-left: 20px;
+      position: relative;
+      margin: 5px 5px 5px 8px;
+      color: $paragraph-color;
+    }
+    ol > li:before {
+      content: "✔";
+      position: absolute;
+      left: -10px;
+      color: rgb(5, 116, 2);
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .no:before {
+      content: "\274c";
+      position: absolute;
+      font-size: 14px;
+    }
+    &-bag {
+      text-align: center;
+      width: 100%;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      &-description {
+        &-details {
+          text-align: start;
+          padding-left: 10px;
+          color: $paragraph-color;
+        }
+        &-title {
+          @include h2;
+          font-size: 20px;
+          font-weight: bold;
+          color: $paragraph-color;
+        }
+        &-rate {
+          @include regular-paragraphs;
+          font-size: 25px;
+          font-weight: bold;
+          color: $main-orange-color;
+          padding-bottom: 5px;
+        }
+      }
+      &-description:hover {
+        background: $color-hover;
+        color: rgb(0, 0, 0);
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+    }
+    .bag-light,
+    .bag-standard {
+      margin-right: 5%;
+    }
+    .btn {
+      margin-bottom: 10px;
+      cursor: pointer;
+      @include main-button;
+      width: 10vw;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+    }
+  }
   @include f-column;
 
   &__title {
@@ -459,14 +551,14 @@ h2 {
       padding-left: 0rem;
     }
 
-    ol>li {
+    ol > li {
       padding-left: 20px;
       position: relative;
       margin: 5px 5px 5px 8px;
       color: $paragraph-color;
     }
 
-    ol>li:before {
+    ol > li:before {
       content: "✔";
       position: absolute;
       left: -10px;
@@ -540,7 +632,6 @@ h2 {
   display: flex;
   min-height: 430px;
   margin-bottom: 50px;
-
   //max-width: 1200px;
   //margin: 0 auto;
   &__img {
@@ -549,19 +640,16 @@ h2 {
       width: 100%;
     }
   }
-
   &__text {
     display: flex;
     flex-direction: column;
     color: $main-color;
     // padding-left: 100px;
     margin: auto auto 8% 60%;
-
     // margin: auto;
     // margin-bottom: 10%;
     h2 {
       color: $main-color;
-
       &:after {
         content: "";
         margin-bottom: 30px;
@@ -571,18 +659,15 @@ h2 {
         width: 100%;
       }
     }
-
     p {
       margin-bottom: 20px;
       @include regular-paragraphs;
       color: $main-color;
     }
-
     .btn {
       display: flex;
       justify-content: center;
       position: relative;
-
       .btn:link,
       .btn:visited {
         text-transform: uppercase;
@@ -593,22 +678,18 @@ h2 {
         transition: all 0.2s;
         position: absolute;
       }
-
       .btn:hover {
         transform: translateY(-3px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
       }
-
       .btn:active {
         transform: translateY(-1px);
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
       }
-
       .btn-orange {
         background-color: $main-orange-color;
         color: rgb(255, 255, 255);
       }
-
       .btn::after {
         content: "";
         display: inline-block;
@@ -621,18 +702,15 @@ h2 {
         z-index: -1;
         transition: all 0.4s;
       }
-
       .btn-orange::after {
         background-color: $main-orange-color;
       }
-
       .btn:hover::after {
         transform: scaleX(1.4) scaleY(1.6);
         opacity: 0;
       }
     }
   }
-
   #popup {
     position: fixed;
     width: 100%;
@@ -642,16 +720,13 @@ h2 {
     opacity: 0;
     visibility: hidden;
   }
-
   #popup:target {
     opacity: 1;
     visibility: visible;
   }
-
   #popup:target .concult__content {
     transform: scale(1);
   }
-
   .consult {
     background-color: rgba(0, 0, 0, 0.7);
     // background-image: url("../../images/imagesMain/imgRequest/1613503494_16-p-fon-dlya-prezentatsii-po-angliiskomu-yazik-21.jpeg");
@@ -661,7 +736,6 @@ h2 {
     justify-content: center;
     align-items: center;
     z-index: 10;
-
     .consult__content {
       position: relative;
       max-width: 400px;
@@ -671,12 +745,9 @@ h2 {
       color: black;
       border-radius: 20px;
       transition: all 0.5s ease;
-    }
-
-    &__left {
-      padding: 24px 0 0 43px;
+      padding: 36px;
+      border: none;
       overflow: hidden;
-
       .consult__text {
         h2 {
           color: #425b69;
@@ -686,28 +757,24 @@ h2 {
           margin-bottom: 15px;
           letter-spacing: 2px;
         }
-
         p {
           font-size: 15px;
           line-height: 20px;
           margin-bottom: 25px;
         }
       }
-
       .consult__form {
         margin-bottom: 25px;
-
-        .consult__name {
-          input {
-            border: none;
-            outline: none;
-          }
-        }
-
         .form__reg:focus::placeholder {
           opacity: 0;
         }
-
+        .form__reg {
+          background: transparent;
+          border: none;
+        }
+        .form__reg::placeholder {
+          color: #425b69;
+        }
         .consult__name:after,
         .consult__number:after {
           content: "";
@@ -718,78 +785,56 @@ h2 {
           background: rgba(0, 0, 50, 0.4);
         }
       }
-
-      // input {
-      //     outline: none;
-      // }
-      // input[type="text"]:focus,
-      // input[type="number"]:focus {
-      //     outline: none;
-      // }
-      // .consult__label::placeholder {
-      //     opacity: 0;
-      // }
-      .btn {
-        max-width: 200px;
-
-        .btn:link,
-        .btn:visited {
-          text-transform: uppercase;
-          text-decoration: none;
-          padding: 10px 15px;
-          display: inline-block;
-          border-radius: 100px;
-          transition: all 0.2s;
-          position: absolute;
-        }
-
-        .btn:hover {
-          transform: translateY(-3px);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        .btn:active {
-          transform: translateY(-1px);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .btn-orange {
-          background-color: $main-orange-color;
-          color: rgb(255, 255, 255);
-        }
-
-        .btn::after {
-          content: "";
-          display: inline-block;
-          height: 100%;
-          width: 100%;
-          border-radius: 100px;
-          position: absolute;
-          top: 0;
-          left: 0;
-          z-index: -1;
-          transition: all 0.4s;
-        }
-
-        .btn-orange::after {
-          background-color: $main-orange-color;
-        }
-
-        .btn:hover::after {
-          transform: scaleX(1.4) scaleY(1.6);
-          opacity: 0;
-        }
-      }
     }
-
-    &__right {
-      img {
-        max-width: 600px;
-        min-height: 350px;
+    input[type="text"]:focus,
+    input[type="number"]:focus {
+      outline: none;
+    }
+    .btn {
+      max-width: 200px;
+      font-size: 15px;
+      .btn:link,
+      .btn:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: inline-block;
+        border-radius: 100px;
+        transition: all 0.2s;
+        position: absolute;
+      }
+      .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      .btn:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      }
+      .btn-orange {
+        background-color: $main-orange-color;
+        color: rgb(255, 255, 255);
+      }
+      .btn::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
         width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.4s;
+      }
+      .btn-orange::after {
+        background-color: $main-orange-color;
+      }
+      .btn:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
       }
     }
-
     .close-popup {
       position: absolute;
       right: -10px;
@@ -803,7 +848,6 @@ h2 {
       line-height: 40px;
       border-radius: 50%;
     }
-
     .close-popup:hover {
       transform: translateY(-3px);
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -816,13 +860,11 @@ h2 {
     font-family: $main-font;
     max-width: 1200px;
     margin: 0 auto;
-
     h2 {
       @include h2;
       color: #425b69;
       letter-spacing: 3px;
     }
-
     .questions__block {
       display: flex;
       flex-direction: column;
@@ -830,7 +872,6 @@ h2 {
       gap: 20px;
       padding-top: 30px;
       padding-bottom: 156px;
-
       .questions__item {
         display: block;
         background: rgb(231 133 22 / 53%);
@@ -841,19 +882,15 @@ h2 {
         border-radius: 8px;
         overflow: hidden;
       }
-
       summary::-webkit-details-marker {
         display: none;
       }
-
       summary::-moz-list-bullet {
         list-style-type: none;
       }
-
       summary::marker {
         display: none;
       }
-
       summary {
         display: block;
         padding: 20px;
@@ -865,38 +902,33 @@ h2 {
         // color: white;
         color: #425b69;
       }
-
       summary:before {
         top: 26px;
         right: 12px;
         color: transparent;
-        background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50% 50% / 1em 1em;
+        background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50% 50% / 1em
+          1em;
         width: 1em;
         height: 1em;
         content: "";
         position: absolute;
         transition: transform 0.5s;
       }
-
-      details[open]>summary:before {
+      details[open] > summary:before {
         transform: scale(1, -1);
       }
-
-      summary~* {
+      summary ~ * {
         padding: 20px 20px 0 20px;
       }
-
-      details[open] summary~* {
+      details[open] summary ~ * {
         animation: sweep 0.5s ease-in-out;
         // color: white;
         color: #425b69;
       }
-
       summary:hover {
         transform: translateY(-7px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
       }
-
       // @keyframes sweep {
       //     0% {
       //         opacity: 0;
@@ -919,7 +951,6 @@ h2 {
     @include h2;
     @include f-center;
   }
-
   &__subtitle {
     color: $paragraph-color;
     font-size: 20px;
@@ -928,19 +959,16 @@ h2 {
     justify-content: center;
     margin-bottom: 4%;
   }
-
   &__wrapper {
     width: 90%;
     margin: 2% auto;
   }
-
   &__block {
     display: grid;
     grid-template-columns: repeat(3, 3fr);
     grid-template-rows: repeat(2, 3fr);
     grid-gap: 3%;
   }
-
   &__card {
     width: 100%;
     @include f-column;
@@ -948,18 +976,15 @@ h2 {
     align-items: center;
     border-radius: 5px;
     transition: all 0.25s ease-in-out;
-
     &:hover {
       background: $color-hover;
       color: rgb(0, 0, 0);
       border-radius: 20px;
       box-shadow: -1px 20px 10px 0px rgba(0, 0, 0, 0.212);
     }
-
     img {
       width: 30%;
     }
-
     h4 {
       margin-top: 5%;
       // color: $main-orange-color;
@@ -968,7 +993,6 @@ h2 {
       font-weight: 800;
       font-size: 20px;
     }
-
     h5 {
       padding: 0 10px;
       color: gray;
