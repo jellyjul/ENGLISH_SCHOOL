@@ -447,6 +447,13 @@ h2 {
   flex-direction: column;
   align-items: center;
 }
+.gallery__text {
+  text-align: center;
+  color: #454545;
+}
+.gallery__text .bold {
+  font-weight: bold;
+}
 .gallery__container {
   -moz-columns: 5 200px;
        columns: 5 200px;
@@ -610,21 +617,38 @@ h2 {
   display: flex;
   justify-content: center;
   margin-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
   text-align: center;
 }
+.review .carousel {
+  margin-top: 50px;
+}
 .review .carousel-inner {
-  height: auto;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+  height: 400px;
+}
+.review .carousel-caption {
+  color: #454545;
+  font-family: "Roboto Slab", serif;
+  height: 400px;
+  top: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.review .carousel-caption-first {
+  background-image: url("../../images/imagesMain/imagesReview/student-first1.png");
+}
+.review .carousel-caption-second {
+  background-image: url("../../images/imagesMain/imagesReview/student-second1.jpg");
+}
+.review .carousel-caption-third {
+  background-image: url("../../images/imagesMain/imagesReview/student-third1.png");
+}
+.review .carousel-caption-fourth {
+  background-image: url("../../images/imagesMain/imagesReview/student-fourth1.png");
 }
 .review .sr-only {
   color: black;
-}
-.review img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
 }
 
 .price {
