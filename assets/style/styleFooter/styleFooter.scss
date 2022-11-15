@@ -14,17 +14,14 @@ footer {
             border-radius: 50px;
         }
         .footer__nav {
-            display: flex;
-            justify-content: space-between;
+            @include f-space-between;
             padding-bottom: 70px;
             .footer__nav-right {
-                display: flex;
-                justify-content: space-between;
+                @include f-space-between;
                 flex-basis: 47%;
                 gap: 30px;
                 .footer__nav-contacts {
-                    display: flex;
-                    flex-direction: column;
+                    @include f-column;
                     padding-right: 65px;
                     a {
                         font-weight: 400;
@@ -39,8 +36,7 @@ footer {
                     }
                 }
                 .footer__nav-adress {
-                    display: flex;
-                    flex-direction: column;
+                    @include f-column;
                     gap: 10px;
                     a {
                         font-weight: 400;
