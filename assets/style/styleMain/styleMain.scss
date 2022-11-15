@@ -1,6 +1,7 @@
 @import "../vars/vars.scss";
 @import "../styleHeader/styleHeader.scss";
 @import "../styleFooter/styleFooter.scss";
+
 //--------------------------------------------------------------------------------------------//
 .wrapper {
   // background-color: #fff4f0;
@@ -69,26 +70,42 @@
   &__top-title {
     font-weight: 800;
     font-size: 50px;
-    line-height: 105%;
     text-transform: uppercase;
     padding: 30px 0px;
   }
   &__top-text {
-    padding: 0px 30px;
+    padding: 10px 20px;
     color: #425b69;
     h5 {
       text-transform: uppercase;
       font-size: 20px;
       color: #425b69;
+      color: white;
     }
-    h6 {
+    .name__adv {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      padding: 20px 20px 0 20px;
+      color: #425b69;
       text-transform: uppercase;
+      font-size: 15px;
+      h6 {
+        //text-transform: uppercase;
+        margin-top: 20px;
+        //text-align: justify;
+        color: #f3f4fa;
+      }
+      img {
+        width: 15%;
+      }
     }
   }
+
   &__top-button {
     @include f-center;
     flex-wrap: wrap;
-    margin: 20px 0px;
+    margin: 10px 0px;
     background-color: $main-orange-color;
   }
   &__image {
@@ -117,11 +134,11 @@
   text-align: center;
   color: $main-color;
   background-color: rgba(87, 162, 83, 0.979);
-}
 
-.button:hover {
-  background: $main-color;
-  color: rgba(98, 99, 55, 1);
+  &:hover {
+    background: $main-color;
+    color: rgba(98, 99, 55, 1);
+  }
 }
 
 //--------------------------------about--------------------------
@@ -189,15 +206,30 @@
 }
 
 //---------------------------gallery------------------------
-h2 {
-  margin-top: 5%;
-  @include h2;
-}
 
 .gallery {
   @include f-center;
   @include f-column;
   align-items: center;
+  h2 {
+    margin-top: 5%;
+    @include h2;
+  }
+  &__flags {
+    @include f-center;
+    gap: 20px;
+    img {
+      max-width: 5%;
+    }
+  }
+  &__text {
+    //text-align: center;
+    color: $paragraph-color;
+
+    .bold {
+      font-weight: bold;
+    }
+  }
   &__container {
     columns: 5 200px;
     column-gap: 1.5rem;
@@ -227,6 +259,56 @@ h2 {
         border-radius: 5px;
         transition: all 0.25s ease-in-out;
       }
+      p {
+        margin: 5px 0;
+        padding: 0;
+        text-align: center;
+        font-style: italic;
+        color: $paragraph-color;
+        &:last-child {
+          color: $main-orange-color;
+        }
+      }
+    }
+  }
+  @include f-center;
+  @include f-column;
+  align-items: center;
+
+  &__container {
+    columns: 5 200px;
+    column-gap: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+
+    div {
+      width: 150px;
+      margin: 0 1.5rem 1.5rem 0;
+      display: inline-block;
+      width: 100%;
+      border: solid 2px white;
+      margin-top: 10%;
+      padding: 5px;
+      box-shadow: $box-shadow;
+      border-radius: 5px;
+      transition: all 0.25s ease-in-out;
+
+      &:hover img {
+        filter: grayscale(0);
+      }
+
+      &:hover {
+        border: solid 4px $main-orange-color;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      img {
+        width: 100%;
+        filter: grayscale(100%);
+        border-radius: 5px;
+        transition: all 0.25s ease-in-out;
+      }
+
       p {
         margin: 5px 0;
         padding: 0;
@@ -343,26 +425,52 @@ h2 {
     padding: 5% 0 1% 0;
     text-align: center;
   }
+
   .review__text {
     color: $paragraph-color;
     font-size: 20px;
     @include f-center;
     margin-bottom: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
     text-align: center;
   }
-  .carousel-inner {
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+
+  .carousel {
+    margin-top: 50px;
   }
+
+  .carousel-inner {
+    height: 400px;
+  }
+
+  .carousel-caption {
+    color: $paragraph-color;
+    font-family: $main-font;
+    height: 400px;
+    top: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .carousel-caption-first {
+    background-image: url("../../images/imagesMain/imagesReview/student-first1.png");
+  }
+
+  .carousel-caption-second {
+    background-image: url("../../images/imagesMain/imagesReview/student-second1.jpg");
+  }
+
+  .carousel-caption-third {
+    background-image: url("../../images/imagesMain/imagesReview/student-third1.png");
+  }
+
+  .carousel-caption-fourth {
+    background-image: url("../../images/imagesMain/imagesReview/student-fourth1.png");
+  }
+
   .sr-only {
     color: black;
-  }
-  img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
   }
 }
 
@@ -438,6 +546,98 @@ h2 {
     .bag-standard {
       margin-right: 5%;
     }
+    .btn {
+      margin-bottom: 10px;
+      cursor: pointer;
+      @include main-button;
+      width: 10vw;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+    }
+  }
+  @include f-column;
+
+  &__title {
+    @include h2;
+    padding-top: 5%;
+    color: #425b69;
+  }
+
+  &__info {
+    @include regular-paragraphs;
+    @include f-space-between;
+    flex-direction: row;
+    padding: 2% 5% 10% 5%;
+
+    ol {
+      list-style: none;
+      padding-left: 0rem;
+    }
+
+    ol > li {
+      padding-left: 20px;
+      position: relative;
+      margin: 5px 5px 5px 8px;
+      color: $paragraph-color;
+    }
+
+    ol > li:before {
+      content: "✔";
+      position: absolute;
+      left: -10px;
+      color: rgb(5, 116, 2);
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .no:before {
+      content: "\274c";
+      position: absolute;
+      font-size: 14px;
+    }
+
+    &-bag {
+      text-align: center;
+      width: 100%;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+
+      &-description {
+        &-details {
+          text-align: start;
+          padding-left: 10px;
+          color: $paragraph-color;
+        }
+
+        &-title {
+          @include h2;
+          font-size: 20px;
+          font-weight: bold;
+          color: $paragraph-color;
+        }
+
+        &-rate {
+          @include regular-paragraphs;
+          font-size: 25px;
+          font-weight: bold;
+          color: $main-orange-color;
+          padding-bottom: 5px;
+        }
+      }
+
+      &-description:hover {
+        background: $color-hover;
+        color: rgb(0, 0, 0);
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    .bag-light,
+    .bag-standard {
+      margin-right: 5%;
+    }
+
     .btn {
       margin-bottom: 10px;
       cursor: pointer;
@@ -568,10 +768,13 @@ h2 {
       color: black;
       border-radius: 20px;
       transition: all 0.5s ease;
+      // padding: 36px;
+      // border: none;
     }
     &__left {
       padding: 24px 0 0 43px;
       overflow: hidden;
+
       .consult__text {
         h2 {
           color: #425b69;
@@ -589,14 +792,15 @@ h2 {
       }
       .consult__form {
         margin-bottom: 25px;
-        .consult__name {
-          input {
-            border: none;
-            outline: none;
-          }
-        }
         .form__reg:focus::placeholder {
           opacity: 0;
+        }
+        .form__reg {
+          background: transparent;
+          border: none;
+        }
+        .form__reg::placeholder {
+          color: #425b69;
         }
         .consult__name:after,
         .consult__number:after {
@@ -608,66 +812,54 @@ h2 {
           background: rgba(0, 0, 50, 0.4);
         }
       }
-      // input {
-      //     outline: none;
-      // }
-      // input[type="text"]:focus,
-      // input[type="number"]:focus {
-      //     outline: none;
-      // }
-      // .consult__label::placeholder {
-      //     opacity: 0;
-      // }
-      .btn {
-        max-width: 200px;
-        .btn:link,
-        .btn:visited {
-          text-transform: uppercase;
-          text-decoration: none;
-          padding: 10px 15px;
-          display: inline-block;
-          border-radius: 100px;
-          transition: all 0.2s;
-          position: absolute;
-        }
-        .btn:hover {
-          transform: translateY(-3px);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
-        .btn:active {
-          transform: translateY(-1px);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-        }
-        .btn-orange {
-          background-color: $main-orange-color;
-          color: rgb(255, 255, 255);
-        }
-        .btn::after {
-          content: "";
-          display: inline-block;
-          height: 100%;
-          width: 100%;
-          border-radius: 100px;
-          position: absolute;
-          top: 0;
-          left: 0;
-          z-index: -1;
-          transition: all 0.4s;
-        }
-        .btn-orange::after {
-          background-color: $main-orange-color;
-        }
-        .btn:hover::after {
-          transform: scaleX(1.4) scaleY(1.6);
-          opacity: 0;
-        }
-      }
     }
-    &__right {
-      img {
-        max-width: 600px;
-        min-height: 350px;
+    input[type="text"]:focus,
+    input[type="number"]:focus {
+      outline: none;
+    }
+    .btn {
+      max-width: 200px;
+      font-size: 15px;
+      .btn:link,
+      .btn:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: inline-block;
+        border-radius: 100px;
+        transition: all 0.2s;
+        position: absolute;
+      }
+      .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      .btn:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      }
+      .btn-orange {
+        background-color: $main-orange-color;
+        color: rgb(255, 255, 255);
+      }
+      .btn::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
         width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.4s;
+      }
+      .btn-orange::after {
+        background-color: $main-orange-color;
+      }
+      .btn:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
       }
     }
     .close-popup {
