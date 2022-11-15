@@ -430,9 +430,18 @@ h2 {
   flex-direction: column;
   align-items: center;
 }
+.gallery__text {
+  text-align: center;
+  color: #454545;
+}
+.gallery__text .bold {
+  font-weight: bold;
+}
 .gallery__container {
-  columns: 5 200px;
-  column-gap: 1.5rem;
+  -moz-columns: 5 200px;
+       columns: 5 200px;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
   width: 90%;
   margin: 0 auto;
 }
@@ -591,21 +600,38 @@ h2 {
   display: flex;
   justify-content: center;
   margin-bottom: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
   text-align: center;
 }
+.review .carousel {
+  margin-top: 50px;
+}
 .review .carousel-inner {
-  height: auto;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+  height: 400px;
+}
+.review .carousel-caption {
+  color: #454545;
+  font-family: "Roboto Slab", serif;
+  height: 400px;
+  top: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.review .carousel-caption-first {
+  background-image: url("../../images/imagesMain/imagesReview/student-first1.png");
+}
+.review .carousel-caption-second {
+  background-image: url("../../images/imagesMain/imagesReview/student-second1.jpg");
+}
+.review .carousel-caption-third {
+  background-image: url("../../images/imagesMain/imagesReview/student-third1.png");
+}
+.review .carousel-caption-fourth {
+  background-image: url("../../images/imagesMain/imagesReview/student-fourth1.png");
 }
 .review .sr-only {
   color: black;
-}
-.review img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
 }
 
 .price {
@@ -856,6 +882,12 @@ h2 {
   border: none;
   outline: none;
 }
+.request .consult__left .consult__form .form__reg:focus::-moz-placeholder {
+  opacity: 0;
+}
+.request .consult__left .consult__form .form__reg:focus:-ms-input-placeholder {
+  opacity: 0;
+}
 .request .consult__left .consult__form .form__reg:focus::placeholder {
   opacity: 0;
 }
@@ -1003,7 +1035,8 @@ h2 {
   padding: 20px 20px 0 20px;
 }
 .questions__wrapper .questions__block details[open] summary ~ * {
-  animation: sweep 0.5s ease-in-out;
+  -webkit-animation: sweep 0.5s ease-in-out;
+          animation: sweep 0.5s ease-in-out;
   color: #425b69;
 }
 .questions__wrapper .questions__block summary:hover {
