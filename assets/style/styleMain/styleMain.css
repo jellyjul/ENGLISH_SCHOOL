@@ -68,19 +68,6 @@ body {
   font-family: "Roboto Slab", serif;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  overflow: hidden;
-}
-
-.container {
-  max-width: 1230px;
-  margin: 0px auto;
-  padding: 0px 15px;
-}
-
 .header {
   font-weight: 400;
   font-size: 18px;
@@ -1255,4 +1242,135 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
 .questions__wrapper .questions__block summary:hover {
   transform: translateY(-7px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .advantages h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .advantages__subtitle {
+    font-size: 18px;
+    margin: 1%;
+  }
+  .advantages__block {
+    display: grid;
+  }
+  .advantages__card h4 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .gallery h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .gallery__flags img {
+    max-width: 10%;
+  }
+  .gallery__text {
+    margin: 1% 10%;
+    font-size: 15px;
+  }
+  .gallery__container {
+    margin-top: 0;
+  }
+  .gallery__container div {
+    padding: 10px;
+  }
+  .gallery__container .grid-item-7 {
+    display: none;
+  }
+  .team h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .team h3 {
+    font-size: 20px;
+  }
+  .team__row {
+    margin: auto;
+  }
+  .team__column {
+    max-width: 100%;
+  }
+  .team__column .team__card .team__img img {
+    max-width: 80%;
+  }
+  .team__column .team__card .team__content {
+    padding: 70px 10px 10px 10px;
+  }
+  .team__column .team__card .team__content h2 {
+    font-size: 22px;
+    margin: 0;
+  }
+  .team__column .team__card .team__content h3 {
+    font-size: 18px;
+  }
+  .team__column .team__card .team__content p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .advantages h2 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .advantages__subtitle {
+    font-size: 15px;
+    margin: 8%;
+  }
+  .advantages__block {
+    display: flex;
+    flex-direction: column;
+  }
+  .advantages__card h4 {
+    font-size: 17px;
+  }
+  .gallery h2 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .gallery__flags img {
+    max-width: 10%;
+  }
+  .gallery__text {
+    margin: 5% 10%;
+    font-size: 15px;
+  }
+  .gallery__container {
+    margin-top: 0;
+  }
+  .team h2 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .team h3 {
+    font-size: 23px;
+  }
+  .team__row {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .team__column {
+    max-width: 100%;
+  }
+  .team__column .team__card .team__img img {
+    max-width: 80%;
+  }
+  .team__column .team__card .team__content {
+    padding: 75px 9px 9px 9px;
+  }
+  .team__column .team__card .team__content h3 {
+    font-size: 20px;
+  }
+  .team__column .team__card .team__content p {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=styleMain.css.map */
