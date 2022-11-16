@@ -5,6 +5,7 @@
 //--------------------------------------------------------------------------------------------//
 .wrapper {
   // background-color: #fff4f0;
+
   @include f-column;
   min-height: 100%;
   overflow: hidden;
@@ -86,7 +87,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      padding: 20px 20px 0 20px;
+      padding: 40px 20px 20px 20px;
       color: #425b69;
       text-transform: uppercase;
       font-size: 15px;
@@ -99,6 +100,11 @@
       img {
         width: 15%;
       }
+    }
+    .name__adv-block {
+    }
+    .name__advantages {
+      padding-top: 10px;
     }
   }
 
@@ -146,6 +152,7 @@
   @include font-header;
   background-color: white;
   // background-color: #fff4f08a;
+  background-color: rgba(238, 236, 222, 1);
   margin-top: -700px;
   &__container {
     margin-bottom: 30px;
@@ -205,6 +212,10 @@
   }
 }
 //---------------------------------------advantages----------------------------------------------//
+
+.advantages-background {
+  background-color: rgba(238, 236, 222, 1);
+}
 .advantages {
   h2 {
     @include h2;
@@ -262,6 +273,7 @@
 //---------------------------gallery------------------------
 
 .gallery {
+  background-color: rgba(238, 236, 222, 1);
   @include f-center;
   @include f-column;
   align-items: center;
@@ -328,6 +340,7 @@
 
 //---------------------------team------------------------
 .team {
+  background-color: rgba(238, 236, 222, 1);
   &__container {
     width: 100%;
     margin: auto;
@@ -426,6 +439,7 @@
 
 //---------------------------------------review----------------------------------------------//
 .review {
+  // background-color: rgba(238, 236, 222, 1);
   .review__title {
     @include h2;
     padding: 5% 0 1% 0;
@@ -482,6 +496,7 @@
 
 //-----------------------------------------price---------------------------------------------//
 .price {
+  background-color: rgba(238, 236, 222, 1);
   @include f-column;
   &__title {
     @include h2;
@@ -657,10 +672,12 @@
 
 //-----------------------------------------request---------------------------------------------//
 .request {
+  background-color: rgba(238, 236, 222, 1);
   background-image: url("../../images/imagesMain/imgRequest/bg.png");
+
   display: flex;
   min-height: 430px;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
   //max-width: 1200px;
   //margin: 0 auto;
   &__img {
@@ -888,8 +905,9 @@
     }
   }
 }
-
+//--------------------------------------------questions----------------------------------
 .questions {
+  background-color: rgba(238, 236, 222, 1);
   &__wrapper {
     font-family: $main-font;
     max-width: 1200px;
@@ -898,6 +916,7 @@
       @include h2;
       color: #425b69;
       letter-spacing: 3px;
+      padding-top: 20px;
     }
     .questions__block {
       display: flex;
