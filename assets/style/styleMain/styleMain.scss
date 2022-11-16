@@ -978,3 +978,161 @@
     }
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .advantages {
+    h2 {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 50px;
+    }
+    &__subtitle {
+      font-size: 18px;
+      margin: 1%;
+    }
+    &__wrapper {
+    }
+    &__block {
+      display: grid;
+    }
+    &__card {
+      h4 {
+        font-size: 15px;
+        text-align: center;
+      }
+    }
+  }
+  .gallery {
+    h2 {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 50px;
+    }
+    &__flags {
+      img {
+        max-width: 10%;
+      }
+    }
+    &__text {
+      margin: 1% 10%;
+      font-size: 15px;
+    }
+    &__container {
+      margin-top: 0;
+      div {
+        padding: 10px;
+      }
+      .grid-item-7 {
+        display: none;
+      }
+    }
+  }
+  .team {
+    h2 {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 50px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    &__row {
+      margin: auto;
+    }
+    &__column {
+      max-width: 100%;
+      .team__card {
+        .team__img {
+          img {
+            max-width: 80%;
+          }
+        }
+        .team__content {
+          padding: 70px 10px 10px 10px;
+          h2 {
+            font-size: 22px;
+            margin: 0;
+          }
+          h3 {
+            font-size: 18px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .advantages {
+    h2 {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 30px;
+    }
+    &__subtitle {
+      font-size: 15px;
+      margin: 8%;
+    }
+    &__block {
+      @include f-column;
+    }
+    &__card {
+      h4 {
+        font-size: 17px;
+      }
+    }
+  }
+  .gallery {
+    h2 {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 30px;
+    }
+    &__flags {
+      img {
+        max-width: 10%;
+      }
+    }
+    &__text {
+      margin: 5% 10%;
+      font-size: 15px;
+    }
+    &__container {
+      margin-top: 0;
+    }
+  }
+  .team {
+    h2 {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 30px;
+    }
+    h3 {
+      font-size: 23px;
+    }
+    &__row {
+      @include f-column;
+      margin: auto;
+    }
+    &__column {
+      max-width: 100%;
+      .team__card {
+        .team__img {
+          img {
+            max-width: 80%;
+          }
+        }
+        .team__content {
+          padding: 75px 9px 9px 9px;
+          h3 {
+            font-size: 20px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
