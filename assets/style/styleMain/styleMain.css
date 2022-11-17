@@ -68,7 +68,6 @@ body {
   font-family: "Roboto Slab", serif;
 }
 
-
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -524,7 +523,6 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   line-height: 137%;
   color: rgb(243, 243, 243);
   background-color: white;
-  background-color: rgb(238, 236, 222);
   margin-top: -700px;
 }
 .about__container {
@@ -594,7 +592,7 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
 }
 
 .advantages-background {
-  background-color: rgb(238, 236, 222);
+  background-color: white;
 }
 
 .advantages {
@@ -662,7 +660,7 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
 }
 
 .gallery {
-  background-color: rgb(238, 236, 222);
+  background-color: white;
   display: flex;
   justify-content: center;
   display: flex;
@@ -737,7 +735,7 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
 }
 
 .team {
-  background-color: rgb(238, 236, 222);
+  background-color: white;
 }
 .team__container {
   width: 100%;
@@ -896,7 +894,7 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
 }
 
 .price {
-  background-color: rgb(238, 236, 222);
+  background-color: white;
   display: flex;
   flex-direction: column;
   display: flex;
@@ -1112,7 +1110,6 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
 }
 
 .request {
-  background-color: rgb(238, 236, 222);
   background-image: url("../../images/imagesMain/imgRequest/bg.png");
   display: flex;
   min-height: 430px;
@@ -1345,9 +1342,6 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.questions {
-  background-color: rgb(238, 236, 222);
-}
 .questions__wrapper {
   font-family: "Roboto Slab", serif;
   max-width: 1200px;
@@ -1425,7 +1419,6 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   transform: translateY(-7px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
 
 @media (max-width: 1200px) {
   .about__name {
@@ -1859,7 +1852,6 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
     margin-top: 50px;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .advantages h2 {
     font-weight: 700;
