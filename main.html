@@ -11,40 +11,50 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/style/styleMain/styleMain.css" />
+    <link rel="stylesheet" href="./assets/style/styleHeader/styleHeader.css" />
+    <link rel="stylesheet" href="./assets/style/styleHeader/script.js" />
     <title>Document</title>
   </head>
 
   <body>
     <header class="header">
       <div class="header__container container">
-        <div class="header__row">
-          <nav class="header__menu menu">
-            <ul class="header__menu-list">
-              <li class="header__menu-item">
-                <a href="#about" class="header__menu-link">О нас</a>
-              </li>
-              <li class="header__menu-item header__menu-item_l">
-                <a href="#team" class="header__menu-link">Команда</a>
-              </li>
-              <div class="header__logo">
-                <a href="" class="header__logo-image">
-                  <img
-                    src="./assets/images/imagesHeader/logo-round.png"
-                    alt=""
-                  />
-                </a>
+          <div class="header__body">
+              <div class="header__logo-b">
+                  <a href="" class="header__logo-image-b">
+                      <img src="./assets/images/imagesHeader/logo-round.png" alt="" />
+                  </a>
               </div>
-              <li class="header__menu-item header__menu-item_r">
-                <a href="#price" class="header__menu-link">Цены</a>
-              </li>
-              <li class="header__menu-item">
-                <a href="#contacts" class="header__menu-link">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+              <div class="header__burger">
+                  <span></span>
+                </div>
+              <nav class="header__menu">
+                  <ul class="header__list">
+                      <li class="header__item">
+                          <a href="#about" class="header__link">О нас</a>
+                      </li>
+                      <li class="header__item header__item_l">
+                          <a href="#team" class="header__link">Команда</a>
+                      </li>
+                      <div class="header__logo">
+                        <a href="" class="header__logo-image">
+                            <img src="./assets/images/imagesHeader/logo-round.png" alt="" />
+                        </a>
+                    </div>
+                      <li class="header__item header__item_r">
+                          <a href="#price" class="header__link">Цены</a>
+                      </li>
+                      <li class="header__item">
+                          <a href="#contacts" class="header__link">Контакты</a>
+                      </li>
+                  </ul>
+              </nav>
+
+
+          </div>
       </div>
-    </header>
+      </div>
+  </header>
     <main class="wrapper">
       <div class="floating-button">
         <a href="#popup"
@@ -57,7 +67,8 @@
           <div class="name__top">
             <div class="name__top-title">Lingua Forward</div>
             <div class="name__top-text">
-              <h5>Учим на английском говорить, читать, думать и писать.</h5>
+              <h5>Учим на английском говорить,</h5>
+              <h5>читать, думать и писать.</h5>
               <div class="name__adv">
                 <div class="name__adv-block">
                   <img src="./assets/images/imagesMain/education.png" alt="" />
@@ -94,7 +105,8 @@
       </div>
       <div class="about" id="about">
         <div class="about__container container">
-          <div class="about__name">Lingua Forward</div>
+          <div class="about__name">
+            <p>Lingua </p> <p>Forward</p></div>
           <div class="about__body">
             <div class="about__left">
               <div class="about__left-content">
@@ -139,79 +151,82 @@
         </div>
       </div>
       <div class="aim"></div>
-      <div class="advantages container" id="education">
-        <h2>Особенности обучения в нашей школе</h2>
-        <div class="advantages__subtitle">
-          Наша цель - максимальное погружение в язык и развитие потенциала
-          каждого, кто его изучает.
-        </div>
-        <div class="advantages__wrapper">
-          <div class="advantages__block">
-            <div class="advantages__card">
-              <img
-                src="./assets/images/imagesMain/imagesAdvantage/boy.png"
-                alt=""
-              />
-              <h4>Носители языка</h4>
-              <h5>
-                Носители языка ведут занятия на всех уровнях, и только Вам
-                выбирать, к кому идти на урок.
-              </h5>
-            </div>
-            <div class="advantages__card">
-              <img
-                src="./assets/images/imagesMain/imagesAdvantage/big-ben.png"
-                alt=""
-              />
-              <h4>Экскурсии по Лондону</h4>
-              <h5>
-                Вы познакомитесь с легендарными местами, попробуете местную еду
-                и попрактикуете свой язык.
-              </h5>
-            </div>
-            <div class="advantages__card">
-              <img
-                src="./assets/images/imagesMain/imagesAdvantage/twin.png"
-                alt=""
-              />
-              <h4>Двухфакторная подготовка</h4>
-              <h5>
-                Теорию, грамматику языка объясняется русским преподавателем, а
-                практика - с носителем языка.
-              </h5>
-            </div>
-            <div class="advantages__card">
-              <img
-                src="./assets/images/imagesMain/imagesAdvantage/school.png"
-                alt=""
-              />
-              <h4>Школа пансион в Англии</h4>
-              <h5>
-                Погружение в аутентичную культуру и общение не только с местными
-                жителями, но и с другими иностранными студентами.
-              </h5>
-            </div>
-            <div class="advantages__card">
-              <img
-                src="./assets/images/imagesMain/imagesAdvantage/learning.png"
-                alt=""
-              />
-              <h4>Знания через практику</h4>
-              <h5>
-                На занятиях большое внимание уделяется практике, где дети
-                понимают теорию на практике и применяют знания в реальной жизни.
-              </h5>
-            </div>
-            <div class="advantages__card">
-              <img
-                src="./assets/images/imagesMain/imagesAdvantage/clock (1).png"
-                alt=""
-              />
-              <h4>Гибкий график</h4>
-              <h5>
-                Курс можно легко подстроить под ваш режим дня. Вы будете сами
-                формировать план занятий и выбирать часы посещения.
-              </h5>
+      <div class="advantages-background">
+        <div class="advantages container" id="education">
+          <h2>Особенности обучения в нашей школе</h2>
+          <div class="advantages__subtitle">
+            Наша цель - максимальное погружение в язык и развитие потенциала
+            каждого, кто его изучает.
+          </div>
+          <div class="advantages__wrapper">
+            <div class="advantages__block">
+              <div class="advantages__card">
+                <img
+                  src="./assets/images/imagesMain/imagesAdvantage/boy.png"
+                  alt=""
+                />
+                <h4>Носители языка</h4>
+                <h5>
+                  Носители языка ведут занятия на всех уровнях, и только Вам
+                  выбирать, к кому идти на урок.
+                </h5>
+              </div>
+              <div class="advantages__card">
+                <img
+                  src="./assets/images/imagesMain/imagesAdvantage/big-ben.png"
+                  alt=""
+                />
+                <h4>Экскурсии по Лондону</h4>
+                <h5>
+                  Вы познакомитесь с легендарными местами, попробуете местную
+                  еду и попрактикуете свой язык.
+                </h5>
+              </div>
+              <div class="advantages__card">
+                <img
+                  src="./assets/images/imagesMain/imagesAdvantage/twin.png"
+                  alt=""
+                />
+                <h4>Двухфакторная подготовка</h4>
+                <h5>
+                  Теорию, грамматику языка объясняется русским преподавателем, а
+                  практика - с носителем языка.
+                </h5>
+              </div>
+              <div class="advantages__card">
+                <img
+                  src="./assets/images/imagesMain/imagesAdvantage/school.png"
+                  alt=""
+                />
+                <h4>Школа пансион в Англии</h4>
+                <h5>
+                  Погружение в аутентичную культуру и общение не только с
+                  местными жителями, но и с другими иностранными студентами.
+                </h5>
+              </div>
+              <div class="advantages__card">
+                <img
+                  src="./assets/images/imagesMain/imagesAdvantage/learning.png"
+                  alt=""
+                />
+                <h4>Знания через практику</h4>
+                <h5>
+                  На занятиях большое внимание уделяется практике, где дети
+                  понимают теорию на практике и применяют знания в реальной
+                  жизни.
+                </h5>
+              </div>
+              <div class="advantages__card">
+                <img
+                  src="./assets/images/imagesMain/imagesAdvantage/clock (1).png"
+                  alt=""
+                />
+                <h4>Гибкий график</h4>
+                <h5>
+                  Курс можно легко подстроить под ваш режим дня. Вы будете сами
+                  формировать план занятий и выбирать часы посещения.
+                </h5>
+              </div>
             </div>
           </div>
         </div>
@@ -786,5 +801,7 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./assets/style/styleHeader/script.js"></script>
   </body>
 </html>
