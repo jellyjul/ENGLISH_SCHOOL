@@ -68,6 +68,7 @@ body {
   font-family: "Roboto Slab", serif;
 }
 
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -1425,6 +1426,7 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+
 @media (max-width: 1200px) {
   .about__name {
     font-size: 110px;
@@ -1857,6 +1859,7 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
     margin-top: 50px;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .advantages h2 {
     font-weight: 700;
