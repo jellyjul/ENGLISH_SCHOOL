@@ -130,7 +130,7 @@ li {
     &__body {
       justify-content: space-around;
       min-height: 100px;
-      padding: 0px;
+      padding: 15px;
     }
     &__logo {
       display: none;
@@ -155,7 +155,7 @@ li {
       height: 20px;
       position: relative;
       z-index: 5;
-      margin-right: 30px;
+      margin: 0 auto;
       padding-right: 20px;
       span {
         position: absolute;
@@ -230,7 +230,8 @@ li {
     }
   }
 }
-@media (max-width: 585px) {
+
+@media (max-width: 630px) {
   .header {
     &__menu {
       background: url("../../images/imagesHeader/400.jpg");
@@ -270,9 +271,6 @@ li {
       li {
         margin: 0px 0px 15px 0px;
       }
-    }
-    &__burger {
-      padding-right: 30px;
     }
   }
 }

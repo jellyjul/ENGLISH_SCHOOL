@@ -155,7 +155,7 @@ li {
   .header__body {
     justify-content: space-around;
     min-height: 100px;
-    padding: 0px;
+    padding: 15px;
   }
   .header__logo {
     display: none;
@@ -179,7 +179,7 @@ li {
     height: 20px;
     position: relative;
     z-index: 5;
-    margin-right: 30px;
+    margin: 0 auto;
     padding-right: 20px;
   }
   .header__burger span {
@@ -248,7 +248,7 @@ li {
     margin: 0px 0px 20px 0px;
   }
 }
-@media (max-width: 585px) {
+@media (max-width: 630px) {
   .header__menu {
     background: url("../../images/imagesHeader/400.jpg");
     width: 249px;
@@ -282,8 +282,5 @@ li {
   }
   .header__list li {
     margin: 0px 0px 15px 0px;
-  }
-  .header__burger {
-    padding-right: 30px;
   }
 }/*# sourceMappingURL=styleHeader.css.map */
