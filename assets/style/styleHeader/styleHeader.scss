@@ -19,7 +19,7 @@
   width: 100%;
   height: 140px;
   background-color: $main-orange-color;
-  z-index: 2;
+  z-index: 5;
 }
 
 .header {
@@ -59,7 +59,7 @@
     display: flex;
     max-width: 110px;
 
-    z-index: 3;
+    z-index: 5;
   }
 
   &__menu {
@@ -69,7 +69,7 @@
   &__list {
     display: flex;
     position: relative;
-    z-index: 2;
+    z-index: 5;
     flex-wrap: wrap;
     padding-left: 0px;
     margin: 0px;
@@ -125,7 +125,7 @@ li {
       }
 
       flex: 0 0 70px;
-      z-index: 3;
+      z-index: 5;
     }
     &__body {
       justify-content: space-around;
@@ -136,13 +136,13 @@ li {
       display: none;
     }
     &__item {
-      padding: 0px 0px 0px 35px;
+      padding: 0px 0px 0px 80px;
     }
     &__item_l {
-      padding: 0px 0px 0px 35px;
+      padding: 0px 0px 0px 80px;
     }
     &__item_r {
-      padding: 0px 0px 0px 35px;
+      padding: 0px 0px 0px 80px;
     }
     &__link {
       font-size: 24px;
@@ -154,8 +154,9 @@ li {
       width: 30px;
       height: 20px;
       position: relative;
-      z-index: 3;
+      z-index: 5;
       margin-right: 30px;
+      padding-right: 20px;
       span {
         position: absolute;
         background-color: rgba(243, 243, 243, 1);
@@ -165,6 +166,11 @@ li {
         top: 9px;
         transition: all 0.3s ease 0s;
       }
+    }
+    &__burger.active {
+      max-width: 1230px;
+      margin: 0px auto;
+      padding: 0px 15px;
     }
     &__burger::before,
     &__burger::after {
@@ -199,18 +205,19 @@ li {
     &__menu {
       position: fixed;
       top: -100%;
-      left: 0;
+      // right: 20%;
       width: 100%;
       height: 100%;
       overflow: auto;
       transition: all 0.3s ease 0s;
       background-color: cadetblue;
-      background: url(../../images/imagesMain/imgRequest/2_2.jpeg);
-      border-radius: 10px;
+      background: url("../../images/imagesHeader/500.jpg");
+      border-radius: 20px;
       padding: 120px 10px 20px 10px;
-      width: 30%;
-      height: 300px;
+      width: 311px;
+      height: 500px;
       margin: 0px 15px;
+      z-index: 4;
     }
     &__menu.active {
       top: 0;
@@ -220,6 +227,52 @@ li {
       li {
         margin: 0px 0px 20px 0px;
       }
+    }
+  }
+}
+@media (max-width: 585px) {
+  .header {
+    &__menu {
+      background: url("../../images/imagesHeader/400.jpg");
+      width: 249px;
+      height: 400px;
+    }
+    &__link {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 105%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    &__menu {
+      background: url("../../images/imagesHeader/300.jpg");
+      width: 187px;
+      height: 300px;
+    }
+    &__link {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 105%;
+    }
+    &__item {
+      padding: 0px 0px 0px 50px;
+    }
+    &__item_l {
+      padding: 0px 0px 0px 50px;
+    }
+    &__item_r {
+      padding: 0px 0px 0px 50px;
+    }
+    &__list {
+      li {
+        margin: 0px 0px 15px 0px;
+      }
+    }
+    &__burger {
+      padding-right: 30px;
     }
   }
 }
