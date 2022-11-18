@@ -4,20 +4,15 @@
 
 //--------------------------------------------------------------------------------------------//
 .wrapper {
-  // background-color: #fff4f0;
-
   @include f-column;
   min-height: 100%;
   overflow: hidden;
-  font-family: "Roboto Slab";
   .floating-button {
     position: fixed;
     z-index: 10;
     right: 30px;
     bottom: 30px;
-    // background-color: #ad6cb087;
-    // ;
-    background-color: rgb(233 116 47 / 72%);
+    background: #f088008d;
     border-radius: 50%;
     width: 70px;
     height: 70px;
@@ -57,7 +52,7 @@
   @include font-header;
   text-align: center;
   position: relative;
-  z-index: 3;
+  z-index: 2;
   &__body {
     margin-top: -500px;
     @include f-column;
@@ -104,8 +99,6 @@
     }
     .name__adv-block {
       flex: 0 1 50%;
-    }
-    .name__advantages {
     }
   }
 
@@ -176,7 +169,7 @@
     padding: 30px 20px;
     text-align: center;
     position: relative;
-    z-index: 4;
+    z-index: 3;
   }
   &__left {
     @include f-column;
@@ -941,7 +934,8 @@
         // background: rgb(252, 132, 20);
         //background: $color-hover;
         width: 700px;
-        box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
         border-radius: 8px;
         overflow: hidden;
       }
@@ -969,8 +963,8 @@
         top: 26px;
         right: 12px;
         color: transparent;
-        background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50% 50% / 1em
-          1em;
+        background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg")
+          no-repeat 50% 50% / 1em 1em;
         width: 1em;
         height: 1em;
         content: "";
@@ -1265,6 +1259,11 @@
       max-width: 300px;
     }
   }
+  .floating-button {
+    max-width: 1230px;
+    margin: 0px auto;
+    padding: 0px 15px;
+  }
 }
 
 @media (max-width: 670px) {
@@ -1488,7 +1487,7 @@
     }
   }
   .about {
-    margin-top: -401px;
+    margin-top: -392px;
     &__body {
     }
     &__name {
