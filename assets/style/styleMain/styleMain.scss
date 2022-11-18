@@ -4,20 +4,15 @@
 
 //--------------------------------------------------------------------------------------------//
 .wrapper {
-  // background-color: #fff4f0;
-
   @include f-column;
   min-height: 100%;
   overflow: hidden;
-  font-family: "Roboto Slab";
   .floating-button {
     position: fixed;
     z-index: 10;
     right: 30px;
     bottom: 30px;
-    // background-color: #ad6cb087;
-    // ;
-    background-color: rgb(233 116 47 / 72%);
+    background: #f088008d;
     border-radius: 50%;
     width: 70px;
     height: 70px;
@@ -57,7 +52,7 @@
   @include font-header;
   text-align: center;
   position: relative;
-  z-index: 3;
+  z-index: 2;
   &__body {
     margin-top: -500px;
     @include f-column;
@@ -105,8 +100,6 @@
     .name__adv-block {
       flex: 0 1 50%;
     }
-    .name__advantages {
-    }
   }
 
   &__top-button {
@@ -153,7 +146,6 @@
   @include font-header;
   background-color: white;
   // background-color: #fff4f08a;
-  background-color: rgba(238, 236, 222, 1);
   margin-top: -700px;
   &__container {
     margin-bottom: 30px;
@@ -177,7 +169,7 @@
     padding: 30px 20px;
     text-align: center;
     position: relative;
-    z-index: 4;
+    z-index: 3;
   }
   &__left {
     @include f-column;
@@ -223,7 +215,7 @@
 //---------------------------------------advantages----------------------------------------------//
 
 .advantages-background {
-  background-color: rgba(238, 236, 222, 1);
+  background-color: white;
 }
 .advantages {
   padding-top: 30px;
@@ -284,7 +276,7 @@
 //---------------------------gallery------------------------
 
 .gallery {
-  background-color: rgba(238, 236, 222, 1);
+  background-color: white;
   @include f-center;
   @include f-column;
   align-items: center;
@@ -351,7 +343,7 @@
 
 //---------------------------team------------------------
 .team {
-  background-color: rgba(238, 236, 222, 1);
+  background-color: white;
   &__container {
     width: 100%;
     margin: auto;
@@ -507,7 +499,7 @@
 
 //-----------------------------------------price---------------------------------------------//
 .price {
-  background-color: rgba(238, 236, 222, 1);
+  background-color: white;
   @include f-column;
   &__title {
     @include h2;
@@ -683,7 +675,7 @@
 
 //-----------------------------------------request---------------------------------------------//
 .request {
-  background-color: rgba(238, 236, 222, 1);
+  //background-color: rgba(238, 236, 222, 1);
   background-image: url("../../images/imagesMain/imgRequest/bg.png");
 
   display: flex;
@@ -918,7 +910,7 @@
 }
 //--------------------------------------------questions----------------------------------
 .questions {
-  background-color: rgba(238, 236, 222, 1);
+  //background-color: rgba(238, 236, 222, 1);
   &__wrapper {
     font-family: $main-font;
     max-width: 1200px;
@@ -1005,164 +997,6 @@
       //     outline: 0;
       //     box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3), inset 0 0 2px rgba(0, 0, 0, 0.3);
       // }
-    }
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .advantages {
-    h2 {
-      font-weight: 700;
-      font-size: 30px;
-      line-height: 50px;
-    }
-    &__subtitle {
-      font-size: 18px;
-      margin: 1%;
-    }
-    &__wrapper {
-    }
-    &__block {
-      display: grid;
-    }
-    &__card {
-      h4 {
-        font-size: 15px;
-        text-align: center;
-      }
-    }
-  }
-  .gallery {
-    h2 {
-      font-weight: 700;
-      font-size: 30px;
-      line-height: 50px;
-    }
-    &__flags {
-      img {
-        max-width: 10%;
-      }
-    }
-    &__text {
-      margin: 1% 10%;
-      font-size: 15px;
-    }
-    &__container {
-      margin-top: 0;
-      div {
-        padding: 10px;
-      }
-      .grid-item-7 {
-        display: none;
-      }
-    }
-  }
-  .team {
-    h2 {
-      font-weight: 700;
-      font-size: 30px;
-      line-height: 50px;
-    }
-    h3 {
-      font-size: 20px;
-    }
-    &__row {
-      margin: auto;
-    }
-    &__column {
-      max-width: 100%;
-      .team__card {
-        .team__img {
-          img {
-            max-width: 80%;
-          }
-        }
-        .team__content {
-          padding: 70px 10px 10px 10px;
-          h2 {
-            font-size: 22px;
-            margin: 0;
-          }
-          h3 {
-            font-size: 18px;
-          }
-          p {
-            font-size: 14px;
-          }
-        }
-      }
-    }
-  }
-}
-@media screen and (max-width: 767px) {
-  .advantages {
-    h2 {
-      font-weight: 700;
-      font-size: 28px;
-      line-height: 30px;
-    }
-    &__subtitle {
-      font-size: 15px;
-      margin: 8%;
-    }
-    &__block {
-      @include f-column;
-    }
-    &__card {
-      h4 {
-        font-size: 17px;
-      }
-    }
-  }
-  .gallery {
-    h2 {
-      font-weight: 700;
-      font-size: 28px;
-      line-height: 30px;
-    }
-    &__flags {
-      img {
-        max-width: 10%;
-      }
-    }
-    &__text {
-      margin: 5% 10%;
-      font-size: 15px;
-    }
-    &__container {
-      margin-top: 0;
-    }
-  }
-  .team {
-    h2 {
-      font-weight: 700;
-      font-size: 28px;
-      line-height: 30px;
-    }
-    h3 {
-      font-size: 23px;
-    }
-    &__row {
-      @include f-column;
-      margin: auto;
-    }
-    &__column {
-      max-width: 100%;
-      .team__card {
-        .team__img {
-          img {
-            max-width: 80%;
-          }
-        }
-        .team__content {
-          padding: 75px 9px 9px 9px;
-          h3 {
-            font-size: 20px;
-          }
-          p {
-            font-size: 14px;
-          }
-        }
-      }
     }
   }
 }
@@ -1424,6 +1258,11 @@
       max-width: 300px;
     }
   }
+  .floating-button {
+    max-width: 1230px;
+    margin: 0px auto;
+    padding: 0px 15px;
+  }
 }
 
 @media (max-width: 670px) {
@@ -1647,7 +1486,7 @@
     }
   }
   .about {
-    margin-top: -401px;
+    margin-top: -392px;
     &__body {
     }
     &__name {
