@@ -153,7 +153,6 @@
   @include font-header;
   background-color: white;
   // background-color: #fff4f08a;
-  background-color: rgba(238, 236, 222, 1);
   margin-top: -700px;
   &__container {
     margin-bottom: 30px;
@@ -223,7 +222,7 @@
 //---------------------------------------advantages----------------------------------------------//
 
 .advantages-background {
-  background-color: rgba(238, 236, 222, 1);
+  background-color: white;
 }
 .advantages {
   padding-top: 30px;
@@ -284,7 +283,7 @@
 //---------------------------gallery------------------------
 
 .gallery {
-  background-color: rgba(238, 236, 222, 1);
+  background-color: white;
   @include f-center;
   @include f-column;
   align-items: center;
@@ -351,7 +350,7 @@
 
 //---------------------------team------------------------
 .team {
-  background-color: rgba(238, 236, 222, 1);
+  background-color: white;
   &__container {
     width: 100%;
     margin: auto;
@@ -507,7 +506,7 @@
 
 //-----------------------------------------price---------------------------------------------//
 .price {
-  background-color: rgba(238, 236, 222, 1);
+  background-color: white;
   @include f-column;
   &__title {
     @include h2;
@@ -683,7 +682,7 @@
 
 //-----------------------------------------request---------------------------------------------//
 .request {
-  background-color: rgba(238, 236, 222, 1);
+  //background-color: rgba(238, 236, 222, 1);
   background-image: url("../../images/imagesMain/imgRequest/bg.png");
 
   display: flex;
@@ -918,7 +917,7 @@
 }
 //--------------------------------------------questions----------------------------------
 .questions {
-  background-color: rgba(238, 236, 222, 1);
+  //background-color: rgba(238, 236, 222, 1);
   &__wrapper {
     font-family: $main-font;
     max-width: 1200px;
@@ -942,8 +941,7 @@
         // background: rgb(252, 132, 20);
         //background: $color-hover;
         width: 700px;
-        box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1),
-          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         border-radius: 8px;
         overflow: hidden;
       }
@@ -971,8 +969,8 @@
         top: 26px;
         right: 12px;
         color: transparent;
-        background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg")
-          no-repeat 50% 50% / 1em 1em;
+        background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50% 50% / 1em
+          1em;
         width: 1em;
         height: 1em;
         content: "";
