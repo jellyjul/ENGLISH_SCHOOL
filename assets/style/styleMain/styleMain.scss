@@ -69,11 +69,49 @@
         flex: 1 1 auto;
     }
 
-    &__top-title {
-        font-weight: 800;
-        font-size: 50px;
-        text-transform: uppercase;
-        padding: 30px 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    font-weight: 800;
+    font-size: 130px;
+    line-height: 105%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: #425b69;
+    padding: 30px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+  }
+  &__left {
+    @include f-column;
+    flex: 0 1 50%;
+  }
+  &__left-content {
+    flex: 1 1 auto;
+  }
+  &__title {
+    text-align: center;
+
+    text-transform: uppercase;
+    padding: 10px 0px;
+    color: #425b69;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+    color: #f08700;
+  }
+  &__text {
+    padding: 20px;
+    color: $paragraph-color;
+    text-align: justify;
+  }
+  &__image {
+    display: flex;
+    margin: 0 auto;
+    max-width: 462px;
+    padding: 0px;
+    img {
+      width: 100%;
     }
 
     &__top-text {
@@ -1029,7 +1067,6 @@
             // }
         }
     }
-}
 
 //-------------------------------------адаптив-main-name-about-----------------------------------------
 
@@ -1167,14 +1204,10 @@
             font-size: 86px;
         }
 
-        &__title {
-            font-size: 28px;
-        }
 
-        &__text {
-            font-size: 16px;
-        }
-
+    &__text {
+      font-size: 16px;
+    }
         &__image {
             margin: 0px;
             max-width: 380px;
@@ -1606,9 +1639,22 @@
 }
 
 @media (max-width: 375px) {
-    .image__block {
-        min-height: 200px;
-        background: url("../../images/imagesMain/background200.png");
+
+  .image__block {
+    min-height: 200px;
+    background: url("../../images/imagesMain/background200.png");
+  }
+
+  .name {
+    &__body {
+      margin-top: -120px;
+
+      min-height: 300px;
+    }
+    &__top-title {
+      font-weight: 400;
+      font-size: 12px;
+      padding: 20px 0px 10px 0px;
     }
 
     .name {
@@ -1626,10 +1672,47 @@
             }
         }
 
-        &__adv-block {
-            img {
-                width: 100%;
-            }
+
+    &__advantages {
+      padding-top: 3px;
+      font-size: 6px;
+    }
+    &__image {
+      display: none;
+    }
+  }
+  .about {
+    margin-top: -264px;
+    &__body {
+    }
+    &__name {
+      font-size: 28px;
+    }
+
+    &__image {
+      max-width: 130px;
+      margin: 5px;
+    }
+    &__left {
+      flex-direction: column;
+      margin-top: 30px;
+    }
+    &__image {
+      max-width: 270px;
+      margin: 0 auto;
+    }
+    &__right-content {
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+    }
+    &__left-content {
+      margin-top: 50px;
+    }
+    &__text {
+      padding-bottom: 0px;
+    }
+  }
+}
 
             max-width: 150px;
             height: 50px;
