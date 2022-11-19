@@ -69,49 +69,11 @@
         flex: 1 1 auto;
     }
 
-    display: flex;
-    flex-wrap: nowrap;
-    font-weight: 800;
-    font-size: 130px;
-    line-height: 105%;
-    letter-spacing: -0.04em;
-    text-transform: uppercase;
-    color: #425b69;
-    padding: 30px 20px;
-    text-align: center;
-    position: relative;
-    z-index: 3;
-  }
-  &__left {
-    @include f-column;
-    flex: 0 1 50%;
-  }
-  &__left-content {
-    flex: 1 1 auto;
-  }
-  &__title {
-    text-align: center;
-
-    text-transform: uppercase;
-    padding: 10px 0px;
-    color: #425b69;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 30px;
-    color: #f08700;
-  }
-  &__text {
-    padding: 20px;
-    color: $paragraph-color;
-    text-align: justify;
-  }
-  &__image {
-    display: flex;
-    margin: 0 auto;
-    max-width: 462px;
-    padding: 0px;
-    img {
-      width: 100%;
+    &__top-title {
+        font-weight: 800;
+        font-size: 50px;
+        text-transform: uppercase;
+        padding: 30px 0px;
     }
 
     &__top-text {
@@ -128,6 +90,7 @@
         .name__adv {
             display: flex;
             flex-wrap: wrap;
+            row-gap: 10px;
             // grid-template-columns: 1fr 1fr;
             // grid-template-rows: 1fr 1fr;
             padding: 20px 20px 20px 20px;
@@ -155,7 +118,7 @@
     &__top-button {
         @include f-center;
         flex-wrap: wrap;
-        margin: 10px 0px;
+        margin: 0px;
         background-color: $main-orange-color;
     }
 
@@ -592,7 +555,6 @@
     .carousel-caption-fourth {
         background-image: url("../../images/imagesMain/imagesReview/student-fourth1.png");
     }
-
 }
 
 //-----------------------------------------price---------------------------------------------//
@@ -617,14 +579,14 @@
             padding-left: 0rem;
         }
 
-        ol>li {
+        ol > li {
             padding-left: 20px;
             position: relative;
             margin: 5px 5px 5px 8px;
             color: $paragraph-color;
         }
 
-        ol>li:before {
+        ol > li:before {
             content: "✔";
             position: absolute;
             left: -10px;
@@ -971,14 +933,12 @@
         font-family: $main-font;
         max-width: 1200px;
         margin: 0 auto;
-
         h2 {
             @include h2;
             color: #425b69;
             letter-spacing: 3px;
             padding-top: 20px;
         }
-
         .questions__block {
             display: flex;
             flex-direction: column;
@@ -986,7 +946,6 @@
             gap: 20px;
             padding-top: 30px;
             padding-bottom: 156px;
-
             .questions__item {
                 display: block;
                 background: rgb(231 133 22 / 53%);
@@ -997,19 +956,15 @@
                 border-radius: 8px;
                 overflow: hidden;
             }
-
             summary::-webkit-details-marker {
                 display: none;
             }
-
             summary::-moz-list-bullet {
                 list-style-type: none;
             }
-
             summary::marker {
                 display: none;
             }
-
             summary {
                 display: block;
                 padding: 20px;
@@ -1021,38 +976,33 @@
                 // color: white;
                 color: #425b69;
             }
-
             summary:before {
                 top: 26px;
                 right: 12px;
                 color: transparent;
-                background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50% 50% / 1em 1em;
+                background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50%
+                    50% / 1em 1em;
                 width: 1em;
                 height: 1em;
                 content: "";
                 position: absolute;
                 transition: transform 0.5s;
             }
-
-            details[open]>summary:before {
+            details[open] > summary:before {
                 transform: scale(1, -1);
             }
-
-            summary~* {
+            summary ~ * {
                 padding: 20px 20px 0 20px;
             }
-
-            details[open] summary~* {
+            details[open] summary ~ * {
                 animation: sweep 0.5s ease-in-out;
                 // color: white;
                 color: #425b69;
             }
-
             summary:hover {
                 transform: translateY(-7px);
                 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             }
-
             // @keyframes sweep {
             //     0% {
             //         opacity: 0;
@@ -1067,6 +1017,7 @@
             // }
         }
     }
+}
 
 //-------------------------------------адаптив-main-name-about-----------------------------------------
 
@@ -1196,18 +1147,18 @@
     .about {
         margin-top: -525px;
 
-        &__body {
-            // min-height: 800px;
-        }
-
         &__name {
             font-size: 86px;
         }
 
+        &__title {
+            font-size: 28px;
+        }
 
-    &__text {
-      font-size: 16px;
-    }
+        &__text {
+            font-size: 16px;
+        }
+
         &__image {
             margin: 0px;
             max-width: 380px;
@@ -1284,10 +1235,6 @@
 
     .about {
         margin-top: -465px;
-
-        &__body {
-            // min-height: 600px;
-        }
 
         &__name {
             font-size: 80px;
@@ -1504,8 +1451,6 @@
             flex-direction: column-reverse;
         }
 
-        &__right {}
-
         &__text {
             max-width: 100%;
         }
@@ -1587,8 +1532,6 @@
             max-width: 160px;
         }
 
-        &__right {}
-
         &__right-content {
             transform: translateY(0px);
             margin-bottom: 20px;
@@ -1633,27 +1576,13 @@
         .carousel-caption-fourth {
             background-image: none;
         }
-
     }
 }
 
 @media (max-width: 375px) {
-
-  .image__block {
-    min-height: 200px;
-    background: url("../../images/imagesMain/background200.png");
-  }
-
-  .name {
-    &__body {
-      margin-top: -120px;
-
-      min-height: 300px;
-    }
-    &__top-title {
-      font-weight: 400;
-      font-size: 12px;
-      padding: 20px 0px 10px 0px;
+    .image__block {
+        min-height: 200px;
+        background: url("../../images/imagesMain/background200.png");
     }
 
     .name {
@@ -1671,47 +1600,10 @@
             }
         }
 
-
-    &__advantages {
-      padding-top: 3px;
-      font-size: 6px;
-    }
-    &__image {
-      display: none;
-    }
-  }
-  .about {
-    margin-top: -264px;
-    &__body {
-    }
-    &__name {
-      font-size: 28px;
-    }
-
-    &__image {
-      max-width: 130px;
-      margin: 5px;
-    }
-    &__left {
-      flex-direction: column;
-      margin-top: 30px;
-    }
-    &__image {
-      max-width: 270px;
-      margin: 0 auto;
-    }
-    &__right-content {
-      margin-bottom: 0px;
-      padding-bottom: 0px;
-    }
-    &__left-content {
-      margin-top: 50px;
-    }
-    &__text {
-      padding-bottom: 0px;
-    }
-  }
-}
+        &__adv-block {
+            img {
+                width: 100%;
+            }
 
             max-width: 150px;
             height: 50px;
@@ -1731,8 +1623,6 @@
     .about {
         margin-top: -392px;
 
-        &__body {}
-
         &__name {
             font-size: 28px;
         }
@@ -1746,7 +1636,6 @@
             margin-top: 50px;
         }
     }
-
 }
 
 //---------------------------------------------------------------------------------------------------
@@ -1763,8 +1652,6 @@
             font-size: 18px;
             margin: 1%;
         }
-
-        &__wrapper {}
 
         &__block {
             display: grid;
@@ -1855,7 +1742,6 @@
     }
 
     .review {
-
         // background-color: rgba(238, 236, 222, 1);
         .review__title {
             font-weight: 700;
@@ -2039,7 +1925,6 @@
         .carousel-caption-fourth {
             height: 450px;
         }
-
     }
 
     .price {
@@ -2064,14 +1949,14 @@
                 padding-left: 0rem;
             }
 
-            ol>li {
+            ol > li {
                 padding-left: 20px;
                 position: relative;
                 margin: 5px 5px 5px 8px;
                 color: $paragraph-color;
             }
 
-            ol>li:before {
+            ol > li:before {
                 content: "\279B";
             }
 
