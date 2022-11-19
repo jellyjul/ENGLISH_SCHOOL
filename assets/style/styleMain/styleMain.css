@@ -191,7 +191,7 @@ li {
   .header__body {
     justify-content: space-around;
     min-height: 100px;
-    padding: 0px;
+    padding: 15px;
   }
   .header__logo {
     display: none;
@@ -215,7 +215,7 @@ li {
     height: 20px;
     position: relative;
     z-index: 5;
-    margin-right: 30px;
+    margin: 0 auto;
     padding-right: 20px;
   }
   .header__burger span {
@@ -284,7 +284,7 @@ li {
     margin: 0px 0px 20px 0px;
   }
 }
-@media (max-width: 585px) {
+@media (max-width: 630px) {
   .header__menu {
     background: url("../../images/imagesHeader/400.jpg");
     width: 249px;
@@ -318,9 +318,6 @@ li {
   }
   .header__list li {
     margin: 0px 0px 15px 0px;
-  }
-  .header__burger {
-    padding-right: 30px;
   }
 }
 * {
@@ -894,7 +891,7 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   text-transform: uppercase;
   color: #f08700;
   text-align: center;
-  padding: 5% 0 1% 0;
+  padding: 5% 1% 1% 0;
   text-align: center;
 }
 .review .review__text {
@@ -903,12 +900,12 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   display: flex;
   justify-content: center;
   margin-bottom: 2%;
-  padding-left: 3%;
+  padding-left: 11%;
   padding-right: 3%;
-  text-align: center;
+  text-align: left;
 }
 .review .carousel {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .review .carousel-inner {
   height: 400px;
@@ -916,10 +913,10 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
 .review .carousel-caption {
   color: #454545;
   font-family: "Roboto Slab", serif;
-  height: 400px;
   top: 50%;
   background-repeat: no-repeat;
   background-position: center center;
+  height: 400px;
 }
 .review .carousel-caption-first {
   background-image: url("../../images/imagesMain/imagesReview/student-first1.png");
@@ -933,122 +930,13 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
 .review .carousel-caption-fourth {
   background-image: url("../../images/imagesMain/imagesReview/student-fourth1.png");
 }
-.review .sr-only {
-  color: black;
-}
 
 .price {
   background-color: white;
   display: flex;
   flex-direction: column;
-  display: flex;
-  flex-direction: column;
 }
-.price__title {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 57px;
-  text-transform: uppercase;
-  color: #f08700;
-  text-align: center;
-  padding-top: 5%;
-  color: #425b69;
-}
-.price__info {
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 24px;
-  color: #454545;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  padding: 2% 5% 10% 5%;
-}
-.price__info ol {
-  list-style: none;
-  padding-left: 0rem;
-}
-.price__info ol > li {
-  padding-left: 20px;
-  position: relative;
-  margin: 5px 5px 5px 8px;
-  color: #454545;
-}
-.price__info ol > li:before {
-  content: "✔";
-  position: absolute;
-  left: -10px;
-  color: rgb(5, 116, 2);
-  font-weight: bold;
-  font-size: 20px;
-}
-.price__info .no:before {
-  content: "❌";
-  position: absolute;
-  font-size: 14px;
-}
-.price__info-bag {
-  text-align: center;
-  width: 100%;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-}
-.price__info-bag-description-details {
-  text-align: start;
-  padding-left: 10px;
-  color: #454545;
-}
-.price__info-bag-description-title {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 57px;
-  text-transform: uppercase;
-  color: #f08700;
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-  color: #454545;
-}
-.price__info-bag-description-rate {
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 24px;
-  color: #454545;
-  font-size: 25px;
-  font-weight: bold;
-  color: #f08700;
-  padding-bottom: 5px;
-}
-.price__info-bag-description:hover {
-  background: rgba(45, 252, 73, 0.1921568627);
-  color: rgb(0, 0, 0);
-  border-radius: 20px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-}
-.price__info .bag-light,
-.price__info .bag-standard {
-  margin-right: 5%;
-}
-.price__info .btn {
-  margin-bottom: 10px;
-  cursor: pointer;
-  color: #030303;
-  font-weight: 400;
-  font-size: 14px;
-  text-transform: uppercase;
-  background: none;
-  border: 1px solid;
-  border-radius: 67px;
-  width: 10vw;
-  font-size: 12px;
-  letter-spacing: 0.1em;
-}
-.price__info .btn:hover {
-  background: #f08700;
-  border: none;
-  box-shadow: 0px 5px 5px rgba(255, 0, 0, 0.212);
-}
-.price__title {
+.price h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 57px;
@@ -1855,6 +1743,37 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
     margin-bottom: 20px;
     padding-bottom: 20px;
   }
+  .review .review__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .review .review__text {
+    font-size: 15px;
+    text-align: start;
+    padding-left: 25px;
+    padding-right: 2%;
+  }
+  .review .review__image {
+    font-size: 12px;
+  }
+  .review .carousel-caption {
+    color: #454545;
+    font-family: "Roboto Slab", serif;
+    font-size: 13px;
+    top: 50%;
+    text-align: start;
+    font-style: italic;
+  }
+  .review .carousel-caption h3 {
+    text-align: center;
+  }
+  .review .carousel-caption-first,
+.review .carousel-caption-second,
+.review .carousel-caption-third,
+.review .carousel-caption-fourth {
+    background-image: none;
+  }
 }
 @media (max-width: 375px) {
   .image__block {
@@ -1969,6 +1888,50 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   .team__column .team__card .team__content p {
     font-size: 14px;
   }
+  .review .review__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .review .review__text {
+    font-size: 15px;
+  }
+  .review h3 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+  }
+  .review .carousel-caption {
+    height: 400px;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .review .carousel-caption-first {
+    background-image: url("../../images/imagesMain/imagesReview/student-first1.png");
+    height: 430px;
+  }
+  .review .carousel-caption-third {
+    background-image: url("../../images/imagesMain/imagesReview/student-third1.png");
+    height: 430px;
+  }
+  .price h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .price .price__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+  }
+  .price .price__info-bag {
+    margin-bottom: 10px;
+  }
+  .price .price__info .btn {
+    width: 20vw;
+  }
 }
 @media screen and (max-width: 767px) {
   .advantages h2 {
@@ -2029,5 +1992,68 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   }
   .team__column .team__card .team__content p {
     font-size: 14px;
+  }
+  .review .review__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+    padding-left: 20px;
+  }
+  .review .review__text {
+    font-size: 15px;
+    text-align: start;
+  }
+  .review .review__image {
+    font-size: 12px;
+  }
+  .review .carousel-caption {
+    color: #454545;
+    font-family: "Roboto Slab", serif;
+    font-size: 13px;
+    top: 50%;
+    text-align: start;
+    font-style: italic;
+  }
+  .review .carousel-caption h3 {
+    text-align: center;
+  }
+  .review .carousel-caption-first,
+.review .carousel-caption-second,
+.review .carousel-caption-third,
+.review .carousel-caption-fourth {
+    height: 450px;
+  }
+  .price h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .price .price__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+  }
+  .price .price__info-bag {
+    margin-bottom: 10px;
+  }
+  .price .price__info ol {
+    list-style: none;
+    padding-left: 0rem;
+  }
+  .price .price__info ol > li {
+    padding-left: 20px;
+    position: relative;
+    margin: 5px 5px 5px 8px;
+    color: #454545;
+  }
+  .price .price__info ol > li:before {
+    content: "➛";
+  }
+  .price .price__info .no {
+    display: none;
+  }
+  .price .price__info .btn {
+    width: 25vw;
   }
 }/*# sourceMappingURL=styleMain.css.map */

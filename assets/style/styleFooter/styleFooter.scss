@@ -1,75 +1,75 @@
 @import "../vars/vars.scss";
 footer {
-    font-family: $main-font;
-    // background-color: #D9D9D9;
-    background: url("../../images/imagesFooter/bg_4.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    .footer__wrapper {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 64px 0 60px 0;
-        .logo {
-            max-width: 100px;
-            border-radius: 50px;
-        }
-        .footer__nav {
-            @include f-space-between;
-            padding-bottom: 70px;
-            .footer__nav-right {
-                @include f-space-between;
-                flex-basis: 47%;
-                gap: 30px;
-                .footer__nav-contacts {
-                    @include f-column;
-                    padding-right: 65px;
-                    a {
-                        font-weight: 400;
-                        font-size: 17px;
-                        text-decoration: none;
-                        // color: #ffff;
-                        color: #000000;
-                        padding-bottom: 5px;
-                    }
-                    .nav-2 {
-                        padding-right: 50px;
-                    }
-                }
-                .footer__nav-adress {
-                    @include f-column;
-                    gap: 10px;
-                    a {
-                        font-weight: 400;
-                        font-size: 17px;
-                        text-decoration: none;
-                        line-height: 20px;
-                        // color: #ffff;
-                        color: #000000;
-                    }
-                }
-                .nav-adress__tel::before {
-                    content: "";
-                    display: inline-block;
-                    width: 1em;
-                    height: 1em;
-                    // background-image: url("../../images/imagesFooter/footer_nav/tel.png");
-                    background-image: url("../../images/imagesFooter/footer_nav/tel.png");
-                }
-                .hover {
-                    a:hover {
-                        color: #fbfbfb;
-                    }
-                }
-            }
-            .footer__nav-social {
-                .footer-social {
-                    img {
-                        padding-right: 10px;
-                        max-width: 35px;
-                        margin-bottom: 72px;
-                    }
-                }
-            }
-        }
+  font-family: $main-font;
+  // background-color: #D9D9D9;
+  background: url("../../images/imagesFooter/bg_4.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .footer__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 64px 0 60px 0;
+    .logo {
+      max-width: 100px;
+      border-radius: 50px;
     }
+    .footer__nav {
+      @include f-space-between;
+      padding-bottom: 70px;
+      .footer__nav-right {
+        @include f-space-between;
+        flex-basis: 47%;
+        gap: 30px;
+        .footer__nav-contacts {
+          @include f-column;
+          padding-right: 65px;
+          a {
+            font-weight: 400;
+            font-size: 17px;
+            text-decoration: none;
+            // color: #ffff;
+            color: #000000;
+            padding-bottom: 5px;
+          }
+          .nav-2 {
+            padding-right: 50px;
+          }
+        }
+        .footer__nav-adress {
+          @include f-column;
+          gap: 10px;
+          a {
+            font-weight: 400;
+            font-size: 17px;
+            text-decoration: none;
+            line-height: 20px;
+            // color: #ffff;
+            color: #000000;
+          }
+        }
+        .nav-adress__tel::before {
+          content: "";
+          display: inline-block;
+          width: 1em;
+          height: 1em;
+          // background-image: url("../../images/imagesFooter/footer_nav/tel.png");
+          background-image: url("../../images/imagesFooter/footer_nav/tel.png");
+        }
+        .hover {
+          a:hover {
+            color: #fbfbfb;
+          }
+        }
+      }
+      .footer__nav-social {
+        .footer-social {
+          img {
+            padding-right: 10px;
+            max-width: 35px;
+            margin-bottom: 72px;
+          }
+        }
+      }
+    }
+  }
 }
