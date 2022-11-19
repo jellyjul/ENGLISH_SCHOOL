@@ -892,7 +892,7 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   text-transform: uppercase;
   color: #f08700;
   text-align: center;
-  padding: 5% 0 1% 0;
+  padding: 5% 1% 1% 0;
   text-align: center;
 }
 .review .review__text {
@@ -906,7 +906,7 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   text-align: left;
 }
 .review .carousel {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .review .carousel-inner {
   height: 400px;
@@ -914,27 +914,22 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
 .review .carousel-caption {
   color: #454545;
   font-family: "Roboto Slab", serif;
-  height: 400px;
   top: 50%;
   background-repeat: no-repeat;
   background-position: center center;
+  height: 400px;
 }
 .review .carousel-caption-first {
   background-image: url("../../images/imagesMain/imagesReview/student-first1.png");
-  height: 450px;
 }
 .review .carousel-caption-second {
   background-image: url("../../images/imagesMain/imagesReview/student-second1.jpg");
 }
 .review .carousel-caption-third {
   background-image: url("../../images/imagesMain/imagesReview/student-third1.png");
-  height: 450px;
 }
 .review .carousel-caption-fourth {
   background-image: url("../../images/imagesMain/imagesReview/student-fourth1.png");
-}
-.review .sr-only {
-  color: black;
 }
 
 .price {
@@ -1746,6 +1741,37 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
     margin-bottom: 20px;
     padding-bottom: 20px;
   }
+  .review .review__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .review .review__text {
+    font-size: 15px;
+    text-align: start;
+    padding-left: 25px;
+    padding-right: 2%;
+  }
+  .review .review__image {
+    font-size: 12px;
+  }
+  .review .carousel-caption {
+    color: #454545;
+    font-family: "Roboto Slab", serif;
+    font-size: 13px;
+    top: 50%;
+    text-align: start;
+    font-style: italic;
+  }
+  .review .carousel-caption h3 {
+    text-align: center;
+  }
+  .review .carousel-caption-first,
+.review .carousel-caption-second,
+.review .carousel-caption-third,
+.review .carousel-caption-fourth {
+    background-image: none;
+  }
 }
 @media (max-width: 375px) {
   .image__block {
@@ -1892,9 +1918,6 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
     line-height: 50px;
     text-align: center;
   }
-  .review .carousel-inner {
-    height: 400px;
-  }
   .review .carousel-caption {
     height: 400px;
     font-size: 15px;
@@ -1902,11 +1925,11 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   }
   .review .carousel-caption-first {
     background-image: url("../../images/imagesMain/imagesReview/student-first1.png");
-    height: 510px;
+    height: 430px;
   }
   .review .carousel-caption-third {
     background-image: url("../../images/imagesMain/imagesReview/student-third1.png");
-    height: 510px;
+    height: 430px;
   }
   .price h2 {
     font-weight: 700;
@@ -2003,23 +2026,18 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
     color: #454545;
     font-family: "Roboto Slab", serif;
     font-size: 13px;
-    height: 350px;
     top: 50%;
-    text-align: justify;
+    text-align: start;
     font-style: italic;
+  }
+  .review .carousel-caption h3 {
+    text-align: center;
   }
   .review .carousel-caption-first,
 .review .carousel-caption-second,
 .review .carousel-caption-third,
 .review .carousel-caption-fourth {
-    background-image: none;
-  }
-  .review .sr-only {
-    color: black;
-  }
-  .review .carousel-control-prev,
-.review .carousel-control-next {
-    align-items: flex-start;
+    height: 450px;
   }
   .price h2 {
     font-weight: 700;
@@ -2031,6 +2049,9 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
     flex-direction: column;
     justify-content: center;
     font-size: 15px;
+  }
+  .price .price__info-bag {
+    margin-bottom: 10px;
   }
   .price .price__info ol {
     list-style: none;
