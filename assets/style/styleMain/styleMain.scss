@@ -182,12 +182,14 @@
   }
   &__title {
     text-align: center;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 105%;
+
     text-transform: uppercase;
     padding: 10px 0px;
     color: #425b69;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+    color: #f08700;
   }
   &__text {
     padding: 20px;
@@ -934,7 +936,8 @@
         // background: rgb(252, 132, 20);
         //background: $color-hover;
         width: 700px;
-        box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
         border-radius: 8px;
         overflow: hidden;
       }
@@ -962,8 +965,8 @@
         top: 26px;
         right: 12px;
         color: transparent;
-        background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50% 50% / 1em
-          1em;
+        background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg")
+          no-repeat 50% 50% / 1em 1em;
         width: 1em;
         height: 1em;
         content: "";
@@ -1135,10 +1138,6 @@
 
     &__name {
       font-size: 86px;
-    }
-
-    &__title {
-      font-size: 28px;
     }
 
     &__text {
@@ -1541,6 +1540,11 @@
   }
 
   .name {
+    &__body {
+      margin-top: -120px;
+
+      min-height: 300px;
+    }
     &__top-title {
       font-weight: 400;
       font-size: 12px;
@@ -1569,23 +1573,38 @@
       font-size: 6px;
     }
     &__image {
-      max-width: 130px;
-      margin-bottom: 10px;
+      display: none;
     }
   }
   .about {
-    margin-top: -392px;
+    margin-top: -264px;
     &__body {
     }
     &__name {
       font-size: 28px;
     }
+
     &__image {
       max-width: 130px;
       margin: 5px;
     }
+    &__left {
+      flex-direction: column;
+      margin-top: 30px;
+    }
+    &__image {
+      max-width: 270px;
+      margin: 0 auto;
+    }
+    &__right-content {
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+    }
     &__left-content {
       margin-top: 50px;
+    }
+    &__text {
+      padding-bottom: 0px;
     }
   }
 }
