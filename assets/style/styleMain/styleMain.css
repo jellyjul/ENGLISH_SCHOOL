@@ -634,6 +634,10 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
 }
 
 .offers {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 137%;
+  color: rgb(243, 243, 243);
   background-color: rgb(251, 251, 251);
 }
 .offers p::before {
@@ -761,6 +765,10 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
 }
 
 .programms {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 137%;
+  color: rgb(243, 243, 243);
   background-color: rgb(251, 251, 251);
 }
 .programms p::before {

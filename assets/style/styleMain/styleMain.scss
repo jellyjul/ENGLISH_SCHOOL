@@ -244,6 +244,7 @@
 //----------------------------------------------------offers---------------------------------------
 
 .offers {
+  @include font-header;
   background-color: rgba(251, 251, 251, 1);
   p::before {
     content: "";
@@ -392,6 +393,7 @@
 //---------------------------------------------programms-------------------------------------
 
 .programms {
+  @include font-header;
   background-color: rgba(251, 251, 251, 1);
 
   &__container {
