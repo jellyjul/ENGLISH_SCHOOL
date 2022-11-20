@@ -633,6 +633,291 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   padding-bottom: 20px;
 }
 
+.offers {
+  background-color: rgb(238, 236, 222);
+}
+.offers p::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(105, 74, 59);
+  display: inline-block;
+  margin-right: 5px;
+}
+.offers__body {
+  margin: 20px -15px;
+  display: flex;
+}
+.offers__title {
+  display: flex;
+  flex: 0 1 25%;
+  padding: 15px;
+  flex-wrap: wrap;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 57px;
+  text-transform: uppercase;
+  color: #f08700;
+}
+.offers__column {
+  flex: 0 1 25%;
+  padding-right: 15px;
+  min-height: 100%;
+}
+
+.offers-item:hover {
+  box-shadow: 5px 5px 5px #425b69;
+  transition: all 0.3s ease 0s;
+  border: solid 4px #f08700;
+}
+
+.offers-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  height: 100%;
+}
+.offers-item a {
+  color: rgb(118, 63, 37);
+}
+.offers-item_f {
+  background-color: rgb(229, 220, 210);
+}
+.offers-item_s {
+  background-color: rgb(255, 242, 200);
+}
+.offers-item_t {
+  background-color: rgba(45, 252, 73, 0.1921568627);
+}
+.offers-item__age {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 20px 0px;
+  color: rgb(105, 74, 59);
+  border-bottom: 0.1px solid rgb(105, 74, 59);
+}
+.offers-item__content {
+  flex: 1 1 auto;
+  border-bottom: 0.1px solid rgb(105, 74, 59);
+}
+.offers-item__title {
+  color: rgb(105, 74, 59);
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.offers-item__text {
+  color: rgb(105, 74, 59);
+  padding-bottom: 20px;
+}
+.offers-item__period {
+  padding-bottom: 20px;
+  font-weight: bold;
+  color: rgb(105, 74, 59);
+  border-bottom: 0.1px solid rgb(105, 74, 59);
+}
+.offers-item__days {
+  padding-bottom: 20px;
+  color: rgb(105, 74, 59);
+}
+.offers-item__buttons {
+  display: flex;
+  justify-content: center;
+}
+.offers-item__button {
+  border-radius: 37px;
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 36px;
+  letter-spacing: 0.2px;
+  padding: 2px 20px;
+  min-height: 40px;
+  letter-spacing: 0.2px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 105%;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(105, 74, 59);
+  border: 0.1px solid rgb(105, 74, 59);
+}
+.offers-item__button_beige:hover {
+  background: rgb(133, 65, 17);
+  color: rgb(229, 220, 210);
+}
+.offers-item__button_yellow:hover {
+  background: #f08700;
+  color: rgb(229, 220, 210);
+}
+.offers-item__button_green:hover {
+  background: rgba(41, 126, 53, 0.8784313725);
+  color: rgb(229, 220, 210);
+}
+
+.programms {
+  background-color: rgb(238, 236, 222);
+}
+.programms p::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(105, 74, 59);
+  display: inline-block;
+  margin-right: 5px;
+}
+.programms__body {
+  margin: 20px -15px;
+  display: flex;
+  justify-content: center;
+}
+.programms__text {
+  display: flex;
+  text-align: start;
+  flex: 0 1 40%;
+  margin: 15px;
+  padding-top: 30px;
+  font-size: 20px;
+}
+.programms__slide {
+  flex: 0 1 35%;
+  width: 100%;
+  justify-content: center;
+  margin: 15px;
+  min-height: 700px;
+}
+.programms__title {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  flex-wrap: wrap;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 57px;
+  text-transform: uppercase;
+  color: #f08700;
+}
+.programms__column {
+  flex: 0 1 33.333%;
+  justify-content: center;
+  padding-right: 15px;
+  min-height: 100%;
+}
+.programms-item:hover {
+  box-shadow: 5px 5px 5px #425b69;
+  transition: all 0.3s ease 0s;
+  border: solid 4px #f08700;
+}
+
+.programms-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  height: 100%;
+}
+.programms-item a {
+  color: rgb(118, 63, 37);
+}
+.programms-item_f {
+  background-color: rgb(229, 220, 210);
+}
+.programms-item_s {
+  background-color: rgb(255, 242, 200);
+}
+.programms-item_t {
+  background-color: rgba(45, 252, 73, 0.1921568627);
+}
+.programms-item_four {
+  background-color: rgb(199, 228, 247);
+  background-color: rgb(197, 234, 241);
+}
+.programms-item_five {
+  background-color: rgb(244, 216, 190);
+}
+.programms-item__age {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 20px 0px;
+  color: rgb(105, 74, 59);
+  border-bottom: 0.1px solid rgb(105, 74, 59);
+}
+.programms-item__content {
+  flex: 1 1 auto;
+  border-bottom: 0.1px solid rgb(105, 74, 59);
+}
+.programms-item__title {
+  color: rgb(105, 74, 59);
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.programms-item__text {
+  color: rgb(105, 74, 59);
+  padding-bottom: 20px;
+}
+.programms-item__period {
+  padding-bottom: 20px;
+  font-weight: bold;
+  color: rgb(105, 74, 59);
+  border-bottom: 0.1px solid rgb(105, 74, 59);
+}
+.programms-item__days {
+  padding-bottom: 20px;
+  color: rgb(105, 74, 59);
+}
+.programms-item__buttons {
+  display: flex;
+  justify-content: center;
+}
+.programms-item__button {
+  border-radius: 37px;
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 36px;
+  letter-spacing: 0.2px;
+  padding: 2px 15px;
+  min-height: 40px;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 105%;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgb(105, 74, 59);
+  border: 0.1px solid rgb(105, 74, 59);
+}
+.programms-item__button_beige:hover {
+  background: rgb(133, 65, 17);
+  color: rgb(229, 220, 210);
+}
+.programms-item__button_yellow:hover {
+  background: #f08700;
+  color: rgb(229, 220, 210);
+}
+.programms-item__button_green:hover {
+  background: rgba(41, 126, 53, 0.8784313725);
+  color: rgb(229, 220, 210);
+}
+.programms-item__button_blue:hover {
+  background: rgb(40, 120, 173);
+  color: rgb(229, 220, 210);
+}
+.programms-item__button_red:hover {
+  background: rgb(200, 122, 48);
+  color: rgb(229, 220, 210);
+}
+
 .advantages-background {
   background-color: white;
 }
