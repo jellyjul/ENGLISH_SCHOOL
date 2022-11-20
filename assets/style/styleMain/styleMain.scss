@@ -159,7 +159,7 @@
 //--------------------------------about--------------------------
 .about {
   @include font-header;
-  background-color: white;
+  background-color: rgba(251, 251, 251, 1);
   // background-color: #fff4f08a;
   margin-top: -700px;
 
@@ -244,7 +244,7 @@
 //----------------------------------------------------offers---------------------------------------
 
 .offers {
-  background-color: rgb(237, 237, 234);
+  background-color: rgba(251, 251, 251, 1);
   p::before {
     content: "";
     width: 10px;
@@ -392,7 +392,7 @@
 //---------------------------------------------programms-------------------------------------
 
 .programms {
-  background-color: rgba(238, 236, 222, 1);
+  background-color: rgba(251, 251, 251, 1);
 
   &__container {
   }
@@ -482,11 +482,11 @@
     // background-color: rgba(234, 221, 167, 1);
   }
   &_four {
-    background-color: rgba(199, 228, 247, 1);
-    background-color: rgba(197, 234, 241, 1);
+    background-color: rgb(217, 228, 234);
+    // background-color: rgba(197, 234, 241, 1);
   }
   &_five {
-    background-color: rgba(244, 216, 190, 1);
+    background-color: rgb(243, 216, 193);
     // background-color: rgba(236, 185, 128, 1);
   }
 
@@ -580,7 +580,7 @@
 //---------------------------------------advantages----------------------------------------------//
 
 .advantages-background {
-  background-color: white;
+  background-color: rgba(251, 251, 251, 1);
 }
 
 .advantages {
@@ -651,7 +651,7 @@
 //---------------------------gallery------------------------
 
 .gallery {
-  background-color: white;
+  background-color: rgba(251, 251, 251, 1);
   @include f-center;
   @include f-column;
   align-items: center;
@@ -729,7 +729,7 @@
 
 //---------------------------team------------------------
 .team {
-  background-color: white;
+  background-color: rgba(251, 251, 251, 1);
 
   &__container {
     width: 100%;
@@ -897,7 +897,7 @@
 
 //-----------------------------------------price---------------------------------------------//
 .price {
-  background-color: white;
+  background-color: rgba(251, 251, 251, 1);
   @include f-column;
 
   h2 {
@@ -994,7 +994,7 @@
 
 //-----------------------------------------request---------------------------------------------//
 .request {
-  //background-color: rgba(238, 236, 222, 1);
+  background-color: rgba(251, 251, 251, 1);
   background-image: url("../../images/imagesMain/imgRequest/bg.png");
 
   display: flex;
@@ -1266,7 +1266,7 @@
 
 //--------------------------------------------questions----------------------------------
 .questions {
-  //background-color: rgba(238, 236, 222, 1);
+  background-color: rgba(251, 251, 251, 1);
   &__wrapper {
     font-family: $main-font;
     max-width: 1200px;
