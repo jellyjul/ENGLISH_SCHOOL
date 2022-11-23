@@ -158,6 +158,7 @@ body {
 }
 .header__link:hover {
   color: rgba(87, 162, 83, 0.979);
+  text-decoration: none;
 }
 
 li {
@@ -669,137 +670,6 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   height: 400px;
 }
 
-.offers {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 137%;
-  color: rgb(243, 243, 243);
-  background-color: rgb(251, 251, 251);
-}
-.offers p::before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: rgb(105, 74, 59);
-  display: inline-block;
-  margin-right: 5px;
-}
-.offers__body {
-  margin: 20px -15px;
-  display: flex;
-}
-.offers__title {
-  display: flex;
-  flex: 0 1 25%;
-  padding: 15px;
-  flex-wrap: wrap;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 57px;
-  text-transform: uppercase;
-  color: #f08700;
-}
-.offers__column {
-  flex: 0 1 25%;
-  padding-right: 15px;
-  min-height: 100%;
-}
-
-.offers-item:hover {
-  box-shadow: 5px 5px 5px #425b69;
-  transition: all 0.3s ease 0s;
-  border: solid 4px #f08700;
-}
-
-.offers-item {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  padding: 20px;
-  border-radius: 20px;
-  height: 100%;
-}
-.offers-item a {
-  color: rgb(118, 63, 37);
-}
-.offers-item_f {
-  background-color: rgb(229, 220, 210);
-}
-.offers-item_s {
-  background-color: rgb(255, 242, 200);
-}
-.offers-item_t {
-  background-color: rgba(45, 252, 73, 0.1921568627);
-}
-.offers-item__age {
-  font-size: 15px;
-  font-weight: bold;
-  padding: 20px 0px;
-  color: rgb(105, 74, 59);
-  border-bottom: 0.1px solid rgb(105, 74, 59);
-}
-.offers-item__content {
-  flex: 1 1 auto;
-  border-bottom: 0.1px solid rgb(105, 74, 59);
-}
-.offers-item__title {
-  color: rgb(105, 74, 59);
-  font-size: 20px;
-  font-weight: bold;
-  padding-bottom: 20px;
-}
-.offers-item__text {
-  color: rgb(105, 74, 59);
-  padding-bottom: 20px;
-}
-.offers-item__period {
-  padding-bottom: 20px;
-  font-weight: bold;
-  color: rgb(105, 74, 59);
-  border-bottom: 0.1px solid rgb(105, 74, 59);
-}
-.offers-item__days {
-  padding-bottom: 20px;
-  color: rgb(105, 74, 59);
-}
-.offers-item__buttons {
-  display: flex;
-  justify-content: center;
-}
-.offers-item__button {
-  border-radius: 37px;
-  margin: 10px 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px 36px;
-  letter-spacing: 0.2px;
-  padding: 2px 20px;
-  min-height: 40px;
-  letter-spacing: 0.2px;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 105%;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-  color: rgb(105, 74, 59);
-  border: 0.1px solid rgb(105, 74, 59);
-}
-.offers-item__button_beige:hover {
-  background: rgb(133, 65, 17);
-  color: rgb(229, 220, 210);
-}
-.offers-item__button_yellow:hover {
-  background: #f08700;
-  color: rgb(229, 220, 210);
-}
-.offers-item__button_green:hover {
-  background: rgba(41, 126, 53, 0.8784313725);
-  color: rgb(229, 220, 210);
-}
-
 .programms {
   font-weight: 400;
   font-size: 18px;
@@ -820,6 +690,7 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   margin: 20px -15px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .programms__text {
   display: flex;
@@ -852,9 +723,11 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
 .programms__column {
   flex: 0 1 33.333%;
   justify-content: center;
-  padding-right: 15px;
+  padding: 0px 20px;
   min-height: 100%;
+  margin-bottom: 20px;
 }
+
 .programms-item:hover {
   box-shadow: 5px 5px 5px #425b69;
   transition: all 0.3s ease 0s;
@@ -864,7 +737,6 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
 .programms-item {
   display: flex;
   flex-direction: column;
-  height: 100%;
   padding: 20px;
   border-radius: 20px;
   height: 100%;
@@ -945,22 +817,27 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
 .programms-item__button_beige:hover {
   background: rgb(133, 65, 17);
   color: rgb(229, 220, 210);
+  text-decoration: none;
 }
 .programms-item__button_yellow:hover {
   background: #f08700;
   color: rgb(229, 220, 210);
+  text-decoration: none;
 }
 .programms-item__button_green:hover {
   background: rgba(41, 126, 53, 0.8784313725);
   color: rgb(229, 220, 210);
+  text-decoration: none;
 }
 .programms-item__button_blue:hover {
   background: rgb(40, 120, 173);
   color: rgb(229, 220, 210);
+  text-decoration: none;
 }
 .programms-item__button_red:hover {
   background: rgb(200, 122, 48);
   color: rgb(229, 220, 210);
+  text-decoration: none;
 }
 
 .advantages-background {
@@ -1797,6 +1674,9 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
     margin-bottom: 20px;
     padding-bottom: 20px;
   }
+  .programms__column {
+    flex: 0 1 50%;
+  }
 }
 @media (max-width: 820px) {
   .image__block {
@@ -2022,6 +1902,9 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
     margin-bottom: 20px;
     padding-bottom: 20px;
   }
+  .programms__column {
+    flex: 0 1 80%;
+  }
 }
 @media (max-width: 480px) {
   .image__block {
@@ -2075,6 +1958,12 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
     transform: translateY(0px);
     margin-bottom: 20px;
     padding-bottom: 20px;
+  }
+  .programms__column {
+    flex: 0 1 100%;
+  }
+  .programms__title h2 {
+    font-size: 30px;
   }
   .review .review__title {
     font-weight: 700;
@@ -2136,7 +2025,7 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
     display: none;
   }
   .about {
-    margin-top: -264px;
+    margin-top: -250px;
   }
   .about__name {
     font-size: 28px;

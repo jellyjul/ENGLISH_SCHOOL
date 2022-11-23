@@ -122,6 +122,7 @@ body {
 }
 .header__link:hover {
   color: rgba(87, 162, 83, 0.979);
+  text-decoration: none;
 }
 
 li {

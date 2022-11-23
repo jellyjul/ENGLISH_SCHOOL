@@ -81,16 +81,11 @@
       display: flex;
       flex-wrap: wrap;
       row-gap: 10px;
-      // grid-template-columns: 1fr 1fr;
-      // grid-template-rows: 1fr 1fr;
       padding: 20px 20px 20px 20px;
       color: #425b69;
       text-transform: uppercase;
       font-size: 15px;
       h6 {
-        //text-transform: uppercase;
-        // margin-top: 20px;
-        //text-align: justify;
         color: #f3f4fa;
       }
       img {
@@ -146,7 +141,6 @@
 .about {
   @include font-header;
   background-color: rgba(251, 251, 251, 1);
-  // background-color: #fff4f08a;
   margin-top: -700px;
   &__container {
     margin-bottom: 30px;
@@ -213,7 +207,7 @@
   }
 }
 
-//------------------------------------------------------------------------------------------------
+//--------------------------------------------------------pansion----------------------------------------
 
 .pansion {
   @include font-header;
@@ -248,143 +242,10 @@
   }
 }
 
-//----------------------------------------------------offers---------------------------------------
-.offers {
-  @include font-header;
-  background-color: rgba(251, 251, 251, 1);
-  p::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: rgb(105, 74, 59);
-    display: inline-block;
-    margin-right: 5px;
-  }
-  &__container {
-  }
-  &__body {
-    margin: 20px -15px;
-    display: flex;
-  }
-  &__title {
-    display: flex;
-    flex: 0 1 25%;
-    padding: 15px;
-    flex-wrap: wrap;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 57px;
-    text-transform: uppercase;
-    color: #f08700;
-  }
-  &__column {
-    flex: 0 1 25%;
-    padding-right: 15px;
-    min-height: 100%;
-  }
-}
-
-.offers-item:hover {
-  box-shadow: 5px 5px 5px #425b69;
-  transition: all 0.3s ease 0s;
-  border: solid 4px $main-orange-color;
-}
-
-.offers-item {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  padding: 20px;
-  border-radius: 20px;
-  height: 100%;
-  a {
-    color: rgb(118, 63, 37);
-  }
-  &_f {
-    background-color: rgba(229, 220, 210, 1);
-  }
-  &_s {
-    background-color: rgba(255, 242, 200, 1);
-  }
-  &_t {
-    background-color: $color-hover;
-  }
-  &__age {
-    font-size: 15px;
-    font-weight: bold;
-    padding: 20px 0px;
-    color: rgb(105, 74, 59);
-    border-bottom: 0.1px solid rgb(105, 74, 59);
-  }
-  &__content {
-    flex: 1 1 auto;
-    border-bottom: 0.1px solid rgb(105, 74, 59);
-  }
-  &__title {
-    color: rgb(105, 74, 59);
-    font-size: 20px;
-    font-weight: bold;
-    padding-bottom: 20px;
-  }
-  &__text {
-    color: rgb(105, 74, 59);
-    padding-bottom: 20px;
-  }
-  &__period {
-    padding-bottom: 20px;
-    font-weight: bold;
-    color: rgb(105, 74, 59);
-    border-bottom: 0.1px solid rgb(105, 74, 59);
-  }
-  &__days {
-    padding-bottom: 20px;
-    color: rgb(105, 74, 59);
-  }
-  &__buttons {
-    display: flex;
-    justify-content: center;
-  }
-  &__button {
-    border-radius: 37px;
-    margin: 10px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px 36px;
-    letter-spacing: 0.2px;
-    padding: 2px 20px;
-    min-height: 40px;
-    letter-spacing: 0.2px;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 105%;
-    text-transform: uppercase;
-    text-align: center;
-    text-decoration: none;
-    color: rgb(105, 74, 59);
-    border: 0.1px solid rgb(105, 74, 59);
-  }
-  &__button_beige:hover {
-    background: rgb(133, 65, 17);
-    color: rgba(229, 220, 210, 1);
-  }
-  &__button_yellow:hover {
-    background: $main-orange-color;
-    color: rgba(229, 220, 210, 1);
-  }
-  &__button_green:hover {
-    background: #297e35e0;
-    color: rgba(229, 220, 210, 1);
-  }
-}
-
 //---------------------------------------------programms-------------------------------------
 .programms {
   @include font-header;
   background-color: rgba(251, 251, 251, 1);
-  &__container {
-  }
   p::before {
     content: "";
     width: 10px;
@@ -398,6 +259,7 @@
     margin: 20px -15px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
   &__text {
     display: flex;
@@ -427,12 +289,9 @@
   &__column {
     flex: 0 1 33.333%;
     justify-content: center;
-    padding-right: 15px;
+    padding: 0px 20px;
     min-height: 100%;
-  }
-  &__column_four {
-  }
-  &__column_five {
+    margin-bottom: 20px;
   }
 }
 
@@ -445,33 +304,27 @@
 .programms-item {
   display: flex;
   flex-direction: column;
-  height: 100%;
   padding: 20px;
   border-radius: 20px;
   height: 100%;
+
   a {
     color: rgb(118, 63, 37);
   }
   &_f {
     background-color: rgba(229, 220, 210, 1);
-    // background-color: rgba(239, 215, 191, 1);
   }
   &_s {
     background-color: rgba(255, 242, 200, 1);
-    // background-color: rgba(177, 194, 162, 1);
-    // background-color: rgba(194, 237, 211, 1);
   }
   &_t {
     background-color: $color-hover;
-    // background-color: rgba(234, 221, 167, 1);
   }
   &_four {
     background-color: rgb(217, 228, 234);
-    // background-color: rgba(197, 234, 241, 1);
   }
   &_five {
     background-color: rgb(243, 216, 193);
-    // background-color: rgba(236, 185, 128, 1);
   }
   &__age {
     font-size: 15px;
@@ -531,22 +384,27 @@
   &__button_beige:hover {
     background: rgb(133, 65, 17);
     color: rgba(229, 220, 210, 1);
+    text-decoration: none;
   }
   &__button_yellow:hover {
     background: $main-orange-color;
     color: rgba(229, 220, 210, 1);
+    text-decoration: none;
   }
   &__button_green:hover {
     background: #297e35e0;
     color: rgba(229, 220, 210, 1);
+    text-decoration: none;
   }
   &__button_blue:hover {
     background: rgb(40, 120, 173);
     color: rgba(229, 220, 210, 1);
+    text-decoration: none;
   }
   &__button_red:hover {
     background: rgb(200, 122, 48);
     color: rgba(229, 220, 210, 1);
+    text-decoration: none;
   }
 }
 
@@ -1165,7 +1023,8 @@
         // background: rgb(252, 132, 20);
         //background: $color-hover;
         width: 700px;
-        box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
         border-radius: 8px;
         overflow: hidden;
       }
@@ -1193,8 +1052,8 @@
         top: 26px;
         right: 12px;
         color: transparent;
-        background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50% 50% / 1em
-          1em;
+        background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg")
+          no-repeat 50% 50% / 1em 1em;
         width: 1em;
         height: 1em;
         content: "";
@@ -1354,6 +1213,11 @@
       padding-bottom: 20px;
     }
   }
+  .programms {
+    &__column {
+      flex: 0 1 50%;
+    }
+  }
 }
 
 @media (max-width: 820px) {
@@ -1382,7 +1246,6 @@
       img {
         width: 100%;
       }
-      // max-width: 150px;
     }
     &__advantages {
       font-size: 10px;
@@ -1579,8 +1442,6 @@
     &__left {
       flex-direction: column-reverse;
     }
-    &__right {
-    }
     &__text {
       max-width: 100%;
     }
@@ -1594,6 +1455,11 @@
       transform: translateY(0px);
       margin-bottom: 20px;
       padding-bottom: 20px;
+    }
+  }
+  .programms {
+    &__column {
+      flex: 0 1 80%;
     }
   }
 }
@@ -1647,14 +1513,23 @@
     &__image {
       max-width: 160px;
     }
-    &__right {
-    }
     &__right-content {
       transform: translateY(0px);
       margin-bottom: 20px;
       padding-bottom: 20px;
     }
   }
+  .programms {
+    &__column {
+      flex: 0 1 100%;
+    }
+    &__title {
+      h2 {
+        font-size: 30px;
+      }
+    }
+  }
+
   .review {
     .review__title {
       font-weight: 700;
@@ -1711,13 +1586,7 @@
         font-size: 6px;
       }
     }
-    // &__adv-block {
-    //   img {
-    //     width: 100%;
-    //   }
-    //   max-width: 150px;
-    //   height: 50px;
-    // }
+
     &__advantages {
       padding-top: 3px;
       font-size: 6px;
@@ -1727,9 +1596,7 @@
     }
   }
   .about {
-    margin-top: -264px;
-    &__body {
-    }
+    margin-top: -250px;
     &__name {
       font-size: 28px;
     }
@@ -1769,8 +1636,6 @@
     &__subtitle {
       font-size: 18px;
       margin: 1%;
-    }
-    &__wrapper {
     }
     &__block {
       display: grid;
