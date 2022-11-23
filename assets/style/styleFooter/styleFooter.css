@@ -34,9 +34,7 @@ body {
 
 footer {
   font-family: "Roboto Slab", serif;
-  background: url("../../images/imagesFooter/bg_4.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgba(237, 139, 18, 0.7803921569);
 }
 footer .footer__wrapper {
   max-width: 1200px;
@@ -50,13 +48,15 @@ footer .footer__wrapper .logo {
 footer .footer__wrapper .footer__nav {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 70px;
+  padding: 0 15px;
 }
 footer .footer__wrapper .footer__nav .footer__nav-right {
   display: flex;
   justify-content: space-between;
-  flex-basis: 47%;
-  gap: 30px;
+}
+footer .footer__wrapper .footer__nav .footer__nav-right .hover a:hover {
+  color: #fbfbfb;
+  transition: 0.5s;
 }
 footer .footer__wrapper .footer__nav .footer__nav-right .footer__nav-contacts {
   display: flex;
@@ -85,18 +85,14 @@ footer .footer__wrapper .footer__nav .footer__nav-right .footer__nav-adress a {
   line-height: 20px;
   color: #000000;
 }
-footer .footer__wrapper .footer__nav .footer__nav-right .nav-adress__tel::before {
-  content: "";
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  background-image: url("../../images/imagesFooter/footer_nav/tel.png");
-}
-footer .footer__wrapper .footer__nav .footer__nav-right .hover a:hover {
-  color: #fbfbfb;
-}
 footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   padding-right: 10px;
   max-width: 35px;
-  margin-bottom: 72px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 715px) {
+  footer {
+    display: none;
+  }
 }/*# sourceMappingURL=styleFooter.css.map */
