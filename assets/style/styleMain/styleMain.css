@@ -640,6 +640,15 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   background-color: rgb(251, 251, 251);
   color: #f08700;
 }
+.pansion h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  text-transform: uppercase;
+  color: #f08700;
+  text-align: center;
+  text-align: start;
+}
 .pansion__container {
   display: flex;
   flex-direction: column;
@@ -827,15 +836,17 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   margin: 15px;
   min-height: 700px;
 }
-.programms__title {
+.programms__title h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  text-transform: uppercase;
+  color: #f08700;
+  text-align: center;
   display: flex;
   justify-content: center;
   padding: 15px;
   flex-wrap: wrap;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 57px;
-  text-transform: uppercase;
   color: #f08700;
 }
 .programms__column {
@@ -2265,6 +2276,24 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   .price .price__info .btn {
     width: 20vw;
   }
+  .pansion h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .pansion .text-muted {
+    font-size: 15px;
+    text-align: start;
+  }
+  .pansion .mb-5 {
+    margin-bottom: 0 !important;
+  }
+  .pansion .justify-content-center {
+    justify-content: flex-start !important;
+  }
+  .pansion .mr-2 {
+    margin-right: 1rem !important;
+  }
 }
 @media screen and (max-width: 767px) {
   .advantages h2 {
@@ -2388,6 +2417,22 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   }
   .price .price__info .btn {
     width: 25vw;
+  }
+  .pansion h2 {
+    font-size: 25px;
+  }
+  .pansion .text-muted {
+    font-size: 15px;
+    text-align: start;
+  }
+  .pansion .mb-5 {
+    margin-bottom: 0 !important;
+  }
+  .pansion .justify-content-center {
+    justify-content: flex-start !important;
+  }
+  .pansion .mr-2 {
+    margin-right: 1rem !important;
   }
 }
 @media (max-width: 1500px) {
