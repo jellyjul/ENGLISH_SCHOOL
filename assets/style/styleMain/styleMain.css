@@ -911,6 +911,13 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   font-size: 16px;
 }
 
+.pansion__gallery .carousel-caption {
+  background-color: rgba(255, 255, 255, 0.4901960784);
+  color: #000000;
+  border-radius: 10px;
+  top: 63%;
+}
+
 .gallery {
   background-color: rgb(251, 251, 251);
   display: flex;
@@ -2229,6 +2236,11 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
     width: 25vw;
   }
 }
+@media (max-width: 1700px) {
+  .pansion .pansion__gallery .carousel-caption {
+    top: 76%;
+  }
+}
 @media (max-width: 1500px) {
   .request__text {
     padding-right: 7%;
@@ -2236,12 +2248,16 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
 }
 @media (max-width: 1440px) {
   .pansion .pansion__gallery .carousel-caption {
-    top: 75%;
+    top: 71%;
   }
 }
 @media (max-width: 1200px) {
   .pansion .pansion__gallery .carousel-caption {
     top: 64%;
+  }
+  .pansion .pansion__gallery .carousel-caption p {
+    font-size: 15px;
+    line-height: 22px;
   }
   .request {
     background-image: url("../../images/imagesMain/imgRequest/Group 48096206.png");
@@ -2258,11 +2274,25 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   }
 }
 @media (max-width: 768px) {
-  .pansion .pansion__gallery .carousel {
-    display: none;
+  .pansion .pansion__gallery .carousel-caption {
+    top: 80%;
+  }
+  .pansion .pansion__gallery .carousel-caption p {
+    font-size: 10px;
+    margin-top: -14px;
+    line-height: 13px;
+  }
+  .pansion .pansion__gallery .carousel-inner {
+    height: 220px;
+  }
+  .pansion .pansion__gallery .carousel-caption {
+    height: 50px;
   }
 }
 @media (max-width: 715px) {
+  .pansion .carousel {
+    display: none;
+  }
   .questions {
     display: none;
   }
@@ -2302,17 +2332,5 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   }
   .consult .consult__content form .consult__form {
     padding: 0 10px;
-  }
-}
-.pansion__gallery .carousel-caption {
-  background-color: rgba(255, 255, 255, 0.4901960784);
-  color: #000000;
-  border-radius: 10px;
-  top: 63%;
-}
-
-@media (max-width: 1700px) {
-  .pansion .pansion__gallery .carousel-caption {
-    top: 76%;
   }
 }/*# sourceMappingURL=styleMain.css.map */

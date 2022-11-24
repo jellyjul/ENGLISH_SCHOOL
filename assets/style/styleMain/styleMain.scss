@@ -466,6 +466,16 @@
     }
 }
 
+//---------------------------pansion------------------------
+.pansion__gallery {
+    .carousel-caption {
+        background-color: #ffffff7d;
+        color: #000000;
+        border-radius: 10px;
+        top: 63%;
+    }
+}
+
 //---------------------------gallery------------------------
 .gallery {
     background-color: rgba(251, 251, 251, 1);
@@ -821,9 +831,6 @@
         opacity: 1;
         visibility: visible;
     }
-    // #popup:target .concult__content {
-    //     transform: scale(1);
-    // }
     .consult {
         background-color: rgba(0, 0, 0, 0.7);
         display: flex;
@@ -1819,6 +1826,16 @@
     }
 }
 
+@media (max-width: 1700px) {
+    .pansion {
+        .pansion__gallery {
+            .carousel-caption {
+                top: 76%;
+            }
+        }
+    }
+}
+
 @media (max-width: 1500px) {
     .request {
         &__text {
@@ -1831,7 +1848,7 @@
     .pansion {
         .pansion__gallery {
             .carousel-caption {
-                top: 75%;
+                top: 71%;
             }
         }
     }
@@ -1842,6 +1859,10 @@
         .pansion__gallery {
             .carousel-caption {
                 top: 64%;
+                p {
+                    font-size: 15px;
+                    line-height: 22px;
+                }
             }
         }
     }
@@ -1867,14 +1888,30 @@
 @media (max-width: 768px) {
     .pansion {
         .pansion__gallery {
-            .carousel {
-                display: none;
+            .carousel-caption {
+                top: 80%;
+                p {
+                    font-size: 10px;
+                    margin-top: -14px;
+                    line-height: 13px;
+                }
+            }
+            .carousel-inner {
+                height: 220px;
+            }
+            .carousel-caption {
+                height: 50px;
             }
         }
     }
 }
 
 @media (max-width: 715px) {
+    .pansion {
+        .carousel {
+            display: none;
+        }
+    }
     .questions {
         display: none;
     }
@@ -1922,25 +1959,6 @@
                 .consult__form {
                     padding: 0 10px;
                 }
-            }
-        }
-    }
-}
-
-.pansion__gallery {
-    .carousel-caption {
-        background-color: #ffffff7d;
-        color: #000000;
-        border-radius: 10px;
-        top: 63%;
-    }
-}
-
-@media (max-width: 1700px) {
-    .pansion {
-        .pansion__gallery {
-            .carousel-caption {
-                top: 76%;
             }
         }
     }
