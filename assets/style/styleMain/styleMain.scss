@@ -761,27 +761,18 @@
 
 //-----------------------------------------request---------------------------------------------//
 .request {
-    background-color: rgba(251, 251, 251, 1);
+    display: flex;
+    justify-content: flex-end;
     background-image: url("../../images/imagesMain/imgRequest/bg.png");
+    background-color: rgb(251, 251, 251);
     display: flex;
     min-height: 430px;
-    // margin-bottom: 50px;
-    //max-width: 1200px;
-    //margin: 0 auto;
-    // &__img {
-    //     img {
-    //         max-width: 700px;
-    //         width: 100%;
-    //     }
-    // }
     &__text {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         color: $main-color;
-        // padding-left: 100px;
-        margin: auto auto 8% 60%;
-        // margin: auto;
-        // margin-bottom: 10%;
+        padding-right: 15%;
         h2 {
             color: $main-color;
             text-align: center;
@@ -804,46 +795,20 @@
             display: flex;
             justify-content: center;
             position: relative;
-            .btn:link,
-            .btn:visited {
+            .btn:link {
                 text-transform: uppercase;
                 text-decoration: none;
                 padding: 15px 40px;
                 display: inline-block;
                 border-radius: 100px;
-                transition: all 0.2s;
-                position: absolute;
+                // transition: all 0.2s;
+                // position: absolute;
             }
             .btn:hover {
+                background-color: #ffffff;
+                border: none;
                 transform: translateY(-3px);
                 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-            }
-            .btn:active {
-                transform: translateY(-1px);
-                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-            }
-            .btn-orange {
-                background-color: $main-orange-color;
-                color: rgb(255, 255, 255);
-            }
-            .btn::after {
-                content: "";
-                display: inline-block;
-                height: 100%;
-                width: 100%;
-                border-radius: 100px;
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: -1;
-                transition: all 0.4s;
-            }
-            .btn-orange::after {
-                background-color: $main-orange-color;
-            }
-            .btn:hover::after {
-                transform: scaleX(1.4) scaleY(1.6);
-                opacity: 0;
             }
         }
     }
@@ -860,14 +825,11 @@
         opacity: 1;
         visibility: visible;
     }
-    #popup:target .concult__content {
-        transform: scale(1);
-    }
+    // #popup:target .concult__content {
+    //     transform: scale(1);
+    // }
     .consult {
         background-color: rgba(0, 0, 0, 0.7);
-        // background-image: url("../../images/imagesMain/imgRequest/1613503494_16-p-fon-dlya-prezentatsii-po-angliiskomu-yazik-21.jpeg");
-        background-repeat: no-repeat;
-        background-size: cover;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -876,17 +838,14 @@
             position: relative;
             max-width: 400px;
             min-height: 600px;
-            // background: rgb(255, 255, 255);
             background-image: url("../../images/imagesMain/imgRequest/2_2.jpeg");
             color: black;
             border-radius: 20px;
-            transition: all 0.5s ease;
-            // padding: 36px;
-            // border: none;
+            // transition: all 0.5s ease;
         }
-        &__left {
+        form {
             padding: 24px 0 0 43px;
-            overflow: hidden;
+            // overflow: hidden;
             .consult__text {
                 h2 {
                     color: #425b69;
@@ -934,47 +893,14 @@
             width: 150px;
             font-size: 15px;
             border-radius: 100px;
-            // .btn:link,
-            // .btn:visited {
-            //     text-transform: uppercase;
-            //     text-decoration: none;
-            //     padding: 10px 15px;
-            //     display: inline-block;
-            //     border-radius: 100px;
-            //     transition: all 0.2s;
-            //     position: absolute;
-            // }
             .btn:hover {
                 transform: translateY(-3px);
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
             }
-            // .btn:active {
-            //     transform: translateY(-1px);
-            //     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-            // }
             .btn-orange {
                 background-color: $main-orange-color;
                 color: rgb(255, 255, 255);
             }
-            // .btn::after {
-            //     content: "";
-            //     display: inline-block;
-            //     height: 100%;
-            //     width: 100%;
-            //     border-radius: 100px;
-            //     position: absolute;
-            //     top: 0;
-            //     left: 0;
-            //     z-index: -1;
-            //     transition: all 0.4s;
-            // }
-            // .btn-orange::after {
-            //     background-color: $main-orange-color;
-            // }
-            // .btn:hover::after {
-            //     transform: scaleX(1.4) scaleY(1.6);
-            //     opacity: 0;
-            // }
         }
         .close-popup {
             position: absolute;
@@ -1007,7 +933,7 @@
             @include h2;
             color: #425b69;
             letter-spacing: 3px;
-            padding-top: 20px;
+            padding-top: 60px;
         }
         .questions__block {
             display: flex;
@@ -1019,8 +945,6 @@
             .questions__item {
                 display: block;
                 background: rgb(231 133 22 / 53%);
-                // background: rgb(252, 132, 20);
-                //background: $color-hover;
                 width: 1000px;
                 box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
                 border-radius: 8px;
@@ -1043,7 +967,6 @@
                 font-size: 20px;
                 cursor: pointer;
                 position: relative;
-                // color: white;
                 color: #425b69;
             }
             summary:before {
@@ -1064,28 +987,12 @@
                 padding: 20px 20px 0 20px;
             }
             details[open] summary~* {
-                // animation: sweep 0.5s ease-in-out;
-                // color: white;
                 color: #425b69;
             }
             summary:hover {
-                // transform: translateY(-7px);
-                // box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
                 background-color: #faa54ff8;
                 transition: 0.5s;
             }
-            // @keyframes sweep {
-            //     0% {
-            //         opacity: 0;
-            //     }
-            //     100% {
-            //         opacity: 1;
-            //     }
-            // }
-            // summary:focus {
-            //     outline: 0;
-            //     box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3), inset 0 0 2px rgba(0, 0, 0, 0.3);
-            // }
         }
     }
 }
@@ -1938,13 +1845,12 @@
 @media (max-width: 1500px) {
     .request {
         &__text {
-            align-items: center;
-            margin: auto auto 10% 55%;
+            padding-right: 7%;
         }
     }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
     .request {
         background-image: url("../../images/imagesMain/imgRequest/Group\ 48096206.png");
         background-repeat: no-repeat;
@@ -1952,6 +1858,7 @@
         margin-bottom: 30px;
         &__text {
             margin: auto;
+            padding-right: 0;
         }
     }
     .questions {
@@ -1972,7 +1879,7 @@
 @media (max-width: 490px) {
     .request {
         &__text {
-            margin: auto auto 36% 0;
+            padding: 0 15px;
         }
         h2 {
             font-size: 26px;
@@ -1981,20 +1888,12 @@
             text-align: center;
         }
     }
-}
-
-@media (max-width: 375px) {
-    .request {
-        &__text {
-            margin: auto auto 42% 0;
-        }
-    }
     .consult {
-        &__left {
-            padding: 35px 0 0 7px;
-        }
         .consult__content {
             width: 340px;
+            form {
+                padding: 34px 0 0 8px;
+            }
         }
     }
 }
