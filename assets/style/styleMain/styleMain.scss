@@ -772,7 +772,7 @@
         flex-direction: column;
         justify-content: center;
         color: $main-color;
-        padding-right: 15%;
+        padding: 30px 15% 0 0;
         h2 {
             color: $main-color;
             text-align: center;
@@ -833,7 +833,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        z-index: 10;
+        z-index: 15;
         .consult__content {
             position: relative;
             max-width: 400px;
@@ -1858,7 +1858,7 @@
         margin-bottom: 30px;
         &__text {
             margin: auto;
-            padding-right: 0;
+            padding: 0;
         }
     }
     .questions {
@@ -1882,7 +1882,7 @@
             padding: 0 15px;
         }
         h2 {
-            font-size: 26px;
+            font-size: 24px;
         }
         p {
             text-align: center;
@@ -1893,6 +1893,50 @@
             width: 340px;
             form {
                 padding: 34px 0 0 8px;
+                .consult__form {
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 368px) {
+    .consult {
+        .consult__content {
+            width: 290px;
+            form {
+                padding: 34px 0 0 8px;
+                .consult__text {
+                    h2 {
+                        font-size: 16px;
+                    }
+                    p {
+                        padding: 0 10px 0 0;
+                    }
+                }
+                .consult__form {
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+}
+
+.pansion__gallery {
+    .carousel-caption {
+        background-color: #ffffff7d;
+        color: #000000;
+        border-radius: 10px;
+        top: 63%;
+    }
+}
+
+@media (max-width: 1700px) {
+    .pansion {
+        .pansion__gallery {
+            .carousel-caption {
+                top: 76%;
             }
         }
     }
