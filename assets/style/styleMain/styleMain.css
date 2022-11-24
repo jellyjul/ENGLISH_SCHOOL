@@ -357,6 +357,9 @@ body {
 footer {
   font-family: "Roboto Slab", serif;
   background-color: rgba(237, 139, 18, 0.7803921569);
+  background: url("../../images/imagesFooter/Снимок экрана 2022-11-24 в 15.26.57.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 footer .footer__wrapper {
   max-width: 1200px;
@@ -1260,7 +1263,7 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   flex-direction: column;
   justify-content: center;
   color: white;
-  padding-right: 15%;
+  padding: 30px 15% 0 0;
 }
 .request__text h2 {
   color: white;
@@ -1319,7 +1322,7 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
+  z-index: 15;
 }
 .request .consult .consult__content {
   position: relative;
@@ -2259,7 +2262,7 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   }
   .request__text {
     margin: auto;
-    padding-right: 0;
+    padding: 0;
   }
   .questions .questions__block .questions__item {
     width: 700px;
@@ -2275,7 +2278,7 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
     padding: 0 15px;
   }
   .request h2 {
-    font-size: 26px;
+    font-size: 24px;
   }
   .request p {
     text-align: center;
@@ -2285,5 +2288,37 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   }
   .consult .consult__content form {
     padding: 34px 0 0 8px;
+  }
+  .consult .consult__content form .consult__form {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 368px) {
+  .consult .consult__content {
+    width: 290px;
+  }
+  .consult .consult__content form {
+    padding: 34px 0 0 8px;
+  }
+  .consult .consult__content form .consult__text h2 {
+    font-size: 16px;
+  }
+  .consult .consult__content form .consult__text p {
+    padding: 0 10px 0 0;
+  }
+  .consult .consult__content form .consult__form {
+    padding: 0 10px;
+  }
+}
+.pansion__gallery .carousel-caption {
+  background-color: rgba(255, 255, 255, 0.4901960784);
+  color: #000000;
+  border-radius: 10px;
+  top: 63%;
+}
+
+@media (max-width: 1700px) {
+  .pansion .pansion__gallery .carousel-caption {
+    top: 76%;
   }
 }/*# sourceMappingURL=styleMain.css.map */
