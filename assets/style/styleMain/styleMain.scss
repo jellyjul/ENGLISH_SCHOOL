@@ -703,13 +703,13 @@
             list-style: none;
             padding-left: 0rem;
         }
-        ol>li {
+        ol > li {
             padding-left: 20px;
             position: relative;
             margin: 5px 5px 5px 8px;
             color: $paragraph-color;
         }
-        ol>li:before {
+        ol > li:before {
             content: "✔";
             position: absolute;
             left: -10px;
@@ -976,20 +976,21 @@
                 top: 24px;
                 right: 12px;
                 color: transparent;
-                background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50% 50% / 1em 1em;
+                background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50%
+                    50% / 1em 1em;
                 width: 1em;
                 height: 1em;
                 content: "";
                 position: absolute;
                 transition: transform 0.5s;
             }
-            details[open]>summary:before {
+            details[open] > summary:before {
                 transform: scale(1, -1);
             }
-            summary~* {
+            summary ~ * {
                 padding: 20px 20px 0 20px;
             }
-            details[open] summary~* {
+            details[open] summary ~ * {
                 color: #425b69;
             }
             summary:hover {
@@ -1807,13 +1808,13 @@
                 list-style: none;
                 padding-left: 0rem;
             }
-            ol>li {
+            ol > li {
                 padding-left: 20px;
                 position: relative;
                 margin: 5px 5px 5px 8px;
                 color: $paragraph-color;
             }
-            ol>li:before {
+            ol > li:before {
                 content: "\279B";
             }
             .no {
@@ -1831,6 +1832,11 @@
         .pansion__gallery {
             .carousel-caption {
                 top: 76%;
+            }
+        }
+        &__gallery {
+            .carousel-inner {
+                height: auto;
             }
         }
     }
