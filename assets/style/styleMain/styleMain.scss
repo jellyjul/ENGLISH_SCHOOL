@@ -466,6 +466,16 @@
     }
 }
 
+//---------------------------pansion------------------------
+.pansion__gallery {
+    .carousel-caption {
+        background-color: #ffffff7d;
+        color: #000000;
+        border-radius: 10px;
+        top: 63%;
+    }
+}
+
 //---------------------------gallery------------------------
 .gallery {
     background-color: rgba(251, 251, 251, 1);
@@ -795,15 +805,11 @@
             display: flex;
             justify-content: center;
             position: relative;
-            .btn:link {
-                text-transform: uppercase;
-                text-decoration: none;
-                padding: 15px 40px;
-                display: inline-block;
-                border-radius: 100px;
-                // transition: all 0.2s;
-                // position: absolute;
-            }
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 15px 40px;
+            display: inline-block;
+            border-radius: 100px;
             .btn:hover {
                 background-color: #ffffff;
                 border: none;
@@ -825,9 +831,6 @@
         opacity: 1;
         visibility: visible;
     }
-    // #popup:target .concult__content {
-    //     transform: scale(1);
-    // }
     .consult {
         background-color: rgba(0, 0, 0, 0.7);
         display: flex;
@@ -1822,23 +1825,14 @@
             }
         }
     }
+}
+
+@media (max-width: 1700px) {
     .pansion {
-        h2 {
-            font-size: 25px;
-            line-height: 30px;
-        }
-        .text-muted {
-            font-size: 15px;
-            text-align: start;
-        }
-        .mb-5 {
-            margin-bottom: 0 !important;
-        }
-        .justify-content-center {
-            justify-content: flex-start !important;
-        }
-        .mr-2 {
-            margin-right: 1rem !important;
+        .pansion__gallery {
+            .carousel-caption {
+                top: 76%;
+            }
         }
         &__gallery {
             .carousel-inner {
@@ -1856,7 +1850,28 @@
     }
 }
 
+@media (max-width: 1440px) {
+    .pansion {
+        .pansion__gallery {
+            .carousel-caption {
+                top: 71%;
+            }
+        }
+    }
+}
+
 @media (max-width: 1200px) {
+    .pansion {
+        .pansion__gallery {
+            .carousel-caption {
+                top: 64%;
+                p {
+                    font-size: 15px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
     .request {
         background-image: url("../../images/imagesMain/imgRequest/Group\ 48096206.png");
         background-repeat: no-repeat;
@@ -1876,7 +1891,33 @@
     }
 }
 
+@media (max-width: 768px) {
+    .pansion {
+        .pansion__gallery {
+            .carousel-caption {
+                top: 80%;
+                p {
+                    font-size: 10px;
+                    margin-top: -14px;
+                    line-height: 13px;
+                }
+            }
+            .carousel-inner {
+                height: 220px;
+            }
+            .carousel-caption {
+                height: 50px;
+            }
+        }
+    }
+}
+
 @media (max-width: 715px) {
+    .pansion {
+        .carousel {
+            display: none;
+        }
+    }
     .questions {
         display: none;
     }
@@ -1924,25 +1965,6 @@
                 .consult__form {
                     padding: 0 10px;
                 }
-            }
-        }
-    }
-}
-
-.pansion__gallery {
-    .carousel-caption {
-        background-color: #ffffff7d;
-        color: #000000;
-        border-radius: 10px;
-        top: 63%;
-    }
-}
-
-@media (max-width: 1700px) {
-    .pansion {
-        .pansion__gallery {
-            .carousel-caption {
-                top: 76%;
             }
         }
     }
