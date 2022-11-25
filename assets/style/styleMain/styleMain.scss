@@ -463,7 +463,68 @@
     text-decoration: none;
   }
 }
-
+//---------------------------------------------courses-------------------------------------
+.courses {
+  &__title {
+    h2 {
+      @include h2;
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      flex-wrap: wrap;
+      color: #f08700;
+    }
+  }
+  &__column {
+    display: flex;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    height: 340px;
+    padding: 30px;
+    margin-bottom: 2%;
+    &:hover {
+      box-shadow: 5px 5px 5px #425b69;
+      transition: all 0.3s ease 0s;
+      border: solid 4px $main-orange-color;
+    }
+  }
+  &__img {
+    max-width: 100%;
+  }
+  &__image {
+    width: 100%;
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+  }
+  &__title {
+    h4 {
+      color: gray;
+    }
+  }
+  &__time {
+    p {
+      color: gray;
+      margin-bottom: 0;
+    }
+  }
+  &__time-flex {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  &__place {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  &__button {
+    border-radius: 25px;
+    background-color: $main-orange-color;
+    color: #000;
+  }
+}
 //---------------------------------------advantages----------------------------------------------//
 .advantages-background {
   background-color: rgba(251, 251, 251, 1);
@@ -759,7 +820,6 @@
   .carousel {
     margin-top: 30px;
 
-
     &-inner {
       height: 400px;
     }
@@ -821,14 +881,14 @@
       padding-left: 0rem;
     }
 
-    ol>li {
+    ol > li {
       padding-left: 20px;
       position: relative;
       margin: 5px 5px 5px 8px;
       color: $paragraph-color;
     }
 
-    ol>li:before {
+    ol > li:before {
       content: "✔";
       position: absolute;
       left: -10px;
@@ -878,7 +938,6 @@
         border-radius: 10px;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
         border: solid 4px $main-orange-color;
-
       }
     }
 
@@ -1138,7 +1197,8 @@
         top: 24px;
         right: 12px;
         color: transparent;
-        background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50% 50% / 1em 1em;
+        background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50% 50% / 1em
+          1em;
         width: 1em;
         height: 1em;
         content: "";
@@ -1146,15 +1206,15 @@
         transition: transform 0.5s;
       }
 
-      details[open]>summary:before {
+      details[open] > summary:before {
         transform: scale(1, -1);
       }
 
-      summary~* {
+      summary ~ * {
         padding: 20px 20px 0 20px;
       }
 
-      details[open] summary~* {
+      details[open] summary ~ * {
         color: #425b69;
       }
 
@@ -1914,7 +1974,6 @@
   }
 
   .review {
-
     &__title {
       font-weight: 700;
       font-size: 30px;
@@ -1994,6 +2053,12 @@
 
     .mr-2 {
       margin-right: 1rem !important;
+    }
+  }
+  .courses {
+    &__column {
+      height: 380px;
+      padding: 20px;
     }
   }
 }
@@ -2146,14 +2211,14 @@
         padding-left: 0rem;
       }
 
-      ol>li {
+      ol > li {
         padding-left: 20px;
         position: relative;
         margin: 5px 5px 5px 8px;
         color: $paragraph-color;
       }
 
-      ol>li:before {
+      ol > li:before {
         content: "\279B";
       }
 
@@ -2164,6 +2229,38 @@
       .btn {
         width: 25vw;
       }
+    }
+  }
+  .courses {
+    &__title {
+      h2 {
+        font-size: 30px;
+      }
+    }
+    &__image {
+      display: none;
+    }
+    &__description {
+      padding: 0;
+    }
+    &__title {
+      h3 {
+        font-size: 20px;
+      }
+      h4 {
+        font-size: 16px;
+      }
+    }
+    &__subtitle {
+      p {
+        font-size: 13px;
+      }
+    }
+    &__time {
+      font-size: 13px;
+    }
+    &__button {
+      display: none;
     }
   }
 }
