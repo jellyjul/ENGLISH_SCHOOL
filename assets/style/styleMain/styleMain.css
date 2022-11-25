@@ -1102,7 +1102,7 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   font-style: italic;
 }
 
-.review .review__title {
+.review__title {
   font-weight: 700;
   font-size: 40px;
   line-height: 57px;
@@ -1112,7 +1112,7 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   padding: 5% 1% 1% 0;
   text-align: center;
 }
-.review .review__text {
+.review__text {
   color: #454545;
   font-size: 20px;
   display: flex;
@@ -1135,6 +1135,12 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   background-repeat: no-repeat;
   background-position: center center;
   height: 400px;
+}
+.review .carousel .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+.review .carousel .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 .review .carousel-caption-first {
   background-image: url("../../images/imagesMain/imagesReview/student-first1.png");
@@ -1232,8 +1238,9 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
 .price__info-bag-description:hover {
   background: rgba(45, 252, 73, 0.1921568627);
   color: rgb(0, 0, 0);
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  border: solid 4px #f08700;
 }
 .price__info .bag-light,
 .price__info .bag-standard {
@@ -1907,18 +1914,18 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   .programms__title h2 {
     font-size: 30px;
   }
-  .review .review__title {
+  .review__title {
     font-weight: 700;
     font-size: 28px;
     line-height: 30px;
   }
-  .review .review__text {
+  .review__text {
     font-size: 15px;
     text-align: start;
     padding-left: 25px;
     padding-right: 2%;
   }
-  .review .review__image {
+  .review__image {
     font-size: 12px;
   }
   .review .carousel-caption {
@@ -2063,12 +2070,12 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   .team__column .team__card .team__content p {
     font-size: 14px;
   }
-  .review .review__title {
+  .review__title {
     font-weight: 700;
     font-size: 30px;
     line-height: 50px;
   }
-  .review .review__text {
+  .review__text {
     font-size: 15px;
   }
   .review h3 {
@@ -2095,16 +2102,16 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
     font-size: 30px;
     line-height: 50px;
   }
-  .price .price__info {
+  .price__info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 15px;
   }
-  .price .price__info-bag {
+  .price__info-bag {
     margin-bottom: 10px;
   }
-  .price .price__info .btn {
+  .price__info .btn {
     width: 20vw;
   }
   .pansion h2 {
@@ -2186,17 +2193,17 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   .team__column .team__card .team__content p {
     font-size: 14px;
   }
-  .review .review__title {
+  .review__title {
     font-weight: 700;
     font-size: 28px;
     line-height: 30px;
     padding-left: 20px;
   }
-  .review .review__text {
+  .review__text {
     font-size: 15px;
     text-align: start;
   }
-  .review .review__image {
+  .review__image {
     font-size: 12px;
   }
   .review .carousel-caption {
@@ -2221,37 +2228,37 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
     font-size: 30px;
     line-height: 50px;
   }
-  .price .price__info {
+  .price__info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 15px;
   }
-  .price .price__info-bag {
+  .price__info-bag {
     margin-bottom: 10px;
   }
-  .price .price__info ol {
+  .price__info ol {
     list-style: none;
     padding-left: 0rem;
   }
-  .price .price__info ol > li {
+  .price__info ol > li {
     padding-left: 20px;
     position: relative;
     margin: 5px 5px 5px 8px;
     color: #454545;
   }
-  .price .price__info ol > li:before {
+  .price__info ol > li:before {
     content: "➛";
   }
-  .price .price__info .no {
+  .price__info .no {
     display: none;
   }
-  .price .price__info .btn {
+  .price__info .btn {
     width: 25vw;
   }
 }
 @media (max-width: 1700px) {
-  .pansion .pansion__gallery .carousel-caption {
+  .pansion__gallery .carousel-caption {
     top: 76%;
   }
   .pansion__gallery .carousel-inner {
@@ -2264,15 +2271,15 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   }
 }
 @media (max-width: 1440px) {
-  .pansion .pansion__gallery .carousel-caption {
+  .pansion__gallery .carousel-caption {
     top: 71%;
   }
 }
 @media (max-width: 1200px) {
-  .pansion .pansion__gallery .carousel-caption {
+  .pansion__gallery .carousel-caption {
     top: 64%;
   }
-  .pansion .pansion__gallery .carousel-caption p {
+  .pansion__gallery .carousel-caption p {
     font-size: 15px;
     line-height: 22px;
   }
@@ -2286,23 +2293,23 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
     margin: auto;
     padding: 0;
   }
-  .questions .questions__block .questions__item {
+  .questions__block .questions__item {
     width: 700px;
   }
 }
 @media (max-width: 768px) {
-  .pansion .pansion__gallery .carousel-caption {
+  .pansion__gallery .carousel-caption {
     top: 80%;
   }
-  .pansion .pansion__gallery .carousel-caption p {
+  .pansion__gallery .carousel-caption p {
     font-size: 10px;
     margin-top: -14px;
     line-height: 13px;
   }
-  .pansion .pansion__gallery .carousel-inner {
+  .pansion__gallery .carousel-inner {
     height: 220px;
   }
-  .pansion .pansion__gallery .carousel-caption {
+  .pansion__gallery .carousel-caption {
     height: 50px;
   }
 }
@@ -2335,19 +2342,19 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
   }
 }
 @media (max-width: 368px) {
-  .consult .consult__content {
+  .consult__content {
     width: 290px;
   }
-  .consult .consult__content form {
+  .consult__content form {
     padding: 34px 0 0 8px;
   }
-  .consult .consult__content form .consult__text h2 {
+  .consult__content form .consult__text h2 {
     font-size: 16px;
   }
-  .consult .consult__content form .consult__text p {
+  .consult__content form .consult__text p {
     padding: 0 10px 0 0;
   }
-  .consult .consult__content form .consult__form {
+  .consult__content form .consult__form {
     padding: 0 10px;
   }
 }/*# sourceMappingURL=styleMain.css.map */
