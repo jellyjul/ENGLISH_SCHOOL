@@ -35,7 +35,6 @@ body {
 footer {
   font-family: "Roboto Slab", serif;
   background-color: rgba(237, 139, 18, 0.7803921569);
-  background: url("../../images/imagesFooter/bg_5.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }

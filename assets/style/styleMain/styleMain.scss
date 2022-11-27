@@ -2053,7 +2053,7 @@
     }
     &__subtitle {
       p {
-        font-size: 13px;
+        font-size: 12px;
       }
     }
     &__time {
@@ -2061,6 +2061,31 @@
     }
     &__button {
       display: none;
+    }
+  }
+  .pansion {
+    h2 {
+      font-weight: 700;
+      font-size: 27px;
+      line-height: 50px;
+      text-align: center;
+    }
+
+    .text-muted {
+      font-size: 12px;
+      text-align: start;
+    }
+
+    .mb-5 {
+      margin-bottom: 0 !important;
+    }
+
+    .justify-content-center {
+      justify-content: flex-start !important;
+    }
+
+    .mr-2 {
+      margin-right: 1rem !important;
     }
   }
 }
