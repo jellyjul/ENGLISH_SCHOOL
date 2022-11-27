@@ -1,8 +1,7 @@
 @import "../vars/vars.scss";
 footer {
     font-family: $main-font;
-    background-color: #ed8b12c7;
-    background: url("../../images/imagesFooter/Снимок\ экрана\ 2022-11-24\ в\ 15.26.57.jpeg");
+    background: url("../../images/imagesFooter/bg.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     .footer__wrapper {
@@ -30,8 +29,8 @@ footer {
                     a {
                         font-weight: 400;
                         font-size: 17px;
-                        text-decoration: none;
                         color: #000000;
+                        text-decoration: none;
                         padding-bottom: 5px;
                     }
                     .nav-2 {
@@ -44,8 +43,8 @@ footer {
                     a {
                         font-weight: 400;
                         font-size: 17px;
-                        text-decoration: none;
                         line-height: 20px;
+                        text-decoration: none;
                         color: #000000;
                     }
                 }

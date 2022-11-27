@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
@@ -35,8 +34,7 @@ body {
 
 footer {
   font-family: "Roboto Slab", serif;
-  background-color: rgba(237, 139, 18, 0.7803921569);
-  background: url("../../images/imagesFooter/Снимок экрана 2022-11-24 в 15.26.57.jpeg");
+  background: url("../../images/imagesFooter/bg.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -70,8 +68,8 @@ footer .footer__wrapper .footer__nav .footer__nav-right .footer__nav-contacts {
 footer .footer__wrapper .footer__nav .footer__nav-right .footer__nav-contacts a {
   font-weight: 400;
   font-size: 17px;
-  text-decoration: none;
   color: #000000;
+  text-decoration: none;
   padding-bottom: 5px;
 }
 footer .footer__wrapper .footer__nav .footer__nav-right .footer__nav-contacts .nav-2 {
@@ -85,8 +83,8 @@ footer .footer__wrapper .footer__nav .footer__nav-right .footer__nav-adress {
 footer .footer__wrapper .footer__nav .footer__nav-right .footer__nav-adress a {
   font-weight: 400;
   font-size: 17px;
-  text-decoration: none;
   line-height: 20px;
+  text-decoration: none;
   color: #000000;
 }
 footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
