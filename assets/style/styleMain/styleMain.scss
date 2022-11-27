@@ -7,17 +7,21 @@ body {
   font-family: $main-font;
   @include universal;
 }
+
 a {
   @include link;
 }
+
 ol,
 ul,
 li {
   @include list-style;
 }
+
 img {
   vertical-align: top;
 }
+
 .wrapper {
   @include f-column;
   min-height: 100%;
@@ -287,6 +291,7 @@ img {
     }
   }
 }
+
 //---------------------------------------------courses------------------------------------
 .courses {
   &__title {
@@ -299,56 +304,69 @@ img {
       color: #f08700;
     }
   }
+
   &__column {
     display: flex;
     box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
     height: 340px;
     padding: 30px;
     margin-bottom: 2%;
+
     &:hover {
       box-shadow: 5px 5px 5px #425b69;
       transition: all 0.3s ease 0s;
       border: solid 4px $main-orange-color;
     }
   }
+
   &__img {
     max-width: 100%;
   }
+
   &__image {
     width: 100%;
   }
+
   &__description {
     display: flex;
     flex-direction: column;
     padding-left: 40px;
   }
+
   &__title {
+
+    h3,
     h4 {
-      color: gray;
+      color: #454545;
     }
   }
+
   &__time {
     p {
-      color: gray;
+      color: #454545;
       margin-bottom: 0;
     }
   }
+
   &__time-flex {
     display: flex;
     align-items: baseline;
     gap: 10px;
   }
+
   &__place {
     display: flex;
     align-items: baseline;
     gap: 10px;
   }
+
   &__button {
     border-radius: 25px;
     background-color: $main-orange-color;
     color: #000;
   }
 }
+
 //---------------------------------------advantages----------------------------------------------//
 .advantages {
   padding-top: 30px;
@@ -618,7 +636,6 @@ img {
 
 //---------------------------------------review----------------------------------------------//
 .review {
-  background-color: white;
   &__title {
     @include h2;
     padding: 5% 1% 1% 0;
@@ -698,14 +715,14 @@ img {
       padding-left: 0rem;
     }
 
-    ol > li {
+    ol>li {
       padding-left: 20px;
       position: relative;
       margin: 5px 5px 5px 8px;
       color: $paragraph-color;
     }
 
-    ol > li:before {
+    ol>li:before {
       content: "✔";
       position: absolute;
       left: -10px;
@@ -767,9 +784,16 @@ img {
       margin-bottom: 10px;
       cursor: pointer;
       @include main-button;
+      background-color: $main-orange-color;
       width: 10vw;
       font-size: 12px;
       letter-spacing: 0.1em;
+      border: none;
+
+      &:hover {
+        background: rgba(128, 128, 128, 0.719);
+        box-shadow: 0px 5px 5px rgba(255, 0, 0, 0.212);
+      }
     }
   }
 }
@@ -1012,8 +1036,7 @@ img {
         top: 24px;
         right: 12px;
         color: transparent;
-        background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50% 50% / 1em
-          1em;
+        background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50% 50% / 1em 1em;
         width: 1em;
         height: 1em;
         content: "";
@@ -1021,15 +1044,15 @@ img {
         transition: transform 0.5s;
       }
 
-      details[open] > summary:before {
+      details[open]>summary:before {
         transform: scale(1, -1);
       }
 
-      summary ~ * {
+      summary~* {
         padding: 20px 20px 0 20px;
       }
 
-      details[open] summary ~ * {
+      details[open] summary~* {
         color: #425b69;
       }
 
@@ -1870,6 +1893,7 @@ img {
       margin-right: 1rem !important;
     }
   }
+
   .courses {
     &__column {
       height: 380px;
@@ -2026,14 +2050,14 @@ img {
         padding-left: 0rem;
       }
 
-      ol > li {
+      ol>li {
         padding-left: 20px;
         position: relative;
         margin: 5px 5px 5px 8px;
         color: $paragraph-color;
       }
 
-      ol > li:before {
+      ol>li:before {
         content: "\279B";
       }
 
@@ -2046,38 +2070,47 @@ img {
       }
     }
   }
+
   .courses {
     &__title {
       h2 {
         font-size: 30px;
       }
     }
+
     &__image {
       display: none;
     }
+
     &__description {
       padding: 0;
     }
+
     &__title {
       h3 {
         font-size: 20px;
       }
+
       h4 {
         font-size: 16px;
       }
     }
+
     &__subtitle {
       p {
         font-size: 12px;
       }
     }
+
     &__time {
       font-size: 13px;
     }
+
     &__button {
       display: none;
     }
   }
+
   .pansion {
     h2 {
       font-weight: 700;

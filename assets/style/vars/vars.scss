@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
-$main-font: "Roboto Slab", serif;
+$main-font: "Roboto Slab",
+serif;
 $main-color: white;
 $main-orange-color: #f08700;
 $paragraph-color: #454545;
@@ -10,6 +11,7 @@ $box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
     ::before,
     ::after {
         padding: 0;
@@ -22,6 +24,7 @@ $box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 @mixin link {
     text-decoration: none;
 }
+
 @mixin list-style {
     list-style: none;
 }
@@ -34,6 +37,7 @@ $box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     background: none;
     border: 1px solid;
     border-radius: 67px;
+
     &:hover {
         background: $main-orange-color;
         border: none;
