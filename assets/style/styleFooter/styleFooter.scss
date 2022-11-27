@@ -2,7 +2,7 @@
 footer {
     font-family: $main-font;
     background-color: #ed8b12c7;
-    background: url("../../images/imagesFooter/Снимок\ экрана\ 2022-11-24\ в\ 15.26.57.jpeg");
+    background: url("../../images/imagesFooter/bg_5.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     .footer__wrapper {
@@ -65,6 +65,6 @@ footer {
 
 @media (max-width: 715px) {
     footer {
-        display: none
+        display: none;
     }
 }
