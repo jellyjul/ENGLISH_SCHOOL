@@ -636,11 +636,12 @@ img {
   flex-direction: column;
   padding-left: 40px;
 }
+.courses__title h3,
 .courses__title h4 {
-  color: gray;
+  color: #454545;
 }
 .courses__time p {
-  color: gray;
+  color: #454545;
   margin-bottom: 0;
 }
 .courses__time-flex {
@@ -910,9 +911,6 @@ img {
   font-style: italic;
 }
 
-.review {
-  background-color: white;
-}
 .review__title {
   font-weight: 700;
   font-size: 40px;
@@ -1066,13 +1064,19 @@ img {
   background: none;
   border: 1px solid;
   border-radius: 67px;
+  background-color: #f08700;
   width: 10vw;
   font-size: 12px;
   letter-spacing: 0.1em;
+  border: none;
 }
 .price__info .btn:hover {
   background: #f08700;
   border: none;
+  box-shadow: 0px 5px 5px rgba(255, 0, 0, 0.212);
+}
+.price__info .btn:hover {
+  background: rgba(128, 128, 128, 0.719);
   box-shadow: 0px 5px 5px rgba(255, 0, 0, 0.212);
 }
 
