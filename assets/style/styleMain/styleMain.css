@@ -357,7 +357,6 @@ body {
 footer {
   font-family: "Roboto Slab", serif;
   background-color: rgba(237, 139, 18, 0.7803921569);
-  background: url("../../images/imagesFooter/Снимок экрана 2022-11-24 в 15.26.57.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2155,13 +2154,32 @@ footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
     font-size: 16px;
   }
   .courses__subtitle p {
-    font-size: 13px;
+    font-size: 12px;
   }
   .courses__time {
     font-size: 13px;
   }
   .courses__button {
     display: none;
+  }
+  .pansion h2 {
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 50px;
+    text-align: center;
+  }
+  .pansion .text-muted {
+    font-size: 12px;
+    text-align: start;
+  }
+  .pansion .mb-5 {
+    margin-bottom: 0 !important;
+  }
+  .pansion .justify-content-center {
+    justify-content: flex-start !important;
+  }
+  .pansion .mr-2 {
+    margin-right: 1rem !important;
   }
 }
 @media (max-width: 1700px) {
