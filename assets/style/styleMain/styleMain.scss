@@ -7,6 +7,7 @@
   @include f-column;
   min-height: 100%;
   overflow: hidden;
+  background-color: rgba(251, 251, 251, 1);
 
   .floating-button {
     position: fixed;
@@ -157,7 +158,6 @@
 //--------------------------------about--------------------------
 .about {
   @include font-header;
-  background-color: rgba(251, 251, 251, 1);
   margin-top: -700px;
 
   &__container {
@@ -240,7 +240,6 @@
 .pansion {
   @include font-header;
   padding-top: 10%;
-  background-color: rgba(251, 251, 251, 1);
   color: $main-orange-color;
 
   h2 {
@@ -273,197 +272,7 @@
     }
   }
 }
-
-//---------------------------------------------programms-------------------------------------
-.programms {
-  @include font-header;
-  background-color: rgba(251, 251, 251, 1);
-
-  p::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: rgb(105, 74, 59);
-    display: inline-block;
-    margin-right: 5px;
-  }
-
-  &__body {
-    margin: 20px -15px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  &__text {
-    display: flex;
-    text-align: start;
-    flex: 0 1 40%;
-    margin: 15px;
-    padding-top: 30px;
-    font-size: 20px;
-  }
-
-  &__slide {
-    flex: 0 1 35%;
-    width: 100%;
-    justify-content: center;
-    margin: 15px;
-    min-height: 700px;
-  }
-
-  &__title {
-    h2 {
-      @include h2;
-      display: flex;
-      justify-content: center;
-      padding: 15px;
-      flex-wrap: wrap;
-      color: #f08700;
-    }
-  }
-
-  &__column {
-    flex: 0 1 33.333%;
-    justify-content: center;
-    padding: 0px 20px;
-    min-height: 100%;
-    margin-bottom: 20px;
-  }
-}
-
-.programms-item:hover {
-  box-shadow: 5px 5px 5px #425b69;
-  transition: all 0.3s ease 0s;
-  border: solid 4px $main-orange-color;
-}
-
-.programms-item {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  border-radius: 20px;
-  height: 100%;
-
-  a {
-    color: rgb(118, 63, 37);
-  }
-
-  &_f {
-    background-color: rgba(229, 220, 210, 1);
-  }
-
-  &_s {
-    background-color: rgba(255, 242, 200, 1);
-  }
-
-  &_t {
-    background-color: $color-hover;
-  }
-
-  &_four {
-    background-color: rgb(217, 228, 234);
-  }
-
-  &_five {
-    background-color: rgb(243, 216, 193);
-  }
-
-  &__age {
-    font-size: 15px;
-    font-weight: bold;
-    padding: 20px 0px;
-    color: rgb(105, 74, 59);
-    border-bottom: 0.1px solid rgb(105, 74, 59);
-  }
-
-  &__content {
-    flex: 1 1 auto;
-    border-bottom: 0.1px solid rgb(105, 74, 59);
-  }
-
-  &__title {
-    color: rgb(105, 74, 59);
-    font-size: 20px;
-    font-weight: bold;
-    padding-bottom: 20px;
-  }
-
-  &__text {
-    color: rgb(105, 74, 59);
-    padding-bottom: 20px;
-  }
-
-  &__period {
-    padding-bottom: 20px;
-    font-weight: bold;
-    color: rgb(105, 74, 59);
-    border-bottom: 0.1px solid rgb(105, 74, 59);
-  }
-
-  &__days {
-    padding-bottom: 20px;
-    color: rgb(105, 74, 59);
-  }
-
-  &__buttons {
-    display: flex;
-    justify-content: center;
-  }
-
-  &__button {
-    border-radius: 37px;
-    margin: 10px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px 36px;
-    letter-spacing: 0.2px;
-    padding: 2px 15px;
-    min-height: 40px;
-    text-decoration: none;
-    letter-spacing: 0.2px;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 105%;
-    text-transform: uppercase;
-    text-align: center;
-    color: rgb(105, 74, 59);
-    border: 0.1px solid rgb(105, 74, 59);
-  }
-
-  &__button_beige:hover {
-    background: rgb(133, 65, 17);
-    color: rgba(229, 220, 210, 1);
-    text-decoration: none;
-  }
-
-  &__button_yellow:hover {
-    background: $main-orange-color;
-    color: rgba(229, 220, 210, 1);
-    text-decoration: none;
-  }
-
-  &__button_green:hover {
-    background: #297e35e0;
-    color: rgba(229, 220, 210, 1);
-    text-decoration: none;
-  }
-
-  &__button_blue:hover {
-    background: rgb(40, 120, 173);
-    color: rgba(229, 220, 210, 1);
-    text-decoration: none;
-  }
-
-  &__button_red:hover {
-    background: rgb(200, 122, 48);
-    color: rgba(229, 220, 210, 1);
-    text-decoration: none;
-  }
-}
-//---------------------------------------------courses-------------------------------------
+//---------------------------------------------courses------------------------------------
 .courses {
   &__title {
     h2 {
@@ -526,10 +335,6 @@
   }
 }
 //---------------------------------------advantages----------------------------------------------//
-.advantages-background {
-  background-color: rgba(251, 251, 251, 1);
-}
-
 .advantages {
   padding-top: 30px;
 
@@ -607,7 +412,6 @@
 
 //---------------------------gallery------------------------
 .gallery {
-  background-color: rgba(251, 251, 251, 1);
   @include f-center;
   @include f-column;
   align-items: center;
@@ -685,8 +489,6 @@
 
 //---------------------------team------------------------
 .team {
-  background-color: rgba(251, 251, 251, 1);
-
   &__container {
     width: 100%;
     margin: auto;
@@ -801,6 +603,7 @@
 
 //---------------------------------------review----------------------------------------------//
 .review {
+  background-color: white;
   &__title {
     @include h2;
     padding: 5% 1% 1% 0;
@@ -861,7 +664,6 @@
 
 //-----------------------------------------price---------------------------------------------//
 .price {
-  background-color: rgba(251, 251, 251, 1);
   @include f-column;
 
   h2 {
@@ -1139,8 +941,6 @@
 
 //--------------------------------------------questions----------------------------------
 .questions {
-  background-color: rgba(251, 251, 251, 1);
-
   &__wrapper {
     font-family: $main-font;
     max-width: 1200px;

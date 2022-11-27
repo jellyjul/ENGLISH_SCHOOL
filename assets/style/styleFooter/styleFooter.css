@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
@@ -36,7 +35,7 @@ body {
 footer {
   font-family: "Roboto Slab", serif;
   background-color: rgba(237, 139, 18, 0.7803921569);
-  background: url("../../images/imagesFooter/Снимок экрана 2022-11-24 в 15.26.57.jpeg");
+  background: url("../../images/imagesFooter/bg_5.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
