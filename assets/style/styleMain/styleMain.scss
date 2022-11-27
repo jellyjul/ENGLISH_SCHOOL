@@ -3,6 +3,21 @@
 @import "../styleFooter/styleFooter.scss";
 
 //--------------------------------------------------------------------------------------------//
+body {
+  font-family: $main-font;
+  @include universal;
+}
+a {
+  @include link;
+}
+ol,
+ul,
+li {
+  @include list-style;
+}
+img {
+  vertical-align: top;
+}
 .wrapper {
   @include f-column;
   min-height: 100%;
