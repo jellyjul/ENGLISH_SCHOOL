@@ -334,7 +334,6 @@ img {
   }
 
   &__title {
-
     h3,
     h4 {
       color: #454545;
@@ -715,14 +714,14 @@ img {
       padding-left: 0rem;
     }
 
-    ol>li {
+    ol > li {
       padding-left: 20px;
       position: relative;
       margin: 5px 5px 5px 8px;
       color: $paragraph-color;
     }
 
-    ol>li:before {
+    ol > li:before {
       content: "✔";
       position: absolute;
       left: -10px;
@@ -879,17 +878,15 @@ img {
     .consult__content {
       position: relative;
       max-width: 400px;
-      min-height: 600px;
+      min-height: 500px;
       background-image: url("../../images/imagesMain/imgRequest/2_2.jpeg");
       color: black;
       border-radius: 20px;
-      // transition: all 0.5s ease;
+      margin: 20px;
     }
 
     form {
-      padding: 24px 0 0 43px;
-
-      // overflow: hidden;
+      padding: 24px 32px 0 43px;
       .consult__text {
         h2 {
           color: #425b69;
@@ -898,6 +895,7 @@ img {
           text-transform: uppercase;
           margin-bottom: 15px;
           letter-spacing: 2px;
+          text-align: center;
         }
 
         p {
@@ -1036,7 +1034,8 @@ img {
         top: 24px;
         right: 12px;
         color: transparent;
-        background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50% 50% / 1em 1em;
+        background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50% 50% / 1em
+          1em;
         width: 1em;
         height: 1em;
         content: "";
@@ -1044,15 +1043,15 @@ img {
         transition: transform 0.5s;
       }
 
-      details[open]>summary:before {
+      details[open] > summary:before {
         transform: scale(1, -1);
       }
 
-      summary~* {
+      summary ~ * {
         padding: 20px 20px 0 20px;
       }
 
-      details[open] summary~* {
+      details[open] summary ~ * {
         color: #425b69;
       }
 
@@ -2050,14 +2049,14 @@ img {
         padding-left: 0rem;
       }
 
-      ol>li {
+      ol > li {
         padding-left: 20px;
         position: relative;
         margin: 5px 5px 5px 8px;
         color: $paragraph-color;
       }
 
-      ol>li:before {
+      ol > li:before {
         content: "\279B";
       }
 
@@ -2197,9 +2196,8 @@ img {
       padding: 0;
     }
   }
-
-  .questions {
-    &__block {
+  .questions__wrapper {
+    .questions__block {
       .questions__item {
         width: 700px;
       }

@@ -257,7 +257,7 @@ li {
 }
 footer {
   font-family: "Roboto Slab", serif;
-  background-color: rgba(237, 139, 18, 0.7803921569);
+  background-image: url("../../images/imagesFooter/bg_5.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1155,13 +1155,14 @@ img {
 .request .consult .consult__content {
   position: relative;
   max-width: 400px;
-  min-height: 600px;
+  min-height: 500px;
   background-image: url("../../images/imagesMain/imgRequest/2_2.jpeg");
   color: black;
   border-radius: 20px;
+  margin: 20px;
 }
 .request .consult form {
-  padding: 24px 0 0 43px;
+  padding: 24px 32px 0 43px;
 }
 .request .consult form .consult__text h2 {
   color: #425b69;
@@ -1170,6 +1171,7 @@ img {
   text-transform: uppercase;
   margin-bottom: 15px;
   letter-spacing: 2px;
+  text-align: center;
 }
 .request .consult form .consult__text p {
   font-size: 15px;
@@ -2151,7 +2153,7 @@ img {
     margin: auto;
     padding: 0;
   }
-  .questions__block .questions__item {
+  .questions__wrapper .questions__block .questions__item {
     width: 700px;
   }
 }
