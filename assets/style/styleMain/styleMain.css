@@ -642,6 +642,9 @@ img {
 .courses__title h4 {
   color: #454545;
 }
+.courses__subtitle {
+  color: #454545;
+}
 .courses__time p {
   color: #454545;
   margin-bottom: 0;
@@ -764,8 +767,10 @@ img {
   font-weight: bold;
 }
 .gallery__container {
-  columns: 5 200px;
-  column-gap: 1.5rem;
+  -moz-columns: 5 200px;
+       columns: 5 200px;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
   width: 90%;
   margin: 0 auto;
 }
@@ -1155,7 +1160,7 @@ img {
 .request .consult .consult__content {
   position: relative;
   max-width: 400px;
-  min-height: 600px;
+  min-height: 500px;
   background-image: url("../../images/imagesMain/imgRequest/2_2.jpeg");
   color: black;
   border-radius: 20px;
@@ -1179,12 +1184,24 @@ img {
 .request .consult form .consult__form {
   margin-bottom: 25px;
 }
+.request .consult form .consult__form .form__reg:focus::-moz-placeholder {
+  opacity: 0;
+}
+.request .consult form .consult__form .form__reg:focus:-ms-input-placeholder {
+  opacity: 0;
+}
 .request .consult form .consult__form .form__reg:focus::placeholder {
   opacity: 0;
 }
 .request .consult form .consult__form .form__reg {
   background: transparent;
   border: none;
+}
+.request .consult form .consult__form .form__reg::-moz-placeholder {
+  color: #425b69;
+}
+.request .consult form .consult__form .form__reg:-ms-input-placeholder {
+  color: #425b69;
 }
 .request .consult form .consult__form .form__reg::placeholder {
   color: #425b69;
