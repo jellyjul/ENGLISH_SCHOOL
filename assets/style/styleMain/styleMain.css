@@ -310,10 +310,16 @@ footer .footer__wrapper .footer__nav .footer__nav-right .footer__nav-adress a {
   line-height: 20px;
   color: #000000;
 }
-footer .footer__wrapper .footer__nav .footer__nav-social .footer-social img {
-  padding-right: 10px;
-  max-width: 35px;
-  margin-bottom: 30px;
+footer .footer__wrapper .footer__nav .footer__nav-social .footer-social svg {
+  margin: 0 10px 20px 0;
+}
+footer .footer__wrapper .footer__nav .footer__nav-social .footer-social .social-insta:hover,
+footer .footer__wrapper .footer__nav .footer__nav-social .footer-social .social-vk:hover,
+footer .footer__wrapper .footer__nav .footer__nav-social .footer-social .social-fb:hover {
+  fill: #fbfbfb;
+}
+footer .footer__wrapper .footer__nav .footer__nav-social .footer-social .social-fb {
+  max-width: 28px;
 }
 
 @media (max-width: 715px) {
@@ -762,10 +768,8 @@ img {
   font-weight: bold;
 }
 .gallery__container {
-  -moz-columns: 5 200px;
-       columns: 5 200px;
-  -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
+  columns: 5 200px;
+  column-gap: 1.5rem;
   width: 90%;
   margin: 0 auto;
 }
@@ -1155,14 +1159,13 @@ img {
 .request .consult .consult__content {
   position: relative;
   max-width: 400px;
-  min-height: 500px;
+  min-height: 600px;
   background-image: url("../../images/imagesMain/imgRequest/2_2.jpeg");
   color: black;
   border-radius: 20px;
-  margin: 20px;
 }
 .request .consult form {
-  padding: 24px 32px 0 43px;
+  padding: 24px 0 0 43px;
 }
 .request .consult form .consult__text h2 {
   color: #425b69;
@@ -1171,7 +1174,6 @@ img {
   text-transform: uppercase;
   margin-bottom: 15px;
   letter-spacing: 2px;
-  text-align: center;
 }
 .request .consult form .consult__text p {
   font-size: 15px;
@@ -1181,24 +1183,12 @@ img {
 .request .consult form .consult__form {
   margin-bottom: 25px;
 }
-.request .consult form .consult__form .form__reg:focus::-moz-placeholder {
-  opacity: 0;
-}
-.request .consult form .consult__form .form__reg:focus:-ms-input-placeholder {
-  opacity: 0;
-}
 .request .consult form .consult__form .form__reg:focus::placeholder {
   opacity: 0;
 }
 .request .consult form .consult__form .form__reg {
   background: transparent;
   border: none;
-}
-.request .consult form .consult__form .form__reg::-moz-placeholder {
-  color: #425b69;
-}
-.request .consult form .consult__form .form__reg:-ms-input-placeholder {
-  color: #425b69;
 }
 .request .consult form .consult__form .form__reg::placeholder {
   color: #425b69;
@@ -1303,7 +1293,7 @@ img {
   top: 24px;
   right: 12px;
   color: transparent;
-  background: url("../../images/imagesHeader/free-icon-font-angle-down-3916886.svg") no-repeat 50% 50%/1em 1em;
+  background: url("../../images/imagesHeader/icons/free-icon-font-angle-down-3916886.svg") no-repeat 50% 50%/1em 1em;
   width: 1em;
   height: 1em;
   content: "";
@@ -2129,10 +2119,8 @@ img {
   .request__text {
     padding-right: 7%;
   }
-}
-@media (max-width: 1440px) {
   .pansion__gallery .carousel-caption {
-    top: 71%;
+    top: 77%;
   }
 }
 @media (max-width: 1200px) {
@@ -2144,7 +2132,7 @@ img {
     line-height: 22px;
   }
   .request {
-    background-image: url("../../images/imagesMain/imgRequest/Group 48096206.png");
+    background-image: url("../../images/imagesMain/imgRequest/bg_min.png");
     background-repeat: no-repeat;
     min-height: 430px;
     margin-bottom: 30px;
@@ -2153,7 +2141,7 @@ img {
     margin: auto;
     padding: 0;
   }
-  .questions__wrapper .questions__block .questions__item {
+  .questions__block .questions__item {
     width: 700px;
   }
 }
