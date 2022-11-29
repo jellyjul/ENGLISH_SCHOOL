@@ -764,10 +764,8 @@ img {
   font-weight: bold;
 }
 .gallery__container {
-  -moz-columns: 5 200px;
-       columns: 5 200px;
-  -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
+  columns: 5 200px;
+  column-gap: 1.5rem;
   width: 90%;
   margin: 0 auto;
 }
@@ -1181,24 +1179,12 @@ img {
 .request .consult form .consult__form {
   margin-bottom: 25px;
 }
-.request .consult form .consult__form .form__reg:focus::-moz-placeholder {
-  opacity: 0;
-}
-.request .consult form .consult__form .form__reg:focus:-ms-input-placeholder {
-  opacity: 0;
-}
 .request .consult form .consult__form .form__reg:focus::placeholder {
   opacity: 0;
 }
 .request .consult form .consult__form .form__reg {
   background: transparent;
   border: none;
-}
-.request .consult form .consult__form .form__reg::-moz-placeholder {
-  color: #425b69;
-}
-.request .consult form .consult__form .form__reg:-ms-input-placeholder {
-  color: #425b69;
 }
 .request .consult form .consult__form .form__reg::placeholder {
   color: #425b69;
@@ -1332,8 +1318,15 @@ img {
     transform: translateY(520px);
     margin-bottom: 20px;
   }
+  .pansion__gallery .carousel-caption {
+    top: 64%;
+  }
+  .pansion__gallery .carousel-caption p {
+    font-size: 15px;
+    line-height: 22px;
+  }
 }
-@media (max-width: 1023px) {
+@media (max-width: 1200px) and (max-width: 1023px) {
   .image__block {
     height: 500px;
     background: url("../../images/imagesMain/background2.png");
@@ -1380,7 +1373,7 @@ img {
     padding-bottom: 20px;
   }
 }
-@media (max-width: 920px) {
+@media (max-width: 1200px) and (max-width: 920px) {
   .image__block {
     height: 500px;
     background: url("../../images/imagesMain/background4.png");
@@ -1440,7 +1433,7 @@ img {
     flex: 0 1 50%;
   }
 }
-@media (max-width: 820px) {
+@media (max-width: 1200px) and (max-width: 820px) {
   .image__block {
     height: 500px;
     background: url("../../images/imagesMain/background4.png");
@@ -1509,7 +1502,7 @@ img {
     flex: 0 1 auto;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1200px) and (max-width: 767px) {
   .image__block {
     height: 400px;
     background: url("../../images/imagesMain/background400.png");
@@ -1557,7 +1550,7 @@ img {
     padding: 0px 15px;
   }
 }
-@media (max-width: 670px) {
+@media (max-width: 1200px) and (max-width: 670px) {
   .image__block {
     min-height: 300px;
     background: url("../../images/imagesMain/background400.png");
@@ -1602,7 +1595,7 @@ img {
     transform: translateY(230px);
   }
 }
-@media (max-width: 585px) {
+@media (max-width: 1200px) and (max-width: 585px) {
   .image__block {
     height: 200px;
     background: url("../../images/imagesMain/background300.png");
@@ -1668,7 +1661,7 @@ img {
     flex: 0 1 80%;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 1200px) and (max-width: 480px) {
   .image__block {
     min-height: 200px;
     background: url("../../images/imagesMain/background200.png");
@@ -1759,7 +1752,7 @@ img {
     background-image: none;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 1200px) and (max-width: 375px) {
   .image__block {
     min-height: 200px;
     background: url("../../images/imagesMain/background200.png");
@@ -1815,7 +1808,7 @@ img {
     padding-bottom: 0px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (max-width: 1200px) and (min-width: 768px) and (max-width: 1023px) {
   .advantages h2 {
     font-weight: 700;
     font-size: 30px;
@@ -1927,30 +1920,12 @@ img {
   .price__info .btn {
     width: 20vw;
   }
-  .pansion h2 {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 50px;
-  }
-  .pansion .text-muted {
-    font-size: 15px;
-    text-align: start;
-  }
-  .pansion .mb-5 {
-    margin-bottom: 0 !important;
-  }
-  .pansion .justify-content-center {
-    justify-content: flex-start !important;
-  }
-  .pansion .mr-2 {
-    margin-right: 1rem !important;
-  }
   .courses__column {
     height: 380px;
     padding: 20px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) and (max-width: 767px) {
   .advantages h2 {
     font-weight: 700;
     font-size: 28px;
@@ -2117,7 +2092,7 @@ img {
     margin-right: 1rem !important;
   }
 }
-@media (max-width: 1700px) {
+@media (max-width: 1200px) and (max-width: 1700px) {
   .pansion__gallery .carousel-caption {
     top: 76%;
   }
@@ -2125,7 +2100,7 @@ img {
     height: auto;
   }
 }
-@media (max-width: 1500px) {
+@media (max-width: 1200px) and (max-width: 1500px) {
   .request__text {
     padding-right: 7%;
   }
@@ -2134,13 +2109,6 @@ img {
   }
 }
 @media (max-width: 1200px) {
-  .pansion__gallery .carousel-caption {
-    top: 64%;
-  }
-  .pansion__gallery .carousel-caption p {
-    font-size: 15px;
-    line-height: 22px;
-  }
   .request {
     background-image: url("../../images/imagesMain/imgRequest/bg_min.png");
     background-repeat: no-repeat;
@@ -2151,13 +2119,15 @@ img {
     margin: auto;
     padding: 0;
   }
-  .questions__block .questions__item {
+}
+@media (max-width: 1200px) {
+  .questions__wrapper .questions__block .questions__item {
     width: 700px;
   }
 }
 @media (max-width: 768px) {
   .pansion__gallery .carousel-caption {
-    top: 80%;
+    top: 75%;
   }
   .pansion__gallery .carousel-caption p {
     font-size: 10px;
@@ -2200,19 +2170,19 @@ img {
   }
 }
 @media (max-width: 368px) {
-  .consult__content {
+  .consult .consult__content {
     width: 290px;
   }
-  .consult__content form {
+  .consult .consult__content form {
     padding: 34px 0 0 8px;
   }
-  .consult__content form .consult__text h2 {
+  .consult .consult__content form .consult__text h2 {
     font-size: 16px;
   }
-  .consult__content form .consult__text p {
+  .consult .consult__content form .consult__text p {
     padding: 0 10px 0 0;
   }
-  .consult__content form .consult__form {
+  .consult .consult__content form .consult__form {
     padding: 0 10px;
   }
 }/*# sourceMappingURL=styleMain.css.map */
