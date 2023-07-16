@@ -1,6 +1,6 @@
 # Lingua Forward English School
 
-<p>A web site for the owner of English school</p>
+<p>A responsive website for the owner of English school</p>
 <img width="700" alt="Screenshot" src="assets/images/screenshots/main.png"/>
 <img width="700" alt="Screenshot" src="assets/images/screenshots/second.png"/>
 <img width="700" alt="Screenshot" src="assets/images/screenshots/pansion.png"/>
