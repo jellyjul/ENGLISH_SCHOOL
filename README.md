@@ -11,7 +11,6 @@
 
 Host the parent directory on the wenserver
 
-## Technologies :
 
 ## Technologies:
 
@@ -21,6 +20,6 @@ Host the parent directory on the wenserver
 
 ## Thanks to all Contributors
 
-[![Contributors](https://contrib.rocks/image?repo=AlenaGM/Mogu-Travel)](https://github.com/jellyjul/ENGLISH_SCHOOL/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=jellyjul/ENGLISH_SCHOOL)](https://github.com/jellyjul/ENGLISH_SCHOOL/graphs/contributors)
 
 ## Result:
