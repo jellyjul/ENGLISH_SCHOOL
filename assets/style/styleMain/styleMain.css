@@ -1187,9 +1187,6 @@ img {
 .request .consult form .consult__form .form__reg:focus::-moz-placeholder {
   opacity: 0;
 }
-.request .consult form .consult__form .form__reg:focus:-ms-input-placeholder {
-  opacity: 0;
-}
 .request .consult form .consult__form .form__reg:focus::placeholder {
   opacity: 0;
 }
@@ -1198,9 +1195,6 @@ img {
   border: none;
 }
 .request .consult form .consult__form .form__reg::-moz-placeholder {
-  color: #425b69;
-}
-.request .consult form .consult__form .form__reg:-ms-input-placeholder {
   color: #425b69;
 }
 .request .consult form .consult__form .form__reg::placeholder {
@@ -1763,9 +1757,9 @@ img {
     text-align: center;
   }
   .review .carousel-caption-first,
-.review .carousel-caption-second,
-.review .carousel-caption-third,
-.review .carousel-caption-fourth {
+  .review .carousel-caption-second,
+  .review .carousel-caption-third,
+  .review .carousel-caption-fourth {
     background-image: none;
   }
 }
@@ -2027,9 +2021,9 @@ img {
     text-align: center;
   }
   .review .carousel-caption-first,
-.review .carousel-caption-second,
-.review .carousel-caption-third,
-.review .carousel-caption-fourth {
+  .review .carousel-caption-second,
+  .review .carousel-caption-third,
+  .review .carousel-caption-fourth {
     height: 450px;
   }
   .price h2 {
