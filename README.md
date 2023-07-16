@@ -9,7 +9,7 @@
 
 ## Getting started
 
-Host the parent directory on the wenserver
+Host the parent directory on the webserver
 
 
 ## Technologies:
