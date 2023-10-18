@@ -1,0 +1,33 @@
+{
+  "name": "english-school",
+  "version": "1.0.0",
+  "description": "a responsive website for english school",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jellyjul/ENGLISH_SCHOOL.git"
+  },
+  "keywords": [
+    "english",
+    "school"
+  ],
+  "author": "Uliana Akhsanova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jellyjul/ENGLISH_SCHOOL/issues"
+  },
+  "homepage": "https://github.com/jellyjul/ENGLISH_SCHOOL#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-watch": "^5.0.1",
+    "sass": "^1.69.3"
+  }
+}
