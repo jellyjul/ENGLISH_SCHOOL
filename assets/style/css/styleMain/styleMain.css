@@ -1236,6 +1236,9 @@ img {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+.request .red {
+  color: red;
+}
 
 .questions__wrapper {
   font-family: "Roboto Slab", serif;

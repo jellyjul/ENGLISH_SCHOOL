@@ -1037,10 +1037,11 @@
                 </p>
               </div>
               <div class="consult__form">
+                <div class="consult__error-name">
                 <div class="consult__name">
                   <label class="consult__label" for="name"></label>
                   <input
-                    class="form__reg"
+                    class="form__reg form__name"
                     type="text"
                     name="name"
                     id="name"
@@ -1050,7 +1051,7 @@
                 <div class="consult__number">
                   <label class="consult__label" for="number"></label>
                   <input
-                    class="form__reg"
+                    class="form__reg form__number field"
                     type="number"
                     name="number"
                     id="number"
@@ -1061,7 +1062,8 @@
               <div class="consult__button btn">
                 <input
                   type="submit"
-                  class="btn btn-orange"
+                  class="btn btn-orange consult__submit field"
+                  id = "submit"
                   value="Записаться"
                 />
               </div>
