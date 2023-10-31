@@ -11,7 +11,6 @@
 
 Host the parent directory on the webserver
 
-
 ## Technologies:
 
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
@@ -24,4 +23,5 @@ Host the parent directory on the webserver
 [![Contributors](https://contrib.rocks/image?repo=jellyjul/ENGLISH_SCHOOL)](https://github.com/jellyjul/ENGLISH_SCHOOL/graphs/contributors)
 
 ## Result:
+
 https://jellyjul.github.io/ENGLISH_SCHOOL/
