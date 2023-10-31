@@ -5,7 +5,6 @@ function formValidation() {
     const name = form.querySelector('.form__name')
     const number = form.querySelector('.form__number')
     const error = document.querySelector('.red')
-
     if (allLetter(name)){
         if (validateNumber(number)){
             let user = {
